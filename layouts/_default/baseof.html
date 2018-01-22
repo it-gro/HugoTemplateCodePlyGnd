@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    {{- if or .Site.Params.debug (findRE `\bbaseof\b` $.Site.Params.traceFlags) }} 
+      _default/baseof.html<br/>
+    {{- end}}
+
+    {{if eq .Section "examples" }}
+      {{if not .IsNode }}
+        <h2>{{.Permalink | relURL}}</h2>
+        <pre>{{printf "layouts/%s/%s.html" .Section .Layout  | readFile | replaceRE `(?s:{{/\* __HIDE__ \*/}}.*?\n)` "" }}</pre>
+        <hr>
+      {{end}}
+      {{block "example" . }}{{end}}
+    {{end}}
+
+    {{if eq .Section "tests" }}
+      {{if not .IsNode }}
+        <h2>{{.Permalink | relURL}}</h2>
+        <pre>{{printf "layouts/%s/%s.html" .Section .Layout  | readFile | replaceRE `(?s:{{/\* __HIDE__ \*/}}.*?\n)` "" }}</pre>
+        <hr>
+      {{end}}
+      {{block "test" . }}{{end}}
+    {{end}}
+  </body>
+</html>

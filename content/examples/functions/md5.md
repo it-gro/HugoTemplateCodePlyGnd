@@ -1,0 +1,3 @@
+---
+layout: "functions/md5"
+---

@@ -1,0 +1,9 @@
+{{/* __HIDE__ */}} {{- define "example" }}<pre>
+{{- $hello := "world" }}
+{{  $hello }}
+{{- if true }}
+  {{- $hello := "universe" }}
+  {{  $hello }}
+{{- end }}
+{{  $hello }}
+{{/* __HIDE__ */}} </pre>{{ end }}

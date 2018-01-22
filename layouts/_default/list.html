@@ -1,0 +1,10 @@
+{{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }} 
+_default/list.html<br/>
+{{- end}}
+
+<ul>
+{{ .Content}}
+  {{ range .Sections }}
+    <li><a href="{{ .Permalink }}">{{.Section}}/{{.Layout }}</a></li>
+  {{ end }}
+</ul>

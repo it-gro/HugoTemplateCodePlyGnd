@@ -1,0 +1,63 @@
+{{- define "example" }}
+{{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }} 
+examples/list.html<br/>
+{{- end}}
+
+{{ $myDir   := .Dir | default (printf "%s/" .Section) }}
+{{ $myPages := where .Site.Pages "Section" "examples" }}
+
+<h2>{{.Dir}}</h2>
+
+<h3>Directories</h3>
+<ul>
+  <li><a href="{{ .Permalink }}../">.. (up)</a></li>
+  {{ range $myPages  }}
+{{- if .Site.Params.debug }} 
+.Permalink : {{ .Permalink }}<br/>
+.$myDir    : {{ $myDir }}<br/>
+.Dir       : {{ .Dir }}<br/>
+.Parent.Dir: {{ .Parent.Dir }}<br/>
+.Name      : {{ .Name }}<br/>
+{{ end }}
+    {{ if and (in .Dir $myDir) (ne .Dir $myDir) }}
+      {{ if eq .Parent.Dir $myDir }}
+        <li><a href="{{ .Permalink }}">{{ .Permalink | relURL }}</a></li>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>
+
+<h3>{{.Section | humanize}}</h3>
+<ul>
+  {{ range $myPages  }}
+{{- if .Site.Params.debug }} 
+.Permalink : {{ .Permalink }}<br/>
+.Dir       : {{ .Dir }}<br/>
+.Parent.Dir: {{ .Parent.Dir }}<br/>
+.Name      : {{ .Name }}<br/>
+{{ end }}
+    {{ if in .Dir $myDir}}
+      {{ if and (eq .Parent.Dir $myDir ) .Permalink  }}
+      {{ $myLeaf := ((strings.TrimPrefix  (printf "/%s" .Dir)  (.Permalink | relURL)) | strings.TrimSuffix "/") }}
+        {{ if $myLeaf }}<li><a href="{{ .Permalink }}">{{ $myLeaf }}</a></li>{{end}}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}
+
+{{/*
+.Permalink : http://localhost:1313/examples/basics/
+.$myDir : examples/
+.Dir : examples/basics/
+.Parent.Dir: examples/
+.Name :
+/examples/basics/
+
+.Permalink : http://localhost:1313/examples/functions/
+.$myDir : examples/
+.Dir : examples/functions/
+.Parent.Dir: examples/
+.Name : 
+
+*/}}

@@ -1,0 +1,3 @@
+---
+layout: "functions/lang.NumFmt"
+---
