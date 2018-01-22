@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+title   = "Hugo Templating Playground"
+disablePathToLower = true
+
+[taxonomies]
+
+[params]
+traceFlags = "layout-name:baseof"
+debug      = false

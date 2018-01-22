@@ -1,0 +1,4 @@
+{{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }} 
+_default/single.html<br/>
+{{- end}}
+{{.Content}}
