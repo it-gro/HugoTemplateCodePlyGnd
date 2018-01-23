@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd (dirname $0)
+
 THE_VARIABLES=""
 THE_VARIABLES="$THE_VARIABLES file              "
 THE_VARIABLES="$THE_VARIABLES git               "

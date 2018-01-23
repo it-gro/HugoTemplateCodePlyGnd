@@ -1,12 +1,23 @@
 {{/* __HIDE__ */}} {{ define "example" }}<pre>
-{{ "i'm a string\nwith newline"    }}
+
+{{ "i'm a string\nwith newline, a \\ backslash and a ` backtick"    }}
+
+{{- /* backticks not apostrophe */}} 
 {{ `i'm a string\nwithout newline` }}
+
+
+{{- /* this is a string */}}
 {{ "0.0" }}
 
+{{- /* a number not a string */}}
 {{ 0.0 }}
+{{/* but not: 1,000.0 */}}
+
 {{ 1234.56 }}
 {{ 1234.56e3 }}
 
+{{- /* boolean values */}}
 {{ true }}
 {{ false }}
+
 {{/* __HIDE__ */}} </pre>{{ end }}
