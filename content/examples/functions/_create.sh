@@ -1,13 +1,27 @@
 #!/bin/bash
 
+cd (dirname $0)
+
 THE_FUNCTIONS=""
-THE_FUNCTIONS="$THE_FUNCTIONS .AddDate              "
-THE_FUNCTIONS="$THE_FUNCTIONS .Format               "
-THE_FUNCTIONS="$THE_FUNCTIONS .Get                  "
-THE_FUNCTIONS="$THE_FUNCTIONS .GetPage              "
-THE_FUNCTIONS="$THE_FUNCTIONS .Param                "
-THE_FUNCTIONS="$THE_FUNCTIONS .Scratch              "
-THE_FUNCTIONS="$THE_FUNCTIONS .Unix                 "
+
+#THE_FUNCTIONS="$THE_FUNCTIONS .AddDate              "
+#THE_FUNCTIONS="$THE_FUNCTIONS .Format               "
+#THE_FUNCTIONS="$THE_FUNCTIONS .Get                  "
+#THE_FUNCTIONS="$THE_FUNCTIONS .GetPage              "
+#THE_FUNCTIONS="$THE_FUNCTIONS .Param                "
+#THE_FUNCTIONS="$THE_FUNCTIONS .Scratch              "
+#THE_FUNCTIONS="$THE_FUNCTIONS .Unix                 "
+
+THE_FUNCTIONS="$THE_FUNCTIONS _AddDate              "
+THE_FUNCTIONS="$THE_FUNCTIONS _Format               "
+THE_FUNCTIONS="$THE_FUNCTIONS _Get                  "
+THE_FUNCTIONS="$THE_FUNCTIONS _GetPage              "
+THE_FUNCTIONS="$THE_FUNCTIONS _Param                "
+THE_FUNCTIONS="$THE_FUNCTIONS _Scratch              "
+THE_FUNCTIONS="$THE_FUNCTIONS _Unix                 "
+
+THE_FUNCTIONS="$THE_FUNCTIONS index_                "
+
 THE_FUNCTIONS="$THE_FUNCTIONS Math                  "
 THE_FUNCTIONS="$THE_FUNCTIONS absLangURL            "
 THE_FUNCTIONS="$THE_FUNCTIONS absURL                "
@@ -41,7 +55,6 @@ THE_FUNCTIONS="$THE_FUNCTIONS humanize              "
 THE_FUNCTIONS="$THE_FUNCTIONS i18n                  "
 THE_FUNCTIONS="$THE_FUNCTIONS imageConfig           "
 THE_FUNCTIONS="$THE_FUNCTIONS in                    "
-THE_FUNCTIONS="$THE_FUNCTIONS index_                "
 THE_FUNCTIONS="$THE_FUNCTIONS int                   "
 THE_FUNCTIONS="$THE_FUNCTIONS intersect             "
 THE_FUNCTIONS="$THE_FUNCTIONS isset                 "
@@ -104,7 +117,7 @@ THE_FUNCTIONS="$THE_FUNCTIONS where                 "
 THE_FUNCTIONS="$THE_FUNCTIONS with                  "
 
 for MY_FUNCTION in ${THE_FUNCTIONS}; do
-	echo ${MY_FUNCTION}
+  echo ${MY_FUNCTION}
 cat > "${MY_FUNCTION}.md" <<EOF
 ---
 layout: "functions/${MY_FUNCTION}"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd (dirname $0)
+
 THE_BASICS=""
 THE_BASICS="$THE_BASICS actions         "
 THE_BASICS="$THE_BASICS arguments       "
