@@ -1,5 +1,37 @@
 {{/* __HIDE__ */}} {{- define "example" }}<pre>
+{{- /* datatypes */}}
 
-{{/* datatypes */}}
+{{ $myString := "foo" }}         {{- $myString }}
+{{ $myString := "foo\nbar" }}    {{- $myString }}
+{{ $myString := `foo\nbar` }}    {{- $myString }}
+{{ $myString := "foo\\nbar" }}   {{- $myString }}
+{{ $myString := `foo\\nbar` }}   {{- $myString }}
+{{ printf "%x" $myString }}
+
+{{ $myInt     :=  42   }} {{- $myInt }}
+{{ $myInt     := -24   }} {{- $myInt }}
+{{ $myInt     :=  4321 }} {{- $myInt }}  {{/* not ok: 4_321 */}}
+{{ printf "%x" $myInt }}
+
+{{ $myArray := slice 10 12 14 }}  {{- $myArray }}
+{{ $myArray := seq 11 2 15 }}     {{- $myArray }}
+{{ $myArray := slice "foo" (seq 5 2 13) "bar" 42 }}  {{- $myArray }}
+
+{{ index $myArray 0 }}
+{{ index $myArray 1 }}
+{{ index $myArray 1 1 }}
+{{ printf "%x" $myArray }}
+
+{{ $myMap := dict "foo" 24 "bar" "cow" "foobar" "24"     }} {{- $myMap }}
+{{ $myMap := dict "foo" 24 "bar" "cow" "foo"    "42"     }} {{- $myMap }}
+{{ $myMap := dict "foo" 42 "bar" "cow" "foo"     12 "1" 2}} {{- $myMap }}
+{{ $myMap.foo }}
+{{ with $myMap }}{{.bar}}{{end}}
+{{ index $myMap "1" }}
+{{ printf "%x" $myMap }}
+
+{{ $myBool := true  }} {{- $myBool }}
+{{ $myBool := false }} {{- $myBool }}
+{{ printf "%x" $myBool }}
 
 {{/* __HIDE__ */}} </pre>{{ end }}
