@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://it-gro.github.io/HugoTemplatingPlayground"
 title   = "Hugo Templating Playground"
 
 disablePathToLower = true

@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Templating Playground</title>
-    <link>http://example.org/examples/variables/</link>
+    <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/</link>
     <description>Recent content on Hugo Templating Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://example.org/examples/variables/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/file/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/file/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/file/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/git/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/git/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/hugo/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/hugo/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/menu/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/menu/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/menu/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/page/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/page/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/page/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/page_front_matter/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/page_front_matter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/page_front_matter/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/page_front_matter/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/site/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/site/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/site/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/sitemap/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/sitemap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/sitemap/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/sitemap/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/variables/taxonomy/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/taxonomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/variables/taxonomy/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/taxonomy/</guid>
       <description></description>
     </item>
     
