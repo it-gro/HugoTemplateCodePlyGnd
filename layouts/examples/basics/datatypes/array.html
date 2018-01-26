@@ -1,0 +1,12 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* array */}}
+{{ $myArray := slice 10 12 14 }}  {{- $myArray }}
+{{ $myArray := seq 11 2 15 }}     {{- $myArray }}
+{{ $myArray := slice "foo" (seq 5 2 15) "bar" 42 }}  {{- $myArray }}
+
+{{ index $myArray 0 }}
+{{ index $myArray 1 }}
+{{ index $myArray 1 1 }}
+{{ printf "%+v (T:%T #v:%#v)" $myArray $myArray $myArray }}
+
+{{/* __HIDE__ */}} {{- end }}

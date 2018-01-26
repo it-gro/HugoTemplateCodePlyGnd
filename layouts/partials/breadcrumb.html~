@@ -1,0 +1,14 @@
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</div>
+
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+  {{ template "breadcrumbnav" (dict "p1" .p1.Parent    "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+  {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="{{ .p1.Permalink }}">{{replaceRE ".*/" "" (.p1.Permalink | relURL | strings.TrimSuffix "/")}}/</a>
+</div>
+{{ end }}

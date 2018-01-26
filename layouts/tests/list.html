@@ -1,6 +1,6 @@
 {{- define "test" }}
 {{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }} 
-tests/list.html<br/>
+<code>tests/list.html</code><br/>
 {{- end}}
 
 {{ $myDir   := .Dir | default (printf "%s/" .Section) }}

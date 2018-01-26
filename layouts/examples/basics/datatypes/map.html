@@ -1,0 +1,11 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* map */}}
+{{ $myMap := dict "foo" 24 "bar" "cow" "foobar" "24"     }} {{- $myMap }}
+{{ $myMap := dict "foo" 24 "bar" "cow" "foo"    "42"     }} {{- $myMap }}
+{{ $myMap := dict "foo" 42 "bar" "cow" "foo"     12 "1" 2}} {{- $myMap }}
+{{ $myMap.foo }}
+{{ with $myMap }}{{.bar}}{{end}}
+{{ index $myMap "1" }}
+{{ printf "%+v (T:%T #v:%#v)" $myMap $myMap $myMap }}
+
+{{/* __HIDE__ */}} {{- end }}

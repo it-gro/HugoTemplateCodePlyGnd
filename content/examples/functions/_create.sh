@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd (dirname $0)
+cd $(dirname $0)
 
 THE_FUNCTIONS=""
 
@@ -128,11 +128,11 @@ MY_LAYOUT_PATH="../../../layouts/examples/functions"
 if [ ! -d "${MY_LAYOUT_PATH}" ]; then mkdir -p "${MY_LAYOUT_PATH}"; fi
 if [ ! -e "${MY_LAYOUT_PATH}/${MY_FUNCTION}.html" ]; then
 cat > "${MY_LAYOUT_PATH}/${MY_FUNCTION}.html" <<EOF
-{{/* __HIDE__ */}} {{- define "example" }}<pre>
+{{/* __HIDE__ */}} {{- define "example" }}
 
 {{/* ${MY_FUNCTION} */}}
 
-{{/* __HIDE__ */}} </pre>{{ end }}
+{{/* __HIDE__ */}} {{ end }}
 EOF
 fi
 

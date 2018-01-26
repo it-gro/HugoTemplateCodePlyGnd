@@ -1,9 +1,48 @@
-{{/* __HIDE__ */}} {{- define "example" }}<pre>
-{{- $hello := "world" }}
-{{  $hello }}
-{{- if true }}
-  {{- $hello := "universe" }}
-  {{  $hello }}
-{{- end }}
-{{  $hello }}
-{{/* __HIDE__ */}} </pre>{{ end }}
+{{/* __HIDE__ */}} {{- define "example" }}
+{{ $hello := "world" }}
+1) {{ $hello }}
+{{ if true }}
+  2) {{ $hello }}
+  {{ $hello := "universe" }}
+  3) {{ $hello }}
+{{ end }}
+4) {{ $hello }}
+
+{{`=> .Scratch` }} {{ `https://gohugo.io/functions/scratch/` | markdownify }}
+{{ .Scratch.Set "aKey" "hello" }}
+10) {{ .Scratch.Get "aKey" }}
+{{ if true }}
+  11) {{ .Scratch.Get "aKey" }}
+  {{ .Scratch.Set "aKey" "you"  }}
+  12) {{ .Scratch.Get "aKey" }}
+{{ end }}
+13) {{ .Scratch.Get "aKey" }}
+
+{{ $.Scratch.Add "a1" 12 }}
+{{ $.Scratch.Get "a1" }}
+{{ $.Scratch.Add "a1" 1 }}
+{{ $.Scratch.Get "a1" }}
+
+{{ $.Scratch.Add "a2" "AB" }}
+{{ $.Scratch.Get "a2" }}
+{{ $.Scratch.Add "a2" "CD" }}
+{{ $.Scratch.Get "a2" }}
+
+{{ $.Scratch.Add "l1" (slice "A" "B") }}
+{{ $.Scratch.Get "l1" }}
+{{ $.Scratch.Add "l1" (slice "C" "D") }}
+{{ $.Scratch.Get "l1" }}
+
+{{ $.Scratch.Set "v1" 123 }}
+{{ $.Scratch.Get "v1" }}
+
+{{ $.Scratch.SetInMap "a3" "b" "XX" }}
+{{ $.Scratch.SetInMap "a3" "a" "AA" }}
+{{ $.Scratch.SetInMap "a3" "c" "CC" }}
+{{ $.Scratch.SetInMap "a3" "b" "BB" }}
+{{ $.Scratch.GetSortedMapValues "a3" }}
+
+{{ $mv := $.Scratch.GetSortedMapValues "a3" }}
+{{ printf "%+v (T:%T #v:%#v)" $mv $mv $mv}}
+{{ index $mv 1 }}
+{{/* __HIDE__ */}} {{ end }}

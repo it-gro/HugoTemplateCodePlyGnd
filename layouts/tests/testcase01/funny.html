@@ -1,12 +1,12 @@
-{{/* __HIDE__ */}} {{ define "test" }}<pre>
-{{ "i'm a string\nwith newline"    }}
-{{ `i'm a string\nwithout newline` }}
-{{ "0.0" }}
+{{.Scratch.Set "notsafe" 1 }}
+{{.Scratch.Get "notsafe" }}
 
-{{ 0.0 }}
-{{ 1234.56 }}
-{{ 1234.56e3 }}
+{{- $myScope := . }}
+{{- range $i := (seq 1 10) }}
+  {{- template "template-test" (dict "env" .) }}
+{{- end }}
 
-{{ true }}
-{{ false }}
-{{/* __HIDE__ */}} </pre>{{ end }}
+{{- define "template-test" }}
+  {{ ($.Scratch.Get "notsafe") }}
+  {{ $.Scratch.Set "notsafe" (add ($.Scratch.Get "notsafe") 1) }}
+{{- end }}

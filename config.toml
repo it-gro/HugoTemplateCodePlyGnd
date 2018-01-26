@@ -6,5 +6,5 @@ disablePathToLower = true
 [taxonomies]
 
 [params]
-traceFlags = "layout-name:baseof"
-debug      = false
+#traceFlags = "layout-name:baseof"
+#debug      = true

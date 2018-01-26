@@ -1,10 +1,44 @@
-{{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }} 
-_default/list.html<br/>
-{{- end}}
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
 
-<ul>
-{{ .Content}}
-  {{ range .Sections }}
-    <li><a href="{{ .Permalink }}">{{.Section}}/{{.Layout }}</a></li>
-  {{ end }}
-</ul>
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        {{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }}
+        <code>_default/list.html</code><br/>
+        {{- end}}
+
+        {{ partial "breadcrumb.html" . }}
+
+        <div class="w3-container w3-card w3-margin-bottom w3-theme-l5">
+
+        {{ .Content}}
+        {{ range $index, $section := .Sections }}
+          {{- if eq (mod $index 3) 0 }}
+            <div class="w3-row-padding w3-margin-bottom">
+          {{ end }}
+          <div class="w3-container w3-col m3 ">
+            <div class="w3-card-4 w3-round-xlarge w3-theme-l3">
+              <div class="w3-container">
+                <a class="no-decoration" href="{{ $section.Permalink }}">
+                  <h2>{{$section.Section | humanize}}</h2>
+                  <small>{{$section.Description | markdownify | safeHTML }}</small>
+                </a>
+              </div>
+            </div>
+          </div>
+          {{- if or (eq (mod $index 3) 2) (eq $index (sub (len $.Sections) 1 )) }}
+            </div>
+          {{ end }}
+        {{ end }}
+
+    </div>
+    </div>
+  </section>
+
+  </body>
+</html>

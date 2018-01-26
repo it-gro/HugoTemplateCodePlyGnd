@@ -1,9 +1,5 @@
 ---
 weight: 10
+description: |
+   [Hugo](https://gohugo.io/documentation/) **[Templates](https://gohugo.io/templates/)** 
 ---
-
-https://gohugo.io/templates/introduction/
-https://gohugo.io/functions/
-https://gohugo.io/variables/
-
-https://golang.org/pkg/text/template/

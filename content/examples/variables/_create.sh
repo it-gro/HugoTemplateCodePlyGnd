@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd (dirname $0)
+cd $(dirname $0)
 
 THE_VARIABLES=""
 THE_VARIABLES="$THE_VARIABLES file              "
@@ -26,11 +26,11 @@ MY_LAYOUT_PATH="../../../layouts/examples/variables"
 if [ ! -d "${MY_LAYOUT_PATH}" ]; then mkdir -p "${MY_LAYOUT_PATH}"; fi
 if [ ! -e "${MY_LAYOUT_PATH}/${MY_VARIABLE}.html" ]; then
 cat > "${MY_LAYOUT_PATH}/${MY_VARIABLE}.html" <<EOF
-{{/* __HIDE__ */}} {{- define "example" }}<pre>
+{{/* __HIDE__ */}} {{- define "example" }}
 
 {{/* ${MY_VARIABLE} */}}
 
-{{/* __HIDE__ */}} </pre>{{ end }}
+{{/* __HIDE__ */}} {{ end }}
 EOF
 fi
 
