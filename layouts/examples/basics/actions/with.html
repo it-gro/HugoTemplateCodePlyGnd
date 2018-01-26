@@ -1,0 +1,30 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* with */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{with pipeline}} T1 {{end}}
+  If the value of the pipeline is empty, no output is generated;
+  otherwise, dot is set to the value of the pipeline and T1 is
+  executed.
+`}}
+
+{{with (slice "a" "b" 1 2 3) }} {{.}} {{end}}
+1) {{ .Dir }}
+{{with .Site.GetPage "section" "examples" }}2) {{.Dir}} {{end}}
+{{with .Site.GetPage "section" "foo"      }}3) {{.Dir}} {{end}}
+
+{{`
+{{with pipeline}} T1 {{else}} T0 {{end}}
+  If the value of the pipeline is empty, dot is unaffected and T0
+  is executed; otherwise, dot is set to the value of the pipeline
+  and T1 is executed.
+`}}
+
+{{with .Site.GetPage "section" "foo" }}
+  {{.Dir}}
+{{else}}
+  no section found
+{{end}}
+
+{{/* __HIDE__ */}} {{- end }}

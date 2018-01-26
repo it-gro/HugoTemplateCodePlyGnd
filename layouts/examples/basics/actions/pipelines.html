@@ -1,5 +1,14 @@
-{{/* __HIDE__ */}} {{- define "example" }}
-
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* pipelines */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{pipeline}}
+The default textual representation of the value of the pipeline is
+copied to the output.
+`}}
+
+{{ "foo" }}
+{{ add 1.2300000 1.1 }}
 
 {{/* __HIDE__ */}} {{- end }}

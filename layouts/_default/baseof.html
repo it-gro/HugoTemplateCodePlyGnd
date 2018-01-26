@@ -14,51 +14,28 @@
 
         {{ partial "breadcrumb.html" . }}
 
-        {{if eq .Section "examples" }}
-          {{if not .IsNode }}
-            {{- if or .Site.Params.debug (findRE `\bbaseof\b` $.Site.Params.traceFlags) }}
-              <code>
-              .File.Path:       {{ .File.Path}}<br/>
-              .Section/.Layout: {{printf "layouts/%s/%s.html" .Section .Layout }}<br/>
-              </code>
-            {{- end}}
-            <div class="w3-container w3-card w3-theme-l1">
-                <pre>{{printf "content/%s" .File.Path  | readFile | replaceRE `(?m)^(layout|weight).*\n` ""  }}</pre>
+        {{if and .Section (not .IsNode) }}
+          {{- if or .Site.Params.debug (findRE `\bbaseof\b` $.Site.Params.traceFlags) }}
+            <code>
+            .File.Path:       {{ .File.Path}}<br/>
+            .Section/.Layout: {{printf "layouts/%s/%s.html" .Section .Layout }}<br/>
+            </code>
+          {{- end}}
+          <div class="w3-container w3-card w3-theme-l1">
+              <pre>{{printf "content/%s" .File.Path  | readFile | replaceRE `(?m)^(layout|weight).*\n` ""  }}</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{printf "layouts/%s/%s.html" .Section .Layout  | readFile | replaceRE `(?s:{{/\* __HIDE__ \*/}}.*?\n)` "" }}</pre>
             </div>
-            <div class="w3-row">
-              <div class="w3-container w3-col m6 w3-theme-l2">
-                <pre>{{printf "layouts/%s/%s.html" .Section .Layout  | readFile | replaceRE `(?s:{{/\* __HIDE__ \*/}}.*?\n)` "" }}</pre>
-              </div>
-              <div class="w3-container w3-col m6 w3-theme-l3">
-                <pre>{{block "example" . }}{{end}}</pre>
-              </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>{{block "render" . }}{{end}}</pre>
             </div>
-          {{else}}
+          </div>
+        {{else}}
             <div class="">
-              {{block "example" . }}{{end}}
+              {{ partial "section.list.html" . }}
             </div>
-          {{end}}
-        {{end}}
-
-        {{if eq .Section "tests" }}
-          {{if not .IsNode }}
-            <h2>{{.Permalink | relURL}}</h2>
-            <div class="w3-container w3-card w3-theme-l1">
-                <pre>{{printf "content/%s" .File.Path  | readFile | replaceRE `(?m)^(layout|weight).*\n` "" }}</pre>
-            </div>
-            <div class="w3-row">
-              <div class="w3-container w3-col m6 w3-theme-l2">
-                <pre>{{printf "layouts/%s/%s.html" .Section .Layout  | readFile | replaceRE `(?s:{{/\* __HIDE__ \*/}}.*?\n)` "" }}</pre>
-              </div>
-              <div class="w3-container w3-col m6 w3-theme-l3">
-                <pre>{{block "example" . }}{{end}}</pre>
-              </div>
-            </div>
-          {{else}}
-            <div class="w3-container w3-card w3-theme-l5">
-          {{block "test" . }}{{end}}
-            </div>
-          {{end}}
         {{end}}
 
       </div>

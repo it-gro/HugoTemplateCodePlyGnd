@@ -1,5 +1,68 @@
-{{/* __HIDE__ */}} {{- define "example" }}
-
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* conditions */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{if pipeline}} T1 {{end}}
+  If the value of the pipeline is empty, no output is generated;
+  otherwise, T1 is executed. The empty values are false, 0, any
+  nil pointer or interface value, and any array, slice, map, or
+  string of length zero.
+  Dot is unaffected.
+`}}
+
+1) {{if true                }} T1 {{end}}
+2) {{if "foo"               }} T1 {{end}}
+3) {{if 42                  }} T1 {{end}}
+4) {{if (seq 1 3)           }} T1 {{end}}
+5) {{if (dict "foo" "bar")  }} T1 {{end}}
+6) {{if "0"                 }} T1 {{end}}
+
+1) {{if false    }} T1 {{end}}
+2) {{if 0.0      }} T1 {{end}}
+3) {{if (slice)  }} T1 {{end}}
+4) {{if (dict)   }} T1 {{end}}
+
+
+{{`
+{{if pipeline}} T1 {{else}} T0 {{end}}
+  If the value of the pipeline is empty, T0 is executed;
+  otherwise, T1 is executed. Dot is unaffected.
+`}}
+
+1) {{if true  }} T1 {{else}} T0 {{end}}
+2) {{if false }} T1 {{else}} T0 {{end}}
+
+
+{{`
+{{if pipeline}} T1 {{else if pipeline}} T0 {{end}}
+  To simplify the appearance of if-else chains, the else action
+  of an if may include another if directly; the effect is exactly
+  the same as writing
+    {{if pipeline}} T1 {{else}}{{if pipeline}} T0 {{end}}{{end}}
+`}}
+
+{{`https://golang.org/pkg/text/template/#hdr-Functions` | markdownify }}
+{{`set of binary comparison operators defined as functions:
+eq  Returns the boolean truth of arg1 == arg2
+ne  Returns the boolean truth of arg1 != arg2
+lt  Returns the boolean truth of arg1 < arg2
+le  Returns the boolean truth of arg1 <= arg2
+gt  Returns the boolean truth of arg1 > arg2
+ge  Returns the boolean truth of arg1 >= arg2
+`}}
+
+{{ $myValue := 15 }}
+{{if lt $myValue 5 }}
+small
+{{else if lt $myValue 20}}
+medium
+{{else if lt $myValue 30}}
+large
+{{else}}
+big
+{{end}}
+
+
 
 {{/* __HIDE__ */}} {{- end }}

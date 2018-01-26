@@ -1,5 +1,0 @@
-{{/* __HIDE__ */}} {{- define "example" }}
-{{/* time */}}
-{{ $myTime := time "2018-01-28" }}
-{{ printf "%+v (T:%T #v:%#v)" $myTime $myTime $myTime }}
-{{/* __HIDE__ */}} {{- end }}

@@ -1,6 +1,5 @@
 ---
-weight: 20
+weight: 40
 description: >
-    Hugo Templates, some Tests                 
-    https://gohugo.io/templates/introduction   
+   [Hugo](https://gohugo.io/documentation/) Anything
 ---

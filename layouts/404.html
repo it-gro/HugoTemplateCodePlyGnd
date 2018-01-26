@@ -1,1 +1,24 @@
-nope
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+  {{- if or .Site.Params.debug (findRE `\blayout-name\b` $.Site.Params.traceFlags) }}
+    {{- `<!-- 404.html (main) -->` | safeHTML }}
+  {{- end}}
+
+  <section id="top" class="w3-theme" >
+    <div class="w3-container w3-theme-l4">
+      <h3 class="w3-center" >We are sorry - this page is not here </h3>
+      <div class="w3-container w3-center w3-theme-l3">
+        <a href="{{ relURL "/" }}" class="w3-button">Go to Homepage</a>
+      </div>
+
+    </div>
+  </section>
+
+  </body>
+</html>
+
