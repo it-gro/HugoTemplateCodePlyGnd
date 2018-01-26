@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        <div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+
+  
+
+  
+
+  
+
+  
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/">Home</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/">examples/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/">basics/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/datatypes/">datatypes/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/datatypes/time/">time/</a>
+  
+</div>
+
+</div>
+
+
+
+
+        
+          <div class="w3-container w3-card w3-theme-l1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* time */}}
+{{ $myTime := time &#34;2018-01-26T00:33:45&#43;01:00&#34; }}
+{{ printf &#34;%&#43;v \nT:%T \n#v:%#v)&#34; $myTime $myTime $myTime }}
+{{- /*
+*/}}
+{{ string $myTime }}
+{{ $myTime }}
+
+{{ `https://golang.org/pkg/time/` | markdownify }}
+{{`any use in hugo templating ?`}}
+{{ time.Now }}
+{{ $t := time.Now }}
+{{ range (seq 1 2000) }}{{end}}
+{{ $t.Sub time.Now }}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+
+2018-01-26 00:33:45 &#43;0100 CET 
+T:time.Time 
+#v:time.Time{wall:0x0, ext:63652520025, loc:(*time.Location)(0x1fa2ca0)})
+2018-01-26 00:33:45 &#43;0100 CET
+2018-01-26 00:33:45 &#43;0100 CET
+
+<a href="https://golang.org/pkg/time/">https://golang.org/pkg/time/</a>
+any use in hugo templating ?
+2018-01-26 16:33:22.868286335 &#43;0100 CET m=&#43;0.584120287
+
+
+-117.957µs
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

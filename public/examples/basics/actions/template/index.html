@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        <div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+
+  
+
+  
+
+  
+
+  
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/">Home</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/">examples/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/">basics/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/actions/">actions/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/actions/template/">template/</a>
+  
+</div>
+
+</div>
+
+
+
+
+        
+          <div class="w3-container w3-card w3-theme-l1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* template */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{template &#34;name&#34;}}
+  The template with the specified name is executed with nil data.
+`}}
+
+{{`
+{{template &#34;name&#34; pipeline}}
+  The template with the specified name is executed with dot set
+  to the value of the pipeline.
+`}}
+
+{{`
+{{block &#34;name&#34; pipeline}} T1 {{end}}
+  A block is shorthand for defining a template
+    {{define &#34;name&#34;}} T1 {{end}}
+  and then executing it in place
+    {{template &#34;name&#34; .}}
+  The typical use is to define a set of root templates that are
+  then customized by redefining the block templates within.
+`}}
+
+1){{ .Dir }}
+{{- template &#34;myTpl1&#34; .Site.GetPage &#34;section&#34; &#34;examples&#34;}}
+3){{ .Dir }}
+
+{{block &#34;myBlock&#34; .Site.GetPage &#34;section&#34; &#34;examples&#34; }}
+4){{ .Dir }}
+{{end}}
+
+{{- define &#34;myTpl1&#34;}}
+2){{ .Dir }}
+{{- end}}
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://golang.org/pkg/text/template/#hdr-Actions">https://golang.org/pkg/text/template/#hdr-Actions</a>
+
+
+{{template &#34;name&#34;}}
+  The template with the specified name is executed with nil data.
+
+
+
+{{template &#34;name&#34; pipeline}}
+  The template with the specified name is executed with dot set
+  to the value of the pipeline.
+
+
+
+{{block &#34;name&#34; pipeline}} T1 {{end}}
+  A block is shorthand for defining a template
+    {{define &#34;name&#34;}} T1 {{end}}
+  and then executing it in place
+    {{template &#34;name&#34; .}}
+  The typical use is to define a set of root templates that are
+  then customized by redefining the block templates within.
+
+
+1)examples/basics/actions/
+2)examples/
+3)examples/basics/actions/
+
+
+4)examples/
+
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

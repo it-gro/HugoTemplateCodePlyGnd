@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        <div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+
+  
+
+  
+
+  
+
+  
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/">Home</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/">examples/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/">basics/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/actions/">actions/</a>
+  
+</div>
+
+
+<div class="w3-bar-item w3-button w3-mobile">
+  
+  <a href="http://example.org/examples/basics/actions/text_and_spaces/">text_and_spaces/</a>
+  
+</div>
+
+</div>
+
+
+
+
+        
+          <div class="w3-container w3-card w3-theme-l1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* text_and_spaces */}}
+{{ `https://golang.org/pkg/text/template/` | markdownify }}
+
+1) {{23 -}} &lt; {{- 45}}
+
+2) {{ `foo` }}
+
+{{ `bar` }}
+
+3) {{ `foo` }}
+
+{{- `bar` }}
+
+4) {{ `foo` -}}
+
+{{ `bar` }}
+
+5)
+{{- `foo` }}
+
+6)
+foo
+{{if false}}{{end}}
+bar
+
+7)
+foo
+{{- if false}}{{end}}
+bar
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://golang.org/pkg/text/template/">https://golang.org/pkg/text/template/</a>
+
+1) 23&lt;45
+
+2) foo
+
+bar
+
+3) foobar
+
+4) foobar
+
+5)foo
+
+6)
+foo
+
+bar
+
+7)
+foo
+bar
+
+ </pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
