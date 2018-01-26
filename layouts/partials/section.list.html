@@ -31,7 +31,7 @@
             {{ if and (in .Dir $myDir) (ne .Dir $myDir) }}
               {{ if eq .Parent.Dir $myDir }}
                 <li>
-                  <a class="w3-button text-button " href="{{ .Permalink }}">{{ .Permalink | relURL }}</a>
+                  <a class="w3-button text-button " href="{{ .Permalink }}">{{ (strings.TrimPrefix .Parent.Dir .Dir | strings.TrimSuffix "/") }}</a>
                   {{if and false .Description }}
                   <div class="w3-container w3-small w3-theme-l4">{{.Description | markdownify | safeHTML }}</div>
                   {{end}}
@@ -63,18 +63,20 @@
           .Dir       : {{ .Dir }}<br/>
           .Parent.Dir: {{ .Parent.Dir }}<br/>
           .Name      : {{ .Name }}<br/>
+          .Path      : {{ .Path }}<br/>
+          .File      : {{ .File }}<br/>
         {{ end }}
-        {{ if in .Dir $myDir}}
+
+        {{ if and (in .Dir $myDir) (not (in .Path "_index.md")) }}
           {{ if and (eq .Parent.Dir $myDir ) .Permalink  }}
-          {{ $myLeaf := ((strings.TrimPrefix  (printf "/%s" .Dir)  (.Permalink | relURL)) | strings.TrimSuffix "/") }}
-            {{ if $myLeaf }}
-              <li>
-                <a class="w3-button text-button " href="{{ .Permalink }}">{{ $myLeaf }}</a>
-                {{if .Description }}
-                  <br/><small>{{.Description | markdownify | safeHTML }}</small>
-                {{end}}
-              </li>
-            {{end}}
+          {{/* $myLeaf := ((strings.TrimPrefix  (printf "/%s" .Dir)  (.Permalink | relURL)) | strings.TrimSuffix "/") */}}
+          {{ $myLeaf := (strings.TrimPrefix .Parent.Dir .Path | strings.TrimSuffix ".md") }}
+           <li>
+             <a class="w3-button text-button " href="{{ .Permalink }}">{{ $myLeaf }}</a>
+             {{if .Description }}
+               <br/><small>{{.Description | markdownify | safeHTML }}</small>
+             {{end}}
+           </li>
           {{ end }}
         {{ end }}
       {{ end }}
