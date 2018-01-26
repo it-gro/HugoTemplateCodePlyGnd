@@ -1,5 +1,27 @@
-{{/* __HIDE__ */}} {{- define "example" }}<pre>
-
+{{/* __HIDE__ */}} {{- define "example" }}
 {{/* context_the_dot */}}
+{{`https://gohugo.io/templates/introduction/#context-aka-the-dot` | markdownify }}
 
-{{/* __HIDE__ */}} </pre>{{ end }}
+{{print .Dir }}
+{{ with .Params.foo }}
+  {{print (index . 0) }}
+  {{print $.Dir }}
+{{ end }}
+
+{{print .Dir }}
+{{print $.Dir }}
+
+{{- range .Params.foo }}
+  {{ print . }}
+{{- end }}
+
+{{print .Dir }}
+
+{{ template "test" (seq 1 5) }}
+{{ template "test" (dict "foo" "bar" "hello" 42) }}
+
+{{/* __HIDE__ */}} {{- end }}
+
+{{- define "test" }}
+{{- printf "%#v" . }}
+{{- end }}

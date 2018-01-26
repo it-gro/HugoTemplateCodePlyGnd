@@ -1,0 +1,21 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* string */}}
+1) {{ "i'm a string\nwith newline, a \\ backslash and a ` backtick" -}}
+
+{{/* backticks not apostrophe */}}
+2) {{ `i'm a string\nwithout newline` }}
+
+3) {{ `string
+with newline` }}
+
+{{/* this is a string */}}
+4) {{ "0.0" }}
+
+5) {{ $myString := "foo" }}         {{- $myString }}
+6) {{ $myString := "foo\nbar" }}    {{- $myString }}
+7) {{ $myString := `foo\nbar` }}    {{- $myString }}
+8) {{ $myString := "foo\\nbar" }}   {{- $myString }}
+9) {{ $myString := `foo\\nbar` }}   {{- $myString }}
+{{ printf "%+v (T:%T #v:%#v)" $myString $myString $myString }}
+
+{{/* __HIDE__ */}} {{- end }}

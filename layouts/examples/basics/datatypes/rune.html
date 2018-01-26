@@ -1,0 +1,23 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* rune */}}
+{{ `https://golang.org/ref/spec#Rune_literals` }}
+{{ $myRune := 'a' }}
+{{ printf "%+v (T:%T #v:%#v)" $myRune $myRune $myRune }}
+
+{{ $myRune := sub 'a' 20 }}
+{{ printf "%+v (T:%T #v:%#v)" $myRune $myRune $myRune }}
+
+{{`
+\a   U+0007 alert or bell
+\b   U+0008 backspace
+\f   U+000C form feed
+\n   U+000A line feed or newline
+\r   U+000D carriage return
+\t   U+0009 horizontal tab
+\v   U+000b vertical tab
+\\   U+005c backslash
+\'   U+0027 single quote  (valid escape only within rune literals)
+\"   U+0022 double quote  (valid escape only within string literals)
+`}}
+
+{{/* __HIDE__ */}} {{- end }}

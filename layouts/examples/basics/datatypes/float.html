@@ -1,0 +1,11 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* float */}}
+{{ $myFloat     :=  42.0      }} {{- $myFloat }}
+{{ printf "%+v (T:%T #v:%#v)" $myFloat $myFloat $myFloat }}
+{{ $myFloat     := -24.1      }} {{- $myFloat }}
+{{ $myFloat     :=  4321.1    }} {{- $myFloat }}  {{/* not ok: 4_321 */}}
+{{ printf "%+v (T:%T #v:%#v)" $myFloat $myFloat $myFloat }}
+{{ $myFloat     :=  1234.56e3 }} {{- $myFloat }}  {{/* not ok: 4_321 */}}
+{{ printf "%+v (T:%T #v:%#v)" $myFloat $myFloat $myFloat }}
+
+{{/* __HIDE__ */}} {{- end }}

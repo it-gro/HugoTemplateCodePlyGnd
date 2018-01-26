@@ -1,0 +1,7 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* int */}}
+{{ $myInt     :=  42   }} {{- $myInt }}
+{{ $myInt     := -24   }} {{- $myInt }}
+{{ $myInt     :=  4321 }} {{- $myInt }}  {{/* not ok: 4_321 */}}
+{{ printf "%+v (T:%T #v:%#v)" $myInt $myInt $myInt }}
+{{/* __HIDE__ */}} {{- end }}

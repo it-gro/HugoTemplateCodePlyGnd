@@ -1,0 +1,17 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* bool */}}
+{{ true }}
+{{ false }}
+
+{{ $myBool := true  }} {{- $myBool }}
+{{ $myBool := false }} {{- $myBool }}
+{{ printf "%+v (T:%T #v:%#v)" $myBool $myBool $myBool }}
+
+{{ `Go Templates treat the following values as false:
+false
+0
+any zero-length array, slice, map, or string
+`}}
+{{ `=> the int/float 0 is false, but the string "0" is true (non empty string)` }}
+
+{{/* __HIDE__ */}} {{- end }}

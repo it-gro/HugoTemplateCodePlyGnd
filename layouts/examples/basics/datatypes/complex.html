@@ -1,0 +1,9 @@
+{{/* __HIDE__ */}} {{- define "example" }}
+{{/* complex */}}
+{{ 42i }} {{/* not of any use in hugo(?), but never let a i follow a number */}}
+{{ $myComplex := 12i }}
+{{ printf "%+v (T:%T #v:%#v)" $myComplex $myComplex $myComplex }}
+
+
+{{ printf "%+v (T:%T #v:%#v)" (time "2018-01-28") (time "2018-01-28") (time "2018-01-28") }}
+{{/* __HIDE__ */}} {{- end }}
