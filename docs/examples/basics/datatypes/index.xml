@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Templating Playground</title>
-    <link>http://example.org/examples/basics/datatypes/</link>
+    <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/</link>
     <description>Recent content on Hugo Templating Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://example.org/examples/basics/datatypes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/string/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/string/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/string/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/int/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/int/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/int/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/int/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/float/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/float/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/float/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/float/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/bool/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/bool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/bool/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/bool/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/array/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/array/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/array/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/map/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/map/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/map/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/time/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/time/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/time/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/datatypes/complex/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/complex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/datatypes/complex/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/complex/</guid>
       <description></description>
     </item>
     

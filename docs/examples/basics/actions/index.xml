@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Templating Playground</title>
-    <link>http://example.org/examples/basics/actions/</link>
+    <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/</link>
     <description>Recent content on Hugo Templating Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://example.org/examples/basics/actions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/text_and_spaces/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/text_and_spaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/text_and_spaces/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/text_and_spaces/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/comments/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/comments/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/comments/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/pipelines/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/pipelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/pipelines/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/pipelines/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/conditions/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/conditions/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/conditions/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/range/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/range/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/range/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/range/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/with/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/with/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/with/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/with/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/examples/basics/actions/template/</link>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/examples/basics/actions/template/</guid>
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/template/</guid>
       <description></description>
     </item>
     
