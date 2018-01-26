@@ -32,3 +32,5 @@ disablePathToLower = true
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-red.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-teal.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-yellow.css"
+
+  fileLinkCntPerHalf = 25

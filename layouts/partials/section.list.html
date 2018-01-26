@@ -12,6 +12,7 @@
   {{ $myDir   := .Dir | default (printf "%s/" .Section) }}
   {{ $myPages := where .Site.Pages "Section" .Section }}
 
+  {{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Directories */}}
   <div class="w3-row">
 
     <div class="w3-col m6 w3-theme-l4">
@@ -19,7 +20,7 @@
 
         <h3>Directories</h3>
         <ul>
-          <li><a href="{{ .Permalink }}../">.. (up)</a></li>
+          <li><a class="w3-button text-button " href="{{ .Permalink }}../">.. (up)</a></li>
           {{ range $myPages  }}
             {{- if .Site.Params.debug }}
               .Permalink : {{ .Permalink }}<br/>
@@ -54,9 +55,12 @@
   </div> {{/* w3-row */}}
 
 
+  {{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ examples */}}
+
   <div class="w3-padding w3-theme-d5">
     <h3>{{.Section | humanize}}</h3>
-    <ul>
+      {{ $.Scratch.Set "theCntLiEl" -1 }}
+      {{ $myCntPerHalf :=  (default 25 ($.Site.Param `fileLinkCntPerHalf`)) }}
       {{ range $myPages  }}
         {{- if .Site.Params.debug }}
           .Permalink : {{ .Permalink }}<br/>
@@ -71,16 +75,34 @@
           {{ if and (eq .Parent.Dir $myDir ) .Permalink  }}
           {{/* $myLeaf := ((strings.TrimPrefix  (printf "/%s" .Dir)  (.Permalink | relURL)) | strings.TrimSuffix "/") */}}
           {{ $myLeaf := (strings.TrimPrefix .Parent.Dir .Path | strings.TrimSuffix ".md") }}
+          {{ $.Scratch.Add "theCntLiEl" 1 }}
+
+          {{- if or (eq ($.Scratch.Get "theCntLiEl") 0 ) (eq (mod ($.Scratch.Get "theCntLiEl") (mul $myCntPerHalf 2)) 0) }}
+            <div class="w3-row w3-theme-d4">
+          {{ end }}
+          {{- if eq (mod ($.Scratch.Get "theCntLiEl") $myCntPerHalf) 0 }}
+              <div class="w3-col m6">
+                <ul>
+          {{ end }}
            <li>
              <a class="w3-button text-button " href="{{ .Permalink }}">{{ $myLeaf }}</a>
              {{if .Description }}
                <br/><small>{{.Description | markdownify | safeHTML }}</small>
              {{end}}
            </li>
+
+          {{- if eq (mod ($.Scratch.Get "theCntLiEl") $myCntPerHalf) (sub $myCntPerHalf 1) }}
+                </ul>
+                </div> {{/* w3-col */}}
+          {{ end }}
+
+          {{- if eq (mod ($.Scratch.Get "theCntLiEl") (mul $myCntPerHalf 2) ) (sub (mul $myCntPerHalf 2) 1) }}
+                </div> {{/* w3-row */}}
+          {{ end }}
+
           {{ end }}
         {{ end }}
       {{ end }}
-    </ul>
   </div> {{/* w3-padding */}}
 
 {{ end }}
