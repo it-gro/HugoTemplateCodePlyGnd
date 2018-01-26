@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{ partial "head.html" . }}
+    {{- partial "head.html" . }}
   </head>
   <body>
 
@@ -12,13 +12,13 @@
         <code>_default/list.html</code><br/>
         {{- end}}
 
-        {{ partial "breadcrumb.html" . }}
+        {{- partial "breadcrumb.html" . }}
 
-        {{ if .IsHome }}
-        {{ template "home" . }}
-        {{ else }}
-        {{ partial "section.list.html" . }}
-        {{ end }}
+        {{- if .IsHome }}
+        {{- template "home" . }}
+        {{- else }}
+        {{- partial "section.list.html" . }}
+        {{- end }}
 
       </div>
     </section>
@@ -34,24 +34,23 @@
   <div class="w3-container w3-card w3-margin-bottom w3-theme-l5">
 
     {{ .Content}}
-    {{ range $index, $section := .Sections }}
+    {{- range $index, $section := .Sections }}
       {{- if eq (mod $index 3) 0 }}
         <div class="w3-row ">
-      {{ end }}
+      {{- end }}
       <div class="w3-container w3-col m3 w3-margin-bottom">
         <div class="w3-card-4 w3-round-xlarge w3-theme-l3">
           <div class="w3-container">
             <a class="no-decoration" href="{{ $section.Permalink }}">
-              <h2>{{$section.Section | humanize}}</h2>
-              <small>{{$section.Description | markdownify | safeHTML }}</small>
-            </a>
+              <h2>{{$section.Section | humanize}}</h2></a>
+            <small>{{$section.Description | markdownify | safeHTML }}</small>
           </div>
         </div>
       </div>
       {{- if or (eq (mod $index 3) 2) (eq $index (sub (len $.Sections) 1 )) }}
         </div>
-      {{ end }}
-    {{ end }}
+      {{- end }}
+    {{- end }}
 
   </div>
-{{end}}
+{{- end}}
