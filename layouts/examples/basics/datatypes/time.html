@@ -1,5 +1,17 @@
-{{/* __HIDE__ */}} {{- define "example" }}
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* time */}}
 {{ $myTime := time "2018-01-26T00:33:45+01:00" }}
 {{ printf "%+v \nT:%T \n#v:%#v)" $myTime $myTime $myTime }}
+{{- /*
+*/}}
+{{ string $myTime }}
+{{ $myTime }}
+
+{{ `https://golang.org/pkg/time/` | markdownify }}
+{{`any use in hugo templating ?`}}
+{{ time.Now }}
+{{ $t := time.Now }}
+{{ range (seq 1 2000) }}{{end}}
+{{ $t.Sub time.Now }}
+
 {{/* __HIDE__ */}} {{- end }}

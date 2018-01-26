@@ -1,0 +1,37 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* template */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{template "name"}}
+  The template with the specified name is executed with nil data.
+`}}
+
+{{`
+{{template "name" pipeline}}
+  The template with the specified name is executed with dot set
+  to the value of the pipeline.
+`}}
+
+{{`
+{{block "name" pipeline}} T1 {{end}}
+  A block is shorthand for defining a template
+    {{define "name"}} T1 {{end}}
+  and then executing it in place
+    {{template "name" .}}
+  The typical use is to define a set of root templates that are
+  then customized by redefining the block templates within.
+`}}
+
+1){{ .Dir }}
+{{- template "myTpl1" .Site.GetPage "section" "examples"}}
+3){{ .Dir }}
+
+{{block "myBlock" .Site.GetPage "section" "examples" }}
+4){{ .Dir }}
+{{end}}
+
+{{/* __HIDE__ */}} {{- end }}
+{{- define "myTpl1"}}
+2){{ .Dir }}
+{{- end}}

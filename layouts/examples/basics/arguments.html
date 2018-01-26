@@ -1,8 +1,11 @@
-{{/* __HIDE__ */}} {{- define "example" }}
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* arguments */}}
 {{`https://golang.org/pkg/text/template/#hdr-Arguments` | markdownify }}
 
-{{`A boolean, string, character, integer, floating-point, imaginary or complex constant in Go syntax. These behave like Go's untyped constants.`}}
+{{`A boolean, string, character, integer, floating-point, imaginary or
+complex constant in Go syntax. These behave like Go's untyped
+constants.`}}
+
 {{print true }}
 {{print "foo" }}
 {{print '\n' }}
@@ -17,15 +20,18 @@
 {{`The character '.' (period)`}}
 {{print . }}
 
-{{`A variable name, which is a (possibly empty) alphanumeric string preceded by a dollar sign`}}
+{{`A variable name, which is a (possibly empty) alphanumeric string
+preceded by a dollar sign`}}
 {{ $foo := "bar" }}
 {{ print $foo }}
 {{ print $ }}
 
-{{`The name of a field of the data, which must be a struct, preceded by a period`}}
+{{`The name of a field of the data, which must be a struct, preceded
+by a period`}}
 {{ print $.Dir }}
 
-{{`The result is the value of the field. Field invocations may be chained`}}
+{{`The result is the value of the field. Field invocations may be
+chained`}}
 {{ print .Params.Title }}
 
 {{`Fields can also be evaluated on variables, including chaining`}}
@@ -33,17 +39,20 @@
 {{ print $myPage.Dir }}
 
 
-{{`The name of a key of the data, which must be a map, preceded by a period`}}
+{{`The name of a key of the data, which must be a map, preceded by a
+period`}}
 {{ $data := dict "foo" "bar" "world" 42}}
 {{ print $data.foo }}
 
-{{`Key invocations may be chained and combined with fields to any depth`}}
+{{`Key invocations may be chained and combined with fields to any
+depth`}}
 {{`Keys can also be evaluated on variables, including chaining`}}
 {{ $data := dict "foo" "bar" "world" 42 "more" (dict "hej" 24 "11" "me") "and" 11}}
 {{ print $data.more.hej }}
 
 {{`The name of a niladic method of the data, preceded by a period`}}
-{{`Method invocations may be chained and combined with fields and keys to any depth`}}
+{{`Method invocations may be chained and combined with fields and keys
+to any depth`}}
 {{ $myPage := .Site.GetPage "section" "examples" }}
 {{ print $myPage.Params.weight }}
 

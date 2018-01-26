@@ -1,1 +1,1 @@
-## Hugo Playground
+## Hugo Templates Playground

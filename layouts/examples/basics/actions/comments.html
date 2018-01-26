@@ -1,5 +1,27 @@
-{{/* __HIDE__ */}} {{- define "example" }}
-
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* comments */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+{{`A comment; discarded. May contain newlines.
+Comments do not nest and must start and end at the delimiters
+`}}
+
+block comment ok:
+{{/*
+  {{ $myFoo := "bar"}}
+  hej - no comment here ...
+  {{ $i := 42 }} {{$i}}
+*/}}
+
+block comment wrong:
+{{/*
+ {{ $myFoo := "bar"}} {{/* bla bla bla */}}
+ hej - no comment here ...
+ {{ $i := 42 }} {{$i}}
+*/}}
+
+block comment ok:
+{{/*  {{ $myFoo := "bar"}} {{/* bla bla bla */}}
+{{/*  hej - no comment here ...             */}}
+{{/*  {{ $i := 42 }} {{$i}}                 */}}
 
 {{/* __HIDE__ */}} {{- end }}

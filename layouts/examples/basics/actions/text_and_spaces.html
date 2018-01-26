@@ -1,4 +1,4 @@
-{{/* __HIDE__ */}} {{- define "example" }}
+{{/* __HIDE__ */}} {{- define "render" }}
 {{/* text_and_spaces */}}
 {{ `https://golang.org/pkg/text/template/` | markdownify }}
 
@@ -19,12 +19,12 @@
 5)
 {{- `foo` }}
 
-6) 
+6)
 foo
 {{if false}}{{end}}
 bar
 
-7) 
+7)
 foo
 {{- if false}}{{end}}
 bar

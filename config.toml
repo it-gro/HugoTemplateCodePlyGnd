@@ -6,5 +6,29 @@ disablePathToLower = true
 [taxonomies]
 
 [params]
-#traceFlags = "layout-name:baseof"
-#debug      = true
+  #traceFlags = "layout-name:baseof"
+  #debug      = true
+
+  #w3cssColorTheme = "/css/w3-theme-custom.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-amber.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-black.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-blue-grey.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-blue.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-brown.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-cyan.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-dark-grey.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-deep-orange.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-deep-purple.css"
+  w3cssColorTheme = "/vendor/w3css/4/w3-theme-green.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-grey.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-indigo.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-khaki.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-light-blue.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-light-green.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-lime.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-orange.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-pink.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-purple.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-red.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-teal.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-yellow.css"
