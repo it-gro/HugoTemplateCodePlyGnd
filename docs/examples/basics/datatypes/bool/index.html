@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/">datatypes/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/bool/">bool/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* bool */}}
+{{ true }}
+{{ false }}
+
+{{ $myBool := true  }} {{- $myBool }}
+{{ $myBool := false }} {{- $myBool }}
+{{ printf &#34;%&#43;v (T:%T #v:%#v)&#34; $myBool $myBool $myBool }}
+
+{{ `Go Templates treat the following values as false:
+false
+0
+any zero-length array, slice, map, or string
+`}}
+{{ `=&gt; the int/float 0 is false, but the string &#34;0&#34; is true (non empty string)` }}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+true
+false
+
+true
+false
+false (T:bool #v:false)
+
+Go Templates treat the following values as false:
+false
+0
+any zero-length array, slice, map, or string
+
+=&gt; the int/float 0 is false, but the string &#34;0&#34; is true (non empty string)
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/">datatypes/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/map/">map/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* map */}}
+{{ $myMap := dict &#34;foo&#34; 24 &#34;bar&#34; &#34;cow&#34; &#34;foobar&#34; &#34;24&#34;     }} {{- $myMap }}
+{{ $myMap := dict &#34;foo&#34; 24 &#34;bar&#34; &#34;cow&#34; &#34;foo&#34;    &#34;42&#34;     }} {{- $myMap }}
+{{ $myMap := dict &#34;foo&#34; 42 &#34;bar&#34; &#34;cow&#34; &#34;foo&#34;     12 &#34;1&#34; 2}} {{- $myMap }}
+{{ $myMap.foo }}
+{{ index $myMap &#34;foo&#34; }}
+{{/* $myMap.1   =&gt; error */}}
+{{/* $myMap.&#34;1&#34; =&gt; error */}}
+{{/* $myMap.`1` =&gt; error */}}
+{{ index $myMap &#34;1&#34; }}
+{{ with $myMap }}{{.bar}}{{end}}
+{{ printf &#34;%&#43;v (T:%T #v:%#v)&#34; $myMap $myMap $myMap }}
+
+{{ echoParam $myMap &#34;foo&#34; }}
+{{ echoParam $myMap &#34;1&#34;   }}
+
+
+{{ $myMap := dict &#34;1&#34; &#34;one&#34; &#34;2&#34; &#34;two&#34; &#34;foo&#34; &#34;bar&#34; }}
+{{ $myMap }}
+
+{{/*
+{{ $myMap := dict (slice &#34;a&#34; &#34;A&#34; &#34;b&#34; &#34;B&#34;) }}
+{{ $myMap }}
+*/}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+map[foo:24 bar:cow foobar:24]
+map[foo:42 bar:cow]
+map[foo:12 bar:cow 1:2]
+12
+12
+
+
+
+2
+cow
+map[foo:12 bar:cow 1:2] (T:map[string]interface {} #v:map[string]interface {}{&#34;bar&#34;:&#34;cow&#34;, &#34;1&#34;:2, &#34;foo&#34;:12})
+
+12
+2
+
+
+
+map[foo:bar 1:one 2:two]
+
+
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
