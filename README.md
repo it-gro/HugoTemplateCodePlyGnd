@@ -4,21 +4,25 @@ This is a Playground for Hugo Templates [Hugo](https://gohugo.io/).
 
 GitHub Page: https://it-gro.github.io/HugoTemplatingPlayground/
 
-### Playground for
+### Playground is for
 
 * syntax
   * literals
-  * variables
-  * arguemtns
-  * datatypes
   * comments
+  * test and spaces
+  * datatypes
+  * variables
+  * arguments
   * conditions
   * range
   * with
-  * test and spaces
-* hugo templates
 * functions
 * variables
+
+### but not for
+
+* hugo template lookup order
+* any html, css, js stuff
 
 
 ```bash
