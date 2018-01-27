@@ -2,7 +2,7 @@
 
 * Syntax
   * Literals
-  * Vomments
+  * Comments
   * Text and Spaces
   * Datatypes
   * Variables
