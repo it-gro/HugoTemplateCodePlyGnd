@@ -8,7 +8,7 @@ GitHub Page: https://it-gro.github.io/HugoTemplatingPlayground/
 
 * Syntax
   * Literals
-  * Vomments
+  * Comments
   * Text and Spaces
   * Datatypes
   * Variables
