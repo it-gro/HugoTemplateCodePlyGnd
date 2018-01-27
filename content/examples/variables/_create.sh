@@ -4,7 +4,7 @@ cd $(dirname $0)
 MY_LAYOUT_BASE="../../../layouts"
 
 THE_DEMOS=""
-THE_DEMOS="$THE_DEMOS file              "
+THE_DEMOS="$THE_DEMOS File              "
 THE_DEMOS="$THE_DEMOS GitInfo           "
 THE_DEMOS="$THE_DEMOS Hugo              "
 THE_DEMOS="$THE_DEMOS Menu              "

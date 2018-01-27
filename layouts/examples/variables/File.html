@@ -1,0 +1,13 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* File */}}
+{{"https://gohugo.io/variables/files/" | markdownify }}
+
+.File.BaseFileName        : {{ .File.BaseFileName        }}
+.File.Dir                 : {{ .File.Dir                 }}
+.File.Ext                 : {{ .File.Ext                 }}
+.File.Lang                : {{ .File.Lang                }}
+.File.LogicalName         : {{ .File.LogicalName         }}
+.File.Path                : {{ .File.Path                }}
+.File.TranslationBaseName : {{ .File.TranslationBaseName }}
+
+{{/* __HIDE__ */}} {{ end }}

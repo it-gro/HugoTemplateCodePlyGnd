@@ -1,5 +1,48 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* Taxonomy */}}
+{{"https://gohugo.io/variables/taxonomy/#use-site-taxonomies-outside-of-taxonomy-templates" | markdownify }}
+{{"https://gohugo.io/variables/taxonomy/" | markdownify }}
 
-{{/* taxonomy */}}
+10){{ .Site.Taxonomies }}
+
+{{ range $myKey, $myValue := .Site.Taxonomies}}
+  {{ printf `%+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
+  {{- range $myKey, $myValue := .}}
+20)    {{ printf `* %+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
+  {{- end}}
+{{- end}}
+
+31){{ .Site.Taxonomies.tags }}
+32){{ .Site.Taxonomies.categories }}
+
+{{`same as`}}
+33){{ index .Site.Taxonomies "tags" }}
+34){{ index .Site.Taxonomies "categories" }}
+
+{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+40) {{ printf "%+v " $taxonomyname }}
+  {{- range $term, $value := $taxonomy }}
+41) {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+42)   {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
+    {{- end}}
+  {{- end}}
+{{- end}}
+
+{{ range (.Site.Taxonomies.tags).foo }}
+50)  {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
+{{- end}}
+
+{{`same as`}}
+{{ range (index .Site.Taxonomies.tags "foo" ) }}
+51) {{ printf "%+v" .RelPermalink }}  {{/* . is a page */}}
+{{- end}}
+
+
+<hr>
+{{`just curious ...`}}
+{{ printf `%+v
+T:%T
+#v:%#v` .Site.Taxonomies .Site.Taxonomies .Site.Taxonomies }}
 
 {{/* __HIDE__ */}} {{ end }}
