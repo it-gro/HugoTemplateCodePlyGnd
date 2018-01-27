@@ -5,6 +5,7 @@
 {{print .Dir }}
 {{ with .Params.foo }}
   {{print (index . 0) }}
+  {{- /* print .Dir */}} {{/* => error */}}
   {{print $.Dir }}
 {{ end }}
 
@@ -14,8 +15,6 @@
 {{- range .Params.foo }}
   {{ print . }}
 {{- end }}
-
-{{print .Dir }}
 
 {{ template "test" (seq 1 5) }}
 {{ template "test" (dict "foo" "bar" "hello" 42) }}

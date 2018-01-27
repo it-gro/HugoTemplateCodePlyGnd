@@ -3,6 +3,7 @@ title   = "Hugo Templating Playground"
 
 disablePathToLower = true
 DefaultContentLanguage = "en"
+enableGitInfo = true
 
 #[languages]
 #[languages.en]

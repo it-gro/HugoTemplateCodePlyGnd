@@ -1,5 +1,5 @@
 ---
-foo   : 
+foo: 
   - bar
   - hello
 layout: "basics/context_the_dot"
