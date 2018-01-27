@@ -1,5 +1,15 @@
 {{/* __HIDE__ */}} {{- define "render" }}
-
 {{/* git */}}
+{{"https://gohugo.io/variables/git/" | markdownify }}
+
+{{`config.toml: enableGitInfo = true`}}
+{{ printf `%+v 
+T:%T 
+#v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
+
+{{ $.GitInfo.Subject }}
+{{ $.GitInfo.AuthorDate }}
+{{ .Lastmod }}  
+{{ "https://gohugo.io/variables/git/#lastmod" | markdownify }} {{` hmm?`}}
 
 {{/* __HIDE__ */}} {{ end }}

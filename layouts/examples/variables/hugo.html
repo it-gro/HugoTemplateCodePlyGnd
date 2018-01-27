@@ -1,5 +1,12 @@
 {{/* __HIDE__ */}} {{- define "render" }}
-
 {{/* hugo */}}
+{{"https://gohugo.io/variables/hugo/" | markdownify }}
+{{ printf `%+v 
+T:%T 
+#v:%#v` $.Hugo $.Hugo $.Hugo }}
+
+{{ $.Hugo.Version}}
+{{ $.Hugo.CommitHash}} {{/* empty ? */}}
+{{ $.Hugo.BuildDate}}
 
 {{/* __HIDE__ */}} {{ end }}
