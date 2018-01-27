@@ -1,8 +1,8 @@
 {{/* __HIDE__ */}} {{- define "render" }}
-{{/* hugo */}}
+{{/* Hugo */}}
 {{"https://gohugo.io/variables/hugo/" | markdownify }}
-{{ printf `%+v 
-T:%T 
+{{ printf `%+v
+T:%T
 #v:%#v` $.Hugo $.Hugo $.Hugo }}
 
 {{ $.Hugo.Version}}

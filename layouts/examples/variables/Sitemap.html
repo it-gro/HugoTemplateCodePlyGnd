@@ -1,0 +1,11 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* Sitemap */}}
+{{"https://gohugo.io/variables/sitemap/" | markdownify }}
+{{ printf `%+v
+T:%T
+#v:%#v` $.Sitemap $.Sitemap $.Sitemap }}
+
+{{ $.Sitemap.ChangeFreq }}
+{{ $.Sitemap.Priority }}
+{{ $.Sitemap.Filename }}
+{{/* __HIDE__ */}} {{ end }}

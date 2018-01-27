@@ -1,0 +1,21 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* Site.Params */}}
+{{"https://gohugo.io/variables/site#the-site-params-variable" | markdownify }}
+{{"[Site](../Site)" | markdownify }}
+.Site.Params                 : {{.Site.Params                 }}
+.Site.Params.w3csscolortheme : {{.Site.Params.w3csscolortheme }}
+.Site.Params.anything        : {{.Site.Params.anything        }}
+.Site.Params.anything.foo    : {{.Site.Params.anything.foo    }}
+
+{{`undocumented:`}}
+.Site.Params.filelinkcntperhalf : {{.Site.Params.filelinkcntperhalf }}
+.Site.Params.mainSections       : {{.Site.Params.mainSections       }}
+
+
+<hr>
+{{`just curious ...`}}
+{{ printf `%+v
+T:%T
+#v:%#v` .Site.Params .Site.Params .Site.Params }}
+
+{{/* __HIDE__ */}} {{ end }}
