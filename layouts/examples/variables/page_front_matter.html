@@ -1,5 +1,32 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* Page Front Matter */}}
+{{"https://gohugo.io/content-management/front-matter/#front-matter-variables" | markdownify }}
 
-{{/* page_front_matter */}}
+{{`Predefined => case sensitive`}}
+aliases         : {{ .Aliases       }}
+date            : {{ .Date          }}
+description     : {{ .Description   }}
+draft           : {{ .Draft         }}
+expiryDate      : {{ .ExpiryDate    }}
+keywords        : {{ .Keywords      }}
+layout          : {{ .Layout        }}
+lastmod         : {{ .Lastmod       }}
+linkTitle       : {{ .LinkTitle     }}
+markup          : {{ .Markup        }}
+publishDate     : {{ .PublishDate   }}
+slug            : {{ .Slug          }}
+title           : {{ .Title         }}
+type            : {{ .Type          }}
+weight          : {{ .Weight        }}
+
+{{`not exported:`}}
+outputs
+isCJKLanguage
+taxonomies
+
+{{`User-Defined, not case sensitive, Anything => .Params.anything`}}
+FooBar          : {{ .Params.FooBar }}
+foobar          : {{ .Params.foobar }}
+FOOBAR          : {{ .Params.FOOBAR }}
 
 {{/* __HIDE__ */}} {{ end }}

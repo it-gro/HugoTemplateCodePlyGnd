@@ -36,7 +36,7 @@
 </div>
 
 <div class="w3-bar-item w3-button w3-mobile">
-  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/taxonomy/">taxonomy/</a>
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Sitemap/">Sitemap/</a>
 </div>
 
 </div>
@@ -50,13 +50,29 @@
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
-              <pre>
-{{/* taxonomy */}}
+              <pre>{{/* Sitemap */}}
+{{&#34;https://gohugo.io/variables/sitemap/&#34; | markdownify }}
+{{ printf `%&#43;v
+T:%T
+#v:%#v` $.Sitemap $.Sitemap $.Sitemap }}
 
+{{ $.Sitemap.ChangeFreq }}
+{{ $.Sitemap.Priority }}
+{{ $.Sitemap.Filename }}
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
-              <pre></pre>
+              <pre>
+
+<a href="https://gohugo.io/variables/sitemap/">https://gohugo.io/variables/sitemap/</a>
+{ChangeFreq: Priority:-1 Filename:}
+T:hugolib.Sitemap
+#v:hugolib.Sitemap{ChangeFreq:&#34;&#34;, Priority:-1, Filename:&#34;&#34;}
+
+
+-1
+
+ </pre>
             </div>
           </div>
         

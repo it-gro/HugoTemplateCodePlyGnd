@@ -36,7 +36,7 @@
 </div>
 
 <div class="w3-bar-item w3-button w3-mobile">
-  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/site/">site/</a>
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Hugo/">Hugo/</a>
 </div>
 
 </div>
@@ -50,13 +50,31 @@
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
-              <pre>
-{{/* site */}}
+              <pre>{{/* Hugo */}}
+{{&#34;https://gohugo.io/variables/hugo/&#34; | markdownify }}
+{{ printf `%&#43;v
+T:%T
+#v:%#v` $.Hugo $.Hugo $.Hugo }}
+
+{{ $.Hugo.Version}}
+{{ $.Hugo.CommitHash}} {{/* empty ? */}}
+{{ $.Hugo.BuildDate}}
 
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
-              <pre></pre>
+              <pre>
+
+<a href="https://gohugo.io/variables/hugo/">https://gohugo.io/variables/hugo/</a>
+&amp;{Version:0.34 Generator:&lt;meta name=&#34;generator&#34; content=&#34;Hugo 0.34&#34; /&gt; CommitHash: BuildDate:2018-01-22T12:06:40Z}
+T:*hugolib.HugoInfo
+#v:&amp;hugolib.HugoInfo{Version:&#34;0.34&#34;, Generator:&#34;&lt;meta name=\&#34;generator\&#34; content=\&#34;Hugo 0.34\&#34; /&gt;&#34;, CommitHash:&#34;&#34;, BuildDate:&#34;2018-01-22T12:06:40Z&#34;}
+
+0.34
+ 
+2018-01-22T12:06:40Z
+
+ </pre>
             </div>
           </div>
         

@@ -1,10 +1,11 @@
 {{/* __HIDE__ */}} {{- define "render" }}
 {{/* Menu */}}
 {{"https://gohugo.io/variables/menus/" | markdownify }}
+{{"https://gohugo.io/content-management/menus/" | markdownify }}
 
-{{- range .Site.Menus.main }}
+{{ range .Site.Menus.main -}}
 10) {{ printf "%-8v | %-8v | %-12v | %-8v " .Name .Title .URL .Pre }}
-{{- end }}
+{{ end }}
 
 {{`just to show the structure `}}
 {{ len  .Site.Menus.main   }}
@@ -13,12 +14,23 @@
 {{ index .Site.Menus.main 1  }}
 {{ (index .Site.Menus.main 1).URL   }}
 
-.Page.Children
-.Page.Identifier
-.Page.Menu
-.Page.Parent
-.Page.Post
-.Page.Pre
-.Page.Weight
+{{"https://gohugo.io/content-management/menus/#add-content-to-menus" | markdownify }}
+{{ range .Page.Menus }}
+20) {{ printf "%-8v | %-8v | %-12v | %-8v | %-8v" .Name .Title .URL .Pre .Parent }}
+{{ end }}
+
+.Children  : {{ (index .Page.Menus "docs").Children  }}
+.Identifier: {{ (index .Page.Menus "docs").Identifier}}
+.Menu      : {{ (index .Page.Menus "docs").Menu      }}
+.Name      : {{ (index .Page.Menus "docs").Name      }}
+.Parent    : {{ (index .Page.Menus "docs").Parent    }}
+.Post      : {{ (index .Page.Menus "docs").Post      }}
+.Pre       : {{ (index .Page.Menus "docs").Pre       }}
+.URL       : {{ (index .Page.Menus "docs").URL       }}
+.Weight    : {{ (index .Page.Menus "docs").Weight    }}
+
+.HasChildren    : {{ (index .Page.Menus "docs").HasChildren    }}
+
+{{/* printf "#v:%#v" .Page.Menus */}}
 
 {{/* __HIDE__ */}} {{ end }}

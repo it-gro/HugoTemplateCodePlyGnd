@@ -5,6 +5,9 @@
     <link>https://it-gro.github.io/HugoTemplatingPlayground/tests/</link>
     <description>Recent content on Hugo Templating Playground</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>demo site vars (lang code)</language>
+    <copyright>demo site vars (c)</copyright>
+    <lastBuildDate>Fri, 26 Jan 2018 16:31:42 +0100</lastBuildDate>
     
 	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/tests/index.xml" rel="self" type="application/rss+xml" />
     
