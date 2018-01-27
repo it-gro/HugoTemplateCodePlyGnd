@@ -22,11 +22,13 @@ weight          : {{ .Weight        }}
 {{`not exported:`}}
 outputs
 isCJKLanguage
-taxonomies
 
 {{`User-Defined, not case sensitive, Anything => .Params.anything`}}
-FooBar          : {{ .Params.FooBar }}
-foobar          : {{ .Params.foobar }}
-FOOBAR          : {{ .Params.FOOBAR }}
+.Params.FooBar  : {{ .Params.FooBar }}
+.Params.foobar  : {{ .Params.foobar }}
+.Params.FOOBAR  : {{ .Params.FOOBAR }}
+
+{{`terms (taxonomy) via .Params`}}
+.Params.tags    : {{ .Params.tags }}
 
 {{/* __HIDE__ */}} {{ end }}

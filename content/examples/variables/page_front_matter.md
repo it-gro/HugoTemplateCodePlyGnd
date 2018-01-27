@@ -13,7 +13,7 @@ markup          : "md"
 outputs         : [ "html" ]
 publishDate     : 2018-01-27T18:19:05+01:00
 slug            : "FrontMatterVariables"
-tags            : "foo"
+tags            : [ "foo", "bar" ]
 title           : "Title"
 weight          : 100
 
