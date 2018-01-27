@@ -2,4 +2,8 @@
 {{/* chomp */}}
 {{"https://gohugo.io/functions/chomp" | markdownify }}
 
+1){{chomp "foo\nbar\n"}}EOL 
+2){{chomp `foo\nbar\n`}}EOL 
+3){{chomp "foo\nbar\n\n\n"}}EOL 
+
 {{/* __HIDE__ */}} {{- end }}

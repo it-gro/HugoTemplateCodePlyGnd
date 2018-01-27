@@ -53,12 +53,22 @@
               <pre>{{/* chomp */}}
 {{&#34;https://gohugo.io/functions/chomp&#34; | markdownify }}
 
+1){{chomp &#34;foo\nbar\n&#34;}}EOL 
+2){{chomp `foo\nbar\n`}}EOL 
+3){{chomp &#34;foo\nbar\n\n\n&#34;}}EOL 
+
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 
 <a href="https://gohugo.io/functions/chomp">https://gohugo.io/functions/chomp</a>
+
+1)foo
+barEOL 
+2)foo\nbar\nEOL 
+3)foo
+barEOL 
 
 </pre>
             </div>

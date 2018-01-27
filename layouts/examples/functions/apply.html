@@ -2,4 +2,13 @@
 {{/* apply */}}
 {{"https://gohugo.io/functions/apply" | markdownify }}
 
+{{ $myArray := slice  "Tanner Linsley" "Derek Perkins" "Joe Bergevin" }}
+{{ $myArray }}
+{{ apply $myArray "urlize" "." }}
+{{ apply (apply (sort $myArray) "lower" ".") "urlize" "." }}
+
+{{ $myArray := seq 1 10 }}
+{{ $myArray }}
+{{ apply $myArray "add" 100 "." }}
+
 {{/* __HIDE__ */}} {{- end }}

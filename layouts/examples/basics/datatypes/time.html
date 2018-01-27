@@ -16,12 +16,16 @@
 {{ $myTime }}
 {{ $myTime.Local }}
 
+{{ $myTime1 := time "2018-01-25T06:10:00" }}
+{{ $myTime2 := time "2018-01-27T10:00:00" }}
+{{ $myTime2.Sub $myTime1 }}
+
 
 {{ `https://golang.org/pkg/time/` | markdownify }}
 {{`any use in hugo templating ?`}}
 {{ time.Now }}
 {{ $t := time.Now }}
 {{ range (seq 1 2000) }}{{end}}
-{{ $t.Sub time.Now }}
+{{ time.Now.Sub $t }}
 
 {{/* __HIDE__ */}} {{- end }}

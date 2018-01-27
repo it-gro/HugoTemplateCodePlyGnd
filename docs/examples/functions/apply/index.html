@@ -53,12 +53,30 @@
               <pre>{{/* apply */}}
 {{&#34;https://gohugo.io/functions/apply&#34; | markdownify }}
 
+{{ $myArray := slice  &#34;Tanner Linsley&#34; &#34;Derek Perkins&#34; &#34;Joe Bergevin&#34; }}
+{{ $myArray }}
+{{ apply $myArray &#34;urlize&#34; &#34;.&#34; }}
+{{ apply (apply (sort $myArray) &#34;lower&#34; &#34;.&#34;) &#34;urlize&#34; &#34;.&#34; }}
+
+{{ $myArray := seq 1 10 }}
+{{ $myArray }}
+{{ apply $myArray &#34;add&#34; 100 &#34;.&#34; }}
+
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 
 <a href="https://gohugo.io/functions/apply">https://gohugo.io/functions/apply</a>
+
+
+[Tanner Linsley Derek Perkins Joe Bergevin]
+[Tanner-Linsley Derek-Perkins Joe-Bergevin]
+[derek-perkins joe-bergevin tanner-linsley]
+
+
+[1 2 3 4 5 6 7 8 9 10]
+[101 102 103 104 105 106 107 108 109 110]
 
 </pre>
             </div>
