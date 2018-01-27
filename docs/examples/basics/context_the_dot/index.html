@@ -45,7 +45,7 @@
         
           <div class="w3-container w3-card w3-theme-l1">
               <pre>---
-foo   : 
+foo: 
   - bar
   - hello
 ---
@@ -59,6 +59,7 @@ foo   :
 {{print .Dir }}
 {{ with .Params.foo }}
   {{print (index . 0) }}
+  {{- /* print .Dir */}} {{/* =&gt; error */}}
   {{print $.Dir }}
 {{ end }}
 
@@ -68,8 +69,6 @@ foo   :
 {{- range .Params.foo }}
   {{ print . }}
 {{- end }}
-
-{{print .Dir }}
 
 {{ template &#34;test&#34; (seq 1 5) }}
 {{ template &#34;test&#34; (dict &#34;foo&#34; &#34;bar&#34; &#34;hello&#34; 42) }}
@@ -87,7 +86,7 @@ foo   :
 
 examples/basics/
 
-  bar
+  bar 
   examples/basics/
 
 
@@ -96,10 +95,8 @@ examples/basics/
   bar
   hello
 
-examples/basics/
-
 []int{1, 2, 3, 4, 5}
-map[string]interface {}{&#34;hello&#34;:42, &#34;foo&#34;:&#34;bar&#34;}
+map[string]interface {}{&#34;foo&#34;:&#34;bar&#34;, &#34;hello&#34;:42}
 
 </pre>
             </div>

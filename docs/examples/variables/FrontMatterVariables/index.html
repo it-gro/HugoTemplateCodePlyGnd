@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/">variables/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/FrontMatterVariables/">FrontMatterVariables/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-l1">
+              <pre>---
+aliases         : [ &#34;alias1&#34;, &#34;alias2&#34; ]
+date            : 2018-01-27T18:18:24&#43;01:00
+description     : &#34;description&#34;
+draft           : false
+expiryDate      : 2042-01-27T18:18:13&#43;01:00
+isCJKLanguage   : false
+keywords        : [ &#34;foo&#34;, &#34;bar&#34; ]
+lastmod         : 2018-01-27T20:18:45&#43;01:00
+linkTitle       : &#34;linkTitle&#34;
+markup          : &#34;md&#34;
+outputs         : [ &#34;html&#34; ]
+publishDate     : 2018-01-27T18:19:05&#43;01:00
+slug            : &#34;FrontMatterVariables&#34;
+tags            : &#34;foo&#34;
+title           : &#34;Title&#34;
+
+FooBar          : &#34;hello world&#34;
+---
+
+type            : &#34;myType&#34;
+url             : &#34;myURL&#34;
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* Page Front Matter */}}
+{{&#34;https://gohugo.io/content-management/front-matter/#front-matter-variables&#34; | markdownify }}
+
+{{`Predefined =&gt; case sensitive`}}
+aliases         : {{ .Aliases       }}
+date            : {{ .Date          }}
+description     : {{ .Description   }}
+draft           : {{ .Draft         }}
+expiryDate      : {{ .ExpiryDate    }}
+keywords        : {{ .Keywords      }}
+layout          : {{ .Layout        }}
+lastmod         : {{ .Lastmod       }}
+linkTitle       : {{ .LinkTitle     }}
+markup          : {{ .Markup        }}
+publishDate     : {{ .PublishDate   }}
+slug            : {{ .Slug          }}
+title           : {{ .Title         }}
+type            : {{ .Type          }}
+weight          : {{ .Weight        }}
+
+{{`not exported:`}}
+outputs
+isCJKLanguage
+taxonomies
+
+{{`User-Defined, not case sensitive, Anything =&gt; .Params.anything`}}
+FooBar          : {{ .Params.FooBar }}
+foobar          : {{ .Params.foobar }}
+FOOBAR          : {{ .Params.FOOBAR }}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://gohugo.io/content-management/front-matter/#front-matter-variables">https://gohugo.io/content-management/front-matter/#front-matter-variables</a>
+
+Predefined =&gt; case sensitive
+aliases         : [alias1 alias2]
+date            : 2018-01-27 18:18:24 &#43;0100 CET
+description     : description
+draft           : false
+expiryDate      : 2042-01-27 18:18:13 &#43;0100 CET
+keywords        : [foo bar]
+layout          : variables/page_front_matter
+lastmod         : 2018-01-23 00:33:16 &#43;0100 CET
+linkTitle       : linkTitle
+markup          : markdown
+publishDate     : 2018-01-27 18:19:05 &#43;0100 CET
+slug            : FrontMatterVariables
+title           : Title
+type            : examples
+weight          : 100
+
+not exported:
+outputs
+isCJKLanguage
+taxonomies
+
+User-Defined, not case sensitive, Anything =&gt; .Params.anything
+FooBar          : hello world
+foobar          : hello world
+FOOBAR          : hello world
+
+ </pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

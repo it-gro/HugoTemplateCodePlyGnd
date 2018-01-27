@@ -63,7 +63,7 @@ Comments do not nest and must start and end at the delimiters
 block comment ok:
 {{/*
   {{ $myFoo := &#34;bar&#34;}}
-  hej - no comment here ...
+  hej - comment here ...
   {{ $i := 42 }} {{$i}}
 */}}
 
@@ -76,7 +76,7 @@ block comment wrong:
 
 block comment ok:
 {{/*  {{ $myFoo := &#34;bar&#34;}} {{/* bla bla bla */}}
-{{/*  hej - no comment here ...             */}}
+{{/*  hej - comment here ...                */}}
 {{/*  {{ $i := 42 }} {{$i}}                 */}}
 
 </pre>

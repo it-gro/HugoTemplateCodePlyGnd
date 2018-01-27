@@ -36,7 +36,7 @@
 </div>
 
 <div class="w3-bar-item w3-button w3-mobile">
-  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/hugo/">hugo/</a>
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/File/">File/</a>
 </div>
 
 </div>
@@ -50,13 +50,33 @@
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
-              <pre>
-{{/* hugo */}}
+              <pre>{{/* File */}}
+{{&#34;https://gohugo.io/variables/files/&#34; | markdownify }}
+
+.File.BaseFileName        : {{ .File.BaseFileName        }}
+.File.Dir                 : {{ .File.Dir                 }}
+.File.Ext                 : {{ .File.Ext                 }}
+.File.Lang                : {{ .File.Lang                }}
+.File.LogicalName         : {{ .File.LogicalName         }}
+.File.Path                : {{ .File.Path                }}
+.File.TranslationBaseName : {{ .File.TranslationBaseName }}
 
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
-              <pre></pre>
+              <pre>
+
+<a href="https://gohugo.io/variables/files/">https://gohugo.io/variables/files/</a>
+
+.File.BaseFileName        : File
+.File.Dir                 : examples/variables/
+.File.Ext                 : md
+.File.Lang                : en
+.File.LogicalName         : File.md
+.File.Path                : examples/variables/File.md
+.File.TranslationBaseName : File
+
+ </pre>
             </div>
           </div>
         
