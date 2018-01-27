@@ -2,9 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
 <title>Hugo Templating Playground</title>
 
   </head>
@@ -54,6 +61,16 @@
 */}}
 {{ string $myTime }}
 {{ $myTime }}
+{{ $myTime.UTC }}
+
+{{ time.Now }}
+{{ time.Now.UTC }}
+{{ time.Now.Local }}
+
+{{ $myTime := time &#34;2018-01-26T00:33:45&#34; }}
+{{ $myTime }}
+{{ $myTime.Local }}
+
 
 {{ `https://golang.org/pkg/time/` | markdownify }}
 {{`any use in hugo templating ?`}}
@@ -73,13 +90,23 @@ T:time.Time
 #v:time.Time{wall:0x0, ext:63652520025, loc:(*time.Location)(0x1fa2ca0)})
 2018-01-26 00:33:45 &#43;0100 CET
 2018-01-26 00:33:45 &#43;0100 CET
+2018-01-25 23:33:45 &#43;0000 UTC
+
+2018-01-27 11:56:19.763453539 &#43;0100 CET m=&#43;1.184355945
+2018-01-27 10:56:19.763464154 &#43;0000 UTC
+2018-01-27 11:56:19.763474596 &#43;0100 CET
+
+
+2018-01-26 00:33:45 &#43;0000 UTC
+2018-01-26 01:33:45 &#43;0100 CET
+
 
 <a href="https://golang.org/pkg/time/">https://golang.org/pkg/time/</a>
 any use in hugo templating ?
-2018-01-26 19:16:37.80403362 &#43;0100 CET m=&#43;0.565279013
+2018-01-27 11:56:19.763519369 &#43;0100 CET m=&#43;1.184421759
 
 
--205.716µs
+-118.137µs
 
 </pre>
             </div>

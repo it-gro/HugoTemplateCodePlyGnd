@@ -2,9 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
 <title>Hugo Templating Playground</title>
 
   </head>
@@ -61,7 +68,9 @@
 `}}
 
 {{range (seq 1 5) }} {{.}} {{end}}
-{{range (dict &#34;hello&#34; 42 &#34;foo&#34; &#34;bar&#34; &#34;A&#34; &#34;z-end&#34; &#34;a&#34; &#34;a&#34; &#34;Z&#34; &#34;Z&#34;) }} {{.}} {{end}}
+{{ $myMap := dict &#34;hello&#34; 42 &#34;foo&#34; &#34;bar&#34; &#34;A&#34; &#34;z-end&#34; &#34;a&#34; &#34;a&#34; &#34;Z&#34; &#34;Z&#34; &#34;11&#34; &#34;eleven&#34; &#34;2&#34; &#34;two&#34; }}
+{{ printf &#34;%&#43;v&#34; $myMap }}
+{{range ($myMap) }} {{.}} {{end}}
 
 {{`
 {{range pipeline}} T1 {{else}} T0 {{end}}
@@ -92,7 +101,9 @@
 
 
  1  2  3  4  5 
- z-end  Z  a  bar  42 
+
+map[foo:bar A:z-end a:a Z:Z 11:eleven 2:two hello:42]
+ eleven  two  z-end  Z  a  bar  42 
 
 
 {{range pipeline}} T1 {{else}} T0 {{end}}

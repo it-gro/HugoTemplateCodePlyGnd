@@ -2,9 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
 <title>Hugo Templating Playground</title>
 
   </head>
@@ -43,13 +50,51 @@
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
-              <pre>
-{{/* .Format */}}
+              <pre>{{/* _Format */}}
+{{&#34;https://gohugo.io/functions/format&#34; | markdownify }}
+
+
+{{now}}
+{{now.Format &#34;January 2, 2006&#34;}}
+
+{{$myDate := time &#34;2018-01-27T10:49:49&#43;01:00&#34; }}
+{{$myDate}}
+{{$myDate.Format &#34;January 2, 2006&#34;               }}   
+{{$myDate.Format &#34;January 2 15:04:05 2006 MST&#34;   }}   
+{{$myDate.Format &#34;Jan 2 15:04:05 2006 MST&#34;       }}   
+{{$myDate.Format &#34;Jan 2 15:04:05 2006 -0700&#34;     }}   
+{{$myDate.Format &#34;2006.01.02&#34;                    }}   
+{{$myDate.Format &#34;January 2, 2006&#34;               }}   
+{{$myDate.Format &#34;Monday, January 2 (2006)&#34;      }}   
+{{$myDate.Format &#34;Mon 02 Jan. 2006&#34;              }}   
+
+{{ dateFormat &#34;2006.01.02 15:04 MST&#34; $myDate.UTC }}
 
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
-              <pre></pre>
+              <pre>
+
+<a href="https://gohugo.io/functions/format">https://gohugo.io/functions/format</a>
+
+
+2018-01-27 11:56:19.766859663 &#43;0100 CET m=&#43;1.187762079
+January 27, 2018
+
+
+2018-01-27 10:49:49 &#43;0100 CET
+January 27, 2018   
+January 27 10:49:49 2018 CET   
+Jan 27 10:49:49 2018 CET   
+Jan 27 10:49:49 2018 &#43;0100   
+2018.01.27   
+January 27, 2018   
+Saturday, January 27 (2018)   
+Sat 27 Jan. 2018   
+
+2018.01.27 09:49 UTC
+
+</pre>
             </div>
           </div>
         
