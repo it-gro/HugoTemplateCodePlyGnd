@@ -13,61 +13,7 @@ Copyright       = "demo site vars (c)"
 DisqusShortname = "demo site vars (disqus)"
 GoogleAnalytics = "demo site vars (google)"
 LanguageCode    = "demo site vars (lang code)"
-
-[Author.jon]
-  Name = "Jon Doe"
-  anything = "Mr. foo"
-
-[Author.jane]
-  Name = "Jane Wild"
-  anything = "Zoo"
-
-[social]
-  facebook        = "me.42"
-  facebook_admin  = ""
-  facebook_app_id = "1234"
-
-[permalinks]
-  post = "/:year/:month/:title/"
-
-
-[menu]
-[[menu.main]]
-  weight = 1
-  name   = "Home"
-  title  = "Base"
-  url    = "/index.html"
-  pre    = "fas fa-home"
-[[menu.main]]
-  weight = 2
-  name   = "Contact"
-  title  = "Touch"
-  url    = "/contact"
-  pre    = "far fa-address-card"
-[[menu.anything]]
-  weight = 1
-  name   = "foo"
-  title  = "bar"
-  url    = "/"
-  pre    = ""
-
-[params.anything]
- foo = "bar"
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-#[languages]
-#[languages.en]
-#baseURL = "https://it-gro.github.io/HugoTemplatingPlayground/en"
-#languageName = "English"
-#weight = 1
-#title = "Hugo Templating Playground"
-#
-#[languages.no]
-#baseURL = "https://it-gro.github.io/HugoTemplatingPlayground/no"
-#languageName = "Norsk"
-#weight = 2
-#title = "Hugo Templating lekeplass"
-
 
 [taxonomies]
   tag      = "tags"
@@ -102,4 +48,61 @@ LanguageCode    = "demo site vars (lang code)"
   #w3cssColorTheme = "vendor/w3css/4/w3-theme-teal.css"
   #w3cssColorTheme = "vendor/w3css/4/w3-theme-yellow.css"
 
-  fileLinkCntPerHalf = 25
+  fileLinkCntPerHalf = 15
+
+
+# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# This is for examples/variables/site/
+[Author.jon]
+  Name = "Jon Doe"
+  anything = "Mr. foo"
+
+[Author.jane]
+  Name = "Jane Wild"
+  anything = "Zoo"
+
+[social]
+  facebook        = "me.42"
+  facebook_admin  = ""
+  facebook_app_id = "1234"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[menu]
+[[menu.main]]
+  weight = 1
+  name   = "Home"
+  title  = "Base"
+  url    = "/index.html"
+  pre    = "fas fa-home"
+[[menu.main]]
+  weight = 2
+  name   = "Contact"
+  title  = "Touch"
+  url    = "/contact"
+  pre    = "far fa-address-card"
+[[menu.anything]]
+  weight = 1
+  name   = "foo"
+  title  = "bar"
+  url    = "/"
+  pre    = ""
+
+[params.anything]
+ foo = "bar"
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+#[languages]
+#[languages.en]
+#baseURL = "https://it-gro.github.io/HugoTemplatingPlayground/en"
+#languageName = "English"
+#weight = 1
+#title = "Hugo Templating Playground"
+#
+#[languages.no]
+#baseURL = "https://it-gro.github.io/HugoTemplatingPlayground/no"
+#languageName = "Norsk"
+#weight = 2
+#title = "Hugo Templating lekeplass"
