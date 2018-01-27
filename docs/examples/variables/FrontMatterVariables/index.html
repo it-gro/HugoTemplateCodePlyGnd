@@ -58,7 +58,7 @@ markup          : &#34;md&#34;
 outputs         : [ &#34;html&#34; ]
 publishDate     : 2018-01-27T18:19:05&#43;01:00
 slug            : &#34;FrontMatterVariables&#34;
-tags            : &#34;foo&#34;
+tags            : [ &#34;foo&#34;, &#34;bar&#34; ]
 title           : &#34;Title&#34;
 
 FooBar          : &#34;hello world&#34;
@@ -93,12 +93,14 @@ weight          : {{ .Weight        }}
 {{`not exported:`}}
 outputs
 isCJKLanguage
-taxonomies
 
 {{`User-Defined, not case sensitive, Anything =&gt; .Params.anything`}}
-FooBar          : {{ .Params.FooBar }}
-foobar          : {{ .Params.foobar }}
-FOOBAR          : {{ .Params.FOOBAR }}
+.Params.FooBar  : {{ .Params.FooBar }}
+.Params.foobar  : {{ .Params.foobar }}
+.Params.FOOBAR  : {{ .Params.FOOBAR }}
+
+{{`terms (taxonomy) via .Params`}}
+.Params.tags    : {{ .Params.tags }}
 
 </pre>
             </div>
@@ -127,12 +129,14 @@ weight          : 100
 not exported:
 outputs
 isCJKLanguage
-taxonomies
 
 User-Defined, not case sensitive, Anything =&gt; .Params.anything
-FooBar          : hello world
-foobar          : hello world
-FOOBAR          : hello world
+.Params.FooBar  : hello world
+.Params.foobar  : hello world
+.Params.FOOBAR  : hello world
+
+terms (taxonomy) via .Params
+.Params.tags    : [foo bar]
 
  </pre>
             </div>

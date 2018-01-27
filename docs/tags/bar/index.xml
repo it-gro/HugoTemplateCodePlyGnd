@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
+    <lastBuildDate>Sat, 27 Jan 2018 18:18:24 +0100</lastBuildDate>
     
 	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/tags/bar/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Title</title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/FrontMatterVariables/</link>
+      <pubDate>Sat, 27 Jan 2018 18:18:24 +0100</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/FrontMatterVariables/</guid>
+      <description>type : &amp;ldquo;myType&amp;rdquo; url : &amp;ldquo;myURL&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>mySite</title>
