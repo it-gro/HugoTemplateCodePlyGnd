@@ -29,6 +29,7 @@ GitHub Page: https://it-gro.github.io/HugoTemplatingPlayground/
   #traceFlags = "layout-name:baseof"
 ```
 
+### How to start:
 
 ```bash
 git clone git@github.com:it-gro/HugoTemplatingPlayground.git
