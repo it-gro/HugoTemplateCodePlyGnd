@@ -1,5 +1,24 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* Menu */}}
+{{"https://gohugo.io/variables/menus/" | markdownify }}
 
-{{/* menu */}}
+{{- range .Site.Menus.main }}
+10) {{ printf "%-8v | %-8v | %-12v | %-8v " .Name .Title .URL .Pre }}
+{{- end }}
+
+{{`just to show the structure `}}
+{{ len  .Site.Menus.main   }}
+{{ index .Site.Menus.main 0  }}
+{{ (index .Site.Menus.main 0).Name  }}
+{{ index .Site.Menus.main 1  }}
+{{ (index .Site.Menus.main 1).URL   }}
+
+.Page.Children
+.Page.Identifier
+.Page.Menu
+.Page.Parent
+.Page.Post
+.Page.Pre
+.Page.Weight
 
 {{/* __HIDE__ */}} {{ end }}

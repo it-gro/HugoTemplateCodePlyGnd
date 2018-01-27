@@ -35,16 +35,19 @@ LanguageCode    = "demo site vars (lang code)"
 [[menu.main]]
   weight = 1
   name   = "Home"
+  title  = "Base"
   url    = "/index.html"
   pre    = "fas fa-home"
 [[menu.main]]
   weight = 2
   name   = "Contact"
+  title  = "Touch"
   url    = "/contact"
   pre    = "far fa-address-card"
 [[menu.anything]]
   weight = 1
   name   = "foo"
+  title  = "bar"
   url    = "/"
   pre    = ""
 
@@ -67,6 +70,9 @@ LanguageCode    = "demo site vars (lang code)"
 
 
 [taxonomies]
+  tag      = "tags"
+  category = "categories"
+  country  = "countries"
 
 [params]
   #traceFlags = "layout-name:baseof"

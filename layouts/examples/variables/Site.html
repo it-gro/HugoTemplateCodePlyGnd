@@ -34,7 +34,19 @@
 .Site.Files                 : {{.Site.Files                 }}
 `}}
 
-{{`Not listed above:`}}
+{{- range .Site.Sections}}
+  {{.Kind}}:{{.RelPermalink }}
+{{- end}}
+
+{{ range $myKey, $myValue := .Site.Taxonomies}}
+  {{ printf `%+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
+  {{- range $myKey, $myValue := .}}
+    {{ printf `* %+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
+  {{- end}}
+{{- end}}
+
+
+{{`Not listed in documentation:`}}
 .Site.Social                              : {{.Site.Social                         }}
 .Site.PageCollections                     : {{.Site.PageCollections                }}
 len .Site.PageCollections.AllPages        : {{len .Site.PageCollections.AllPages        }}
