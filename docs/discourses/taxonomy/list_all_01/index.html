@@ -56,7 +56,8 @@ categories:
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
               <pre>{{/* all_categories */}}
-See more: {{&#34;[/examples/variables/Taxonomy/](/examples/variables/Taxonomy/)&#34; | markdownify }}
+{{ $mySeeMore := &#34;/examples/variables/Taxonomy/&#34; }}
+See more: {{printf &#34;[%s](%s)&#34; $mySeeMore (relURL $mySeeMore) | markdownify }}
 
 10)
 {{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
@@ -120,7 +121,8 @@ See more: {{&#34;[/examples/variables/Taxonomy/](/examples/variables/Taxonomy/)&
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 
-See more: <a href="/examples/variables/Taxonomy/">/examples/variables/Taxonomy/</a>
+
+See more: <a href="/HugoTemplatingPlayground/examples/variables/Taxonomy/">/examples/variables/Taxonomy/</a>
 
 10)
 List Terms in a Taxonomy (e.g. categories) with Pages

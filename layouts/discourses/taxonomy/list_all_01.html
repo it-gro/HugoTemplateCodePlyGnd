@@ -1,6 +1,7 @@
 {{/* __HIDE__ */}} {{- define "render" }}
 {{/* all_categories */}}
-See more: {{"[/examples/variables/Taxonomy/](/examples/variables/Taxonomy/)" | markdownify }}
+{{ $mySeeMore := "/examples/variables/Taxonomy/" }}
+See more: {{printf "[%s](%s)" $mySeeMore (relURL $mySeeMore) | markdownify }}
 
 10)
 {{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
