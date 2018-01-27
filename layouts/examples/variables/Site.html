@@ -1,0 +1,66 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* Site */}}
+{{"https://gohugo.io/variables/site/" | markdownify }}
+{{"[Site.Params](../Site.Params)" | markdownify }}
+
+.Site.AllPages              : {{.Site.AllPages              }}
+.Site.Author                : {{.Site.Author                }}
+.Site.BaseURL               : {{.Site.BaseURL               }}
+.Site.BuildDrafts           : {{.Site.BuildDrafts           }}
+.Site.Copyright             : {{.Site.Copyright             }}
+.Site.Data                  : {{.Site.Data                  }}
+.Site.DisqusShortname       : {{.Site.DisqusShortname       }}
+.Site.GoogleAnalytics       : {{.Site.GoogleAnalytics       }}
+.Site.IsMultiLingual        : {{.Site.IsMultiLingual        }}
+.Site.Language              : {{.Site.Language              }}
+.Site.Language.Lang         : {{.Site.Language.Lang         }}
+.Site.Language.LanguageName : {{.Site.Language.LanguageName }}
+.Site.Language.Weight       : {{.Site.Language.Weight       }}
+.Site.LanguageCode          : {{.Site.LanguageCode          }}
+.Site.LanguagePrefix        : {{.Site.LanguagePrefix        }}
+.Site.Languages             : {{.Site.Languages             }}
+.Site.LastChange            : {{.Site.LastChange            }}
+.Site.Menus                 : {{.Site.Menus                 }}
+.Site.Pages                 : {{.Site.Pages                 }}
+.Site.Permalinks            : {{.Site.Permalinks            }}
+.Site.RSSLink               : {{.Site.RSSLink               }}
+.Site.RegularPages          : {{.Site.RegularPages          }}
+.Site.Sections              : {{.Site.Sections              }}
+.Site.Taxonomies            : {{.Site.Taxonomies            }}
+.Site.Title                 : {{.Site.Title                 }}
+
+{{`
+.Site's Files is deprecated and will be removed in Hugo 0.35.
+.Site.Files                 : {{.Site.Files                 }}
+`}}
+
+{{`Not listed above:`}}
+.Site.Social                              : {{.Site.Social                         }}
+.Site.PageCollections                     : {{.Site.PageCollections                }}
+len .Site.PageCollections.AllPages        : {{len .Site.PageCollections.AllPages        }}
+len .Site.PageCollections.RegularPages    : {{len .Site.PageCollections.RegularPages    }}
+len .Site.PageCollections.AllRegularPages : {{len .Site.PageCollections.AllRegularPages }}
+
+<hr>
+{{`just curious ...`}}
+{{/* not exported
+.Site.canonifyURLs                   : {{.Site.canonifyURLs                   }}
+.Site.relativeURLs                   : {{.Site.relativeURLs                   }}
+.Site.uglyURLs                       : {{.Site.uglyURLs                       }}
+.Site.preserveTaxonomyNames          : {{.Site.preserveTaxonomyNames          }}
+.Site.owner                          : {{.Site.owner                          }}
+.Site.s                              : {{.Site.s                              }}
+.Site.defaultContentLanguageInSubdir : {{.Site.defaultContentLanguageInSubdir }}
+.Site.sectionPagesMenu               : {{.Site.sectionPagesMenu               }}
+*/}}
+
+{{ printf `%+v
+T:%T
+#v:%#v` .Site .Site .Site }}
+
+<hr>
+{{ printf `%+v
+T:%T
+#v:%#v` .Site.PageCollections .Site.PageCollections .Site.PageCollections }}
+
+{{/* __HIDE__ */}} {{ end }}

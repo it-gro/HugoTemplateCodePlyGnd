@@ -1,0 +1,109 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* Page */}}
+{{"https://gohugo.io/variables/page/" | markdownify }}
+
+.AlternativeOutputFormats : {{.AlternativeOutputFormats}}
+.Data                     : {{.Data                    }}
+.Date                     : {{.Date                    }}
+.Description              : {{.Description             }}
+.Dir                      : {{.Dir                     }}
+.Draft                    : {{.Draft                   }}
+.ExpiryDate               : {{.ExpiryDate              }}
+.File                     : {{.File                    }}
+.FuzzyWordCount           : {{.FuzzyWordCount          }}
+.Hugo                     : {{.Hugo                    }}
+.IsHome                   : {{.IsHome                  }}
+.IsNode                   : {{.IsNode                  }}
+.IsPage                   : {{.IsPage                  }}
+.IsTranslated             : {{.IsTranslated            }}
+.Keywords                 : {{.Keywords                }}
+.Kind                     : {{.Kind                    }}
+.Lang                     : {{.Lang                    }}
+.Language                 : {{.Language                }}
+.Lastmod                  : {{.Lastmod                 }}
+.LinkTitle                : {{.LinkTitle               }}
+.Next                     : {{.Next                    }}
+.NextInSection            : {{.NextInSection           }}
+.OutputFormats            : {{.OutputFormats           }}
+.Pages                    : {{.Pages                   }}
+.Permalink                : {{.Permalink               }}
+.PlainWords               : {{.PlainWords              }}
+.Prev                     : {{.Prev                    }}
+.PrevInSection            : {{.PrevInSection           }}
+.PublishDate              : {{.PublishDate             }}
+.RSSLink                  : {{.RSSLink                 }}
+.ReadingTime              : {{.ReadingTime             }}
+.Ref                      : {{.Ref                     }}
+.RelPermalink             : {{.RelPermalink            }}
+.RelRef                   : {{.RelRef                  }}
+.Site                     : {{.Site                    }}
+.Title                    : {{.Title                   }}
+.Translations             : {{.Translations            }}
+.Truncated                : {{.Truncated               }}
+.Type                     : {{.Type                    }}
+.URL                      : {{.URL                     }}
+.UniqueID                 : {{.UniqueID                }}
+.Weight                   : {{.Weight                  }}
+.WordCount                : {{.WordCount               }}
+
+{{ delimit .Keywords ", " }}
+
+{{`output without the newlines: `}}
+.Content                  : {{.Content           | replaceRE `(?s:)\n` ""  }}
+.Plain                    : {{.Plain             | replaceRE `(?s:)\n` ""  }}
+.RawContent               : {{.RawContent        | replaceRE `(?s:)\n` ""  }}
+.Summary                  : {{.Summary           | replaceRE `(?s:)\n` ""  }}
+.TableOfContents          : {{.TableOfContents   | replaceRE `(?s:)\n` ""  }}
+
+<hr>
+{{`just curious ...`}}
+{{ printf `%+v
+T:%T
+#v:%#v` . . . }}
+
+{{/*
+#v:&hugolib.PageOutput
+{
+  Page:(*hugolib.Page)(0xc44963af00), paginator:(*hugolib.Pager)(nil), paginatorInit:sync.Once
+  {
+    m:sync.Mutex
+    {
+      state:0, sema:0x0
+    }
+    , done:0x0
+  }
+  , resources:resource.Resources(nil), resourcesInit:sync.Once
+  {
+    m:sync.Mutex
+    {
+      state:0, sema:0x0
+    }
+    , done:0x1
+  }
+  , targetPathDescriptor:hugolib.targetPathDescriptor
+    {
+      PathSpec:(*helpers.PathSpec)(0xc42feafc20), Type:output.Format
+      {
+        Name:"HTML", MediaType:media.Type
+        {
+          MainType:"text", SubType:"html", Suffix:"html", Delimiter:"."
+        }
+        , Path:"", BaseName:"index", Rel:"canonical", Protocol:"", IsPlainText:false, IsHTML:true, NoUgly:false, NotAlternative:false
+      }
+      , Kind:"page", Sections:[]string
+      {
+        "examples", "variables"
+      }
+      , BaseName:"page", Dir:"examples/variables/", LangPrefix:"", IsMultihost:false, URL:"", Addends:"", ExpandedPermalink:"", UglyURLs:false
+    }
+    , outputFormat:output.Format
+      {
+        Name:"HTML", MediaType:media.Type
+        {
+          MainType:"text", SubType:"html", Suffix:"html", Delimiter:"."
+        }
+        , Path:"", BaseName:"index", Rel:"canonical", Protocol:"", IsPlainText:false, IsHTML:true, NoUgly:false, NotAlternative:false
+      }
+    }
+*/}}
+{{/* __HIDE__ */}} {{ end }}
