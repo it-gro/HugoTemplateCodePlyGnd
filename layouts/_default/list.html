@@ -33,7 +33,7 @@
 {{- end}}
   <div class="w3-container w3-card w3-margin-bottom w3-theme-l5">
 
-    {{ .Content}}
+    <h2>{{$.Site.Title}}</h2>
     {{- range $index, $section := .Sections }}
       {{- if eq (mod $index 3) 0 }}
         <div class="w3-row ">
@@ -51,6 +51,8 @@
         </div>
       {{- end }}
     {{- end }}
+
+    {{ .Content}}
 
   </div>
 {{- end}}

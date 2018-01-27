@@ -1,0 +1,62 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* all_categories */}}
+See more: {{"[/examples/variables/Taxonomy/](/examples/variables/Taxonomy/)" | markdownify }}
+
+10)
+{{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
+{{- $myTaxonomy := "categories" }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+  {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf "%-45s | %-10s" .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+15)
+{{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
+{{- range  $term, $value := .Site.Taxonomies.categories }}
+  {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf "%-45s | %-10s" .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+
+20)
+{{`List all Term Pages of a Taxonomy (e.g. categories) `}}
+{{- range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+  {{ printf "%-45s | %-10s" .RelPermalink .Name }} {{/* . is a page */}}
+{{- end}}
+
+25)
+{{`List all Term Pages of a Taxonomy (e.g. tags) `}}
+{{- range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+  {{ printf "%-45s | %-10s" .RelPermalink .Name }} {{/* . is a page */}}
+{{- end}}
+
+
+30)
+{{`List all Terms in a Taxonomy (e.g. tags) with Pages`}}
+{{- $myTaxonomy := "tags" }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+  {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf "%-45s | %-10s" .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+
+{{/* analyse ...
+{{block "myDummyBlock" .Site.Data }}
+40)
+  {{`List all Terms in a Taxonomy (e.g. categories) `}}
+  {{- range  $term, $value := .Site.Taxonomies.categories }}
+    {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+      {{- range $value.Pages }}
+        {{ printf "%-45s | %-10s" .RelPermalink .Name }}
+    {{- end}}
+  {{- end}}
+{{end}}
+*/}}
+
+{{/* __HIDE__ */}} {{- end }}

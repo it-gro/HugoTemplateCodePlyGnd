@@ -3,12 +3,14 @@
 {{"https://gohugo.io/variables/taxonomy/#use-site-taxonomies-outside-of-taxonomy-templates" | markdownify }}
 {{"https://gohugo.io/variables/taxonomy/" | markdownify }}
 
-10){{ .Site.Taxonomies }}
+10)
+{{ .Site.Taxonomies }}
 
+20)
 {{ range $myKey, $myValue := .Site.Taxonomies}}
   {{ printf `%+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
   {{- range $myKey, $myValue := .}}
-20)    {{ printf `* %+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
+    {{ printf `* %+v (T:%T) => %+v (T:%T) ` $myKey $myKey $myValue $myValue }}
   {{- end}}
 {{- end}}
 
@@ -18,24 +20,48 @@
 {{`same as`}}
 33){{ index .Site.Taxonomies "tags" }}
 34){{ index .Site.Taxonomies "categories" }}
+{{- $myTaxonomy := "categories" }}
+35){{ index .Site.Taxonomies $myTaxonomy }}
 
-{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-40) {{ printf "%+v " $taxonomyname }}
+
+{{`List Terms by Taxonomy with Pages `}}
+40)
+{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+{{ printf "%+v " $taxonomyname }}
   {{- range $term, $value := $taxonomy }}
-41) {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
     {{- range $value.Pages }}
-42)   {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
+      {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
     {{- end}}
   {{- end}}
 {{- end}}
 
-{{ range (.Site.Taxonomies.tags).foo }}
-50)  {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
+{{`List Taxonomies`}}
+50)
+{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+  {{ printf "%+v " $taxonomyname }}
+{{- end}}
+
+{{`List Term foo in Taxonomy tags with Pages `}}
+60)
+{{- range (.Site.Taxonomies.tags).foo }}
+  {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
 {{- end}}
 
 {{`same as`}}
-{{ range (index .Site.Taxonomies.tags "foo" ) }}
-51) {{ printf "%+v" .RelPermalink }}  {{/* . is a page */}}
+61)
+{{- range (index .Site.Taxonomies.tags "foo" ) }}
+  {{ printf "%+v" .RelPermalink }}  {{/* . is a page */}}
+{{- end}}
+
+{{`List Terms in a Taxonomy (e.g. categories) with Pages `}}
+70)
+{{- $myTaxonomy := "categories" }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+  {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf "%-40v | %-20v" .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
 {{- end}}
 
 

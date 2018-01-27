@@ -4,6 +4,22 @@ This is a Playground for Hugo Templates [Hugo](https://gohugo.io/).
 
 GitHub Page: https://it-gro.github.io/HugoTemplatingPlayground/
 
+### Playground for
+
+* syntax
+  * literals
+  * variables
+  * arguemtns
+  * datatypes
+  * comments
+  * conditions
+  * range
+  * with
+  * test and spaces
+* hugo templates
+* functions
+* variables
+
 
 ```bash
 git clone git@github.com:it-gro/HugoTemplatingPlayground.git
