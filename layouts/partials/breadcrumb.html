@@ -13,9 +13,9 @@
 {{- end }}
 <div class="w3-bar-item w3-button w3-mobile">
   {{- if not .p1.IsHome }}
-  <a href="{{ .p1.Permalink }}">{{replaceRE ".*/" "" (.p1.Permalink | relURL | strings.TrimSuffix "/")}}/</a>
+  <a href="{{ .p1.Permalink }}">{{replaceRE ".*/" "" (.p1.Permalink | relURL | strings.TrimSuffix "/")  | humanize }}/</a>
   {{- else }}
-  <a href="{{ .p1.Permalink }}">Home</a>
+  <a href="{{ .p1.Permalink }}">{{.p1.Kind  | humanize }}</a>
   {{- end }}
 </div>
 {{ end }}
