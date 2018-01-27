@@ -1,5 +1,38 @@
 {{/* __HIDE__ */}} {{- define "render" }}
-
 {{/* relURL */}}
+{{"https://gohugo.io/functions/relurl" | markdownify }}
+{{"https://gohugo.io/functions/absurl" | markdownify }}
+{{"[absURL](../absURL)" | markdownify }}
 
-{{/* __HIDE__ */}} {{ end }}
+{{ $.Site.BaseURL }}
+
+{{ "mystyle.css" | absURL }}
+{{ "mystyle.css" | relURL }}
+
+{{ "./mystyle.css" | absURL }}
+{{ "./mystyle.css" | relURL }}
+
+{{ "../mystyle.css" | absURL }}
+{{ "../mystyle.css" | relURL }}
+
+{{ "/foo/mystyle.css" | absURL }}
+{{ "/foo/mystyle.css" | relURL }}
+
+{{`it's safe to apply on URI with http or https`}}
+{{ "http://gohugo.io/" | absURL }}
+{{ "http://gohugo.io/" | relURL }}
+
+{{ "https://gohugo.io/" | absURL }}
+{{ "https://gohugo.io/" | relURL }}
+
+{{`but not other schemas:`}}
+{{ "ftp://gohugo.io/" | absURL }}
+{{ "ftp://gohugo.io/" | relURL }}
+
+
+{{"https://en.wikipedia.org/wiki/URL" | markdownify }}
+{{`scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]`}}
+{{ "abc://username:password@example.com:123/path/data?key=value#fragid1" | absURL }}
+{{ "abc://username:password@example.com:123/path/data?key=value#fragid1" | relURL }}
+
+{{/* __HIDE__ */}} {{- end }}

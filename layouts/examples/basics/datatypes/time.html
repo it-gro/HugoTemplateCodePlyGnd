@@ -6,6 +6,16 @@
 */}}
 {{ string $myTime }}
 {{ $myTime }}
+{{ $myTime.UTC }}
+
+{{ time.Now }}
+{{ time.Now.UTC }}
+{{ time.Now.Local }}
+
+{{ $myTime := time "2018-01-26T00:33:45" }}
+{{ $myTime }}
+{{ $myTime.Local }}
+
 
 {{ `https://golang.org/pkg/time/` | markdownify }}
 {{`any use in hugo templating ?`}}

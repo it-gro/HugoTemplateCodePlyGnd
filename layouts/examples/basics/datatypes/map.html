@@ -4,8 +4,24 @@
 {{ $myMap := dict "foo" 24 "bar" "cow" "foo"    "42"     }} {{- $myMap }}
 {{ $myMap := dict "foo" 42 "bar" "cow" "foo"     12 "1" 2}} {{- $myMap }}
 {{ $myMap.foo }}
-{{ with $myMap }}{{.bar}}{{end}}
+{{ index $myMap "foo" }}
+{{/* $myMap.1   => error */}}
+{{/* $myMap."1" => error */}}
+{{/* $myMap.`1` => error */}}
 {{ index $myMap "1" }}
+{{ with $myMap }}{{.bar}}{{end}}
 {{ printf "%+v (T:%T #v:%#v)" $myMap $myMap $myMap }}
+
+{{ echoParam $myMap "foo" }}
+{{ echoParam $myMap "1"   }}
+
+
+{{ $myMap := dict "1" "one" "2" "two" "foo" "bar" }}
+{{ $myMap }}
+
+{{/*
+{{ $myMap := dict (slice "a" "A" "b" "B") }}
+{{ $myMap }}
+*/}}
 
 {{/* __HIDE__ */}} {{- end }}

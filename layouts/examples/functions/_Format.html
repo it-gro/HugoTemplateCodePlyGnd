@@ -1,5 +1,22 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* _Format */}}
+{{"https://gohugo.io/functions/format" | markdownify }}
 
-{{/* .Format */}}
 
-{{/* __HIDE__ */}} {{ end }}
+{{now}}
+{{now.Format "January 2, 2006"}}
+
+{{$myDate := time "2018-01-27T10:49:49+01:00" }}
+{{$myDate}}
+{{$myDate.Format "January 2, 2006"               }}   
+{{$myDate.Format "January 2 15:04:05 2006 MST"   }}   
+{{$myDate.Format "Jan 2 15:04:05 2006 MST"       }}   
+{{$myDate.Format "Jan 2 15:04:05 2006 -0700"     }}   
+{{$myDate.Format "2006.01.02"                    }}   
+{{$myDate.Format "January 2, 2006"               }}   
+{{$myDate.Format "Monday, January 2 (2006)"      }}   
+{{$myDate.Format "Mon 02 Jan. 2006"              }}   
+
+{{ dateFormat "2006.01.02 15:04 MST" $myDate.UTC }}
+
+{{/* __HIDE__ */}} {{- end }}

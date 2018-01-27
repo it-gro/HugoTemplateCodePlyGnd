@@ -13,7 +13,9 @@
 `}}
 
 {{range (seq 1 5) }} {{.}} {{end}}
-{{range (dict "hello" 42 "foo" "bar" "A" "z-end" "a" "a" "Z" "Z") }} {{.}} {{end}}
+{{ $myMap := dict "hello" 42 "foo" "bar" "A" "z-end" "a" "a" "Z" "Z" "11" "eleven" "2" "two" }}
+{{ printf "%+v" $myMap }}
+{{range ($myMap) }} {{.}} {{end}}
 
 {{`
 {{range pipeline}} T1 {{else}} T0 {{end}}
