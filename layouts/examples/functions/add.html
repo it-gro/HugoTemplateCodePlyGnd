@@ -1,5 +1,9 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* add */}}
+{{"https://gohugo.io/functions/math" | markdownify }}
+{{"[Math](../Math)" | markdownify }}
 
 {{add 1 2}}
+{{add 1.5 2.3}}
 
 {{/* __HIDE__ */}} {{ end }}

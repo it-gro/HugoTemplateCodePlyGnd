@@ -1,5 +1,12 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* _AddDate */}}
+{{"https://gohugo.io/functions/adddate" | markdownify }}
 
-{{/* .AddDate */}}
+{{now}}
+{{now.AddDate 1 2 3}}
 
-{{/* __HIDE__ */}} {{ end }}
+{{$myDate := time "2018-01-27T10:49:49+01:00" }}
+{{$myDate}}
+{{$myDate.AddDate 1 2 3}}
+
+{{/* __HIDE__ */}} {{- end }}

@@ -57,6 +57,7 @@
   <div class="w3-padding w3-theme-d5">
     <h3>{{.Section | humanize}}</h3>
       {{- $.Scratch.Set "theCntLiEl" -1 }}
+      {{- $.Scratch.Set "theCntRows" -1 }}
       {{- $myCntPerHalf :=  (default 25 ($.Site.Param `fileLinkCntPerHalf`)) }}
       {{- $.Scratch.Set "myOpenRow" 0 }}
       {{- $.Scratch.Set "myOpenCol" 0 }}
@@ -77,7 +78,9 @@
 
           {{- if or (eq ($.Scratch.Get "theCntLiEl") 0 ) (eq (mod ($.Scratch.Get "theCntLiEl") (mul $myCntPerHalf 2)) 0) }}
             {{- $.Scratch.Add "myOpenRow" 1 }}
-            <div class="w3-row w3-theme-d4">
+            {{- $.Scratch.Add "theCntRows" 1 }}
+            {{- $myW3Theme := printf "w3-theme-%s" (cond (eq (mod ($.Scratch.Get "theCntRows") 2) 0) "d4" "d3") }}
+            <div class="w3-row {{$myW3Theme}}">
           {{- end }}
           {{- if eq (mod ($.Scratch.Get "theCntLiEl") $myCntPerHalf) 0 }}
               {{- $.Scratch.Add "myOpenCol" 1 }}

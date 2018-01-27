@@ -1,6 +1,7 @@
 {{/* __HIDE__ */}} {{- define "render" }}
 {{/* complex */}}
-{{ 42i }} {{/* not of any use in hugo(?), but never let a i follow a number */}}
+{{`not of any use in hugo(?), never let i follow a number `}}
+{{ 42i }}
 {{ $myComplex := 12i }}
 {{ printf "%+v (T:%T #v:%#v)" $myComplex $myComplex $myComplex }}
 

@@ -1,5 +1,14 @@
 {{/* __HIDE__ */}} {{- define "render" }}
+{{/* _Get */}}
+{{"https://gohugo.io/functions/get" | markdownify }}
 
-{{/* .Get */}}
+{{`Get INDEX`}}
+{{`.Get 3`}}
 
-{{/* __HIDE__ */}} {{ end }}
+{{`Get KEY`}}
+{{`.Get "foo"`}}
+
+{{`.Get is specifically used when creating your own shortcode template.`}}
+{{"https://gohugo.io/templates/shortcode-templates" | markdownify }}
+
+{{/* __HIDE__ */}} {{- end }}

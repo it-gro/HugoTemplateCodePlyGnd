@@ -1,5 +1,13 @@
 {{/* __HIDE__ */}} {{- define "render" }}
-
 {{/* after */}}
+{{"https://gohugo.io/functions/after" | markdownify }}
 
-{{/* __HIDE__ */}} {{ end }}
+{{ $data := slice "one" "two" "three" "four" }}
+{{ range after 2 $data }}
+  {{- . }}
+{{ end }}
+
+{{ after 3 (seq 1 10) }}
+{{ after 6 (dict "foo" (seq 1 10) "hello" "world" "i" 42).foo }}
+
+{{/* __HIDE__ */}} {{- end }}
