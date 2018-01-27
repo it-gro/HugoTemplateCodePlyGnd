@@ -2,10 +2,11 @@ relativeURLs  = true
 #uglyurls      = true
 
 baseURL = "/"
+enableGitInfo          = false
 
 #[languages]
 #[languages.en]
 #baseURL = "https://example.com/hugo/en"
-# 
+#
 #[languages.no]
 #baseURL = "https://example.com/hugo/no"
