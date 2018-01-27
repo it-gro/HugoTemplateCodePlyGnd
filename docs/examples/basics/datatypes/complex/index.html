@@ -2,9 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
 <link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
 <title>Hugo Templating Playground</title>
 
   </head>
@@ -48,7 +55,8 @@
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
               <pre>{{/* complex */}}
-{{ 42i }} {{/* not of any use in hugo(?), but never let a i follow a number */}}
+{{`not of any use in hugo(?), never let i follow a number `}}
+{{ 42i }}
 {{ $myComplex := 12i }}
 {{ printf &#34;%&#43;v (T:%T #v:%#v)&#34; $myComplex $myComplex $myComplex }}
 
@@ -59,7 +67,8 @@
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 
-(0&#43;42i) 
+not of any use in hugo(?), never let i follow a number 
+(0&#43;42i)
 
 (0&#43;12i) (T:complex128 #v:(0&#43;12i))
 
