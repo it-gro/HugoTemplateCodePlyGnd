@@ -6,23 +6,28 @@ GitHub Page: https://it-gro.github.io/HugoTemplatingPlayground/
 
 ### Playground is for
 
-* syntax
-  * literals
-  * comments
-  * test and spaces
-  * datatypes
-  * variables
-  * arguments
-  * conditions
-  * range
-  * with
-* functions
-* variables
+* Syntax
+  * Literals
+  * Vomments
+  * Text and Spaces
+  * Datatypes
+  * Variables
+  * Arguments
+  * Conditions
+  * Range
+  * With
+* Functions
+* Variables
 
 ### but not for
 
-* hugo template lookup order
 * any html, css, js stuff
+* hugo template lookup order - but a trick is shown how to trace. Remove the comment in [config.toml](config.toml):
+
+```toml
+[params]
+  #traceFlags = "layout-name:baseof"
+```
 
 
 ```bash

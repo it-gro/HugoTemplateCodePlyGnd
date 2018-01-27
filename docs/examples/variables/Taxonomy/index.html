@@ -144,11 +144,11 @@ TaxonomyList(3)
     * bar (T:string) =&gt; [WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)] (T:hugolib.WeightedPages) 
     * foo (T:string) =&gt; [WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)] (T:hugolib.WeightedPages) 
 
-31)map[foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)] bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)]]
+31)map[bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)] foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)]]
 32)map[hello-word:[WeightedPage(0,&#34;foobar&#34;) WeightedPage(0,&#34;list_all_01&#34;) WeightedPage(0,&#34;mySite&#34;)]]
 
 same as
-33)map[bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)] foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)]]
+33)map[foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)] bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)]]
 34)map[hello-word:[WeightedPage(0,&#34;foobar&#34;) WeightedPage(0,&#34;list_all_01&#34;) WeightedPage(0,&#34;mySite&#34;)]]
 35)map[hello-word:[WeightedPage(0,&#34;foobar&#34;) WeightedPage(0,&#34;list_all_01&#34;) WeightedPage(0,&#34;mySite&#34;)]]
 
@@ -200,7 +200,7 @@ List Terms in a Taxonomy (e.g. categories) with Pages
 just curious ...
 TaxonomyList(3)
 T:hugolib.TaxonomyList
-#v:hugolib.TaxonomyList{&#34;countries&#34;:hugolib.Taxonomy{}, &#34;tags&#34;:hugolib.Taxonomy{&#34;foo&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc43476f400)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434788f00)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434798a00)}}, &#34;bar&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc43476f400)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434798a00)}}}, &#34;categories&#34;:hugolib.Taxonomy{&#34;hello-word&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434799400)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434806500)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc434798a00)}}}}
+#v:hugolib.TaxonomyList{&#34;tags&#34;:hugolib.Taxonomy{&#34;foo&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435498000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435365900)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435367900)}}, &#34;bar&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435498000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435367900)}}}, &#34;categories&#34;:hugolib.Taxonomy{&#34;hello-word&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435474500)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc43539f900)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc435367900)}}}, &#34;countries&#34;:hugolib.Taxonomy{}}
 
  </pre>
             </div>
