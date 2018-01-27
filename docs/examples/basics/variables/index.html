@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/variables/">variables/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{ $hello := &#34;world&#34; }}
+1) {{ $hello }}
+{{ if true }}
+  2) {{ $hello }}
+  {{ $hello := &#34;universe&#34; }}
+  3) {{ $hello }}
+{{ end }}
+4) {{ $hello }}
+
+{{`=&gt; .Scratch` }} {{ `https://gohugo.io/functions/scratch/` | markdownify }}
+{{ .Scratch.Set &#34;aKey&#34; &#34;hello&#34; }}
+10) {{ .Scratch.Get &#34;aKey&#34; }}
+{{ if true }}
+  11) {{ .Scratch.Get &#34;aKey&#34; }}
+  {{ .Scratch.Set &#34;aKey&#34; &#34;you&#34;  }}
+  12) {{ .Scratch.Get &#34;aKey&#34; }}
+{{ end }}
+13) {{ .Scratch.Get &#34;aKey&#34; }}
+
+{{ $.Scratch.Add &#34;a1&#34; 12 }}
+{{ $.Scratch.Get &#34;a1&#34; }}
+{{ $.Scratch.Add &#34;a1&#34; 1 }}
+{{ $.Scratch.Get &#34;a1&#34; }}
+
+{{ $.Scratch.Add &#34;a2&#34; &#34;AB&#34; }}
+{{ $.Scratch.Get &#34;a2&#34; }}
+{{ $.Scratch.Add &#34;a2&#34; &#34;CD&#34; }}
+{{ $.Scratch.Get &#34;a2&#34; }}
+
+{{ $.Scratch.Add &#34;l1&#34; (slice &#34;A&#34; &#34;B&#34;) }}
+{{ $.Scratch.Get &#34;l1&#34; }}
+{{ $.Scratch.Add &#34;l1&#34; (slice &#34;C&#34; &#34;D&#34;) }}
+{{ $.Scratch.Get &#34;l1&#34; }}
+
+{{ $.Scratch.Set &#34;v1&#34; 123 }}
+{{ $.Scratch.Get &#34;v1&#34; }}
+
+{{ $.Scratch.SetInMap &#34;a3&#34; &#34;b&#34; &#34;XX&#34; }}
+{{ $.Scratch.SetInMap &#34;a3&#34; &#34;a&#34; &#34;AA&#34; }}
+{{ $.Scratch.SetInMap &#34;a3&#34; &#34;c&#34; &#34;CC&#34; }}
+{{ $.Scratch.SetInMap &#34;a3&#34; &#34;b&#34; &#34;BB&#34; }}
+{{ $.Scratch.GetSortedMapValues &#34;a3&#34; }}
+
+{{ $mv := $.Scratch.GetSortedMapValues &#34;a3&#34; }}
+{{ printf &#34;%&#43;v (T:%T #v:%#v)&#34; $mv $mv $mv}}
+{{ index $mv 1 }}
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+1) world
+
+  2) world
+  
+  3) universe
+
+4) world
+
+=&gt; .Scratch <a href="https://gohugo.io/functions/scratch/">https://gohugo.io/functions/scratch/</a>
+
+10) hello
+
+  11) hello
+  
+  12) you
+
+13) you
+
+
+12
+
+13
+
+
+AB
+
+ABCD
+
+
+[A B]
+
+[A B C D]
+
+
+123
+
+
+
+
+
+[AA BB CC]
+
+
+[AA BB CC] (T:[]interface {} #v:[]interface {}{&#34;AA&#34;, &#34;BB&#34;, &#34;CC&#34;})
+BB
+ </pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

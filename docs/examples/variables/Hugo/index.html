@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/">variables/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Hugo/">Hugo/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* Hugo */}}
+{{&#34;https://gohugo.io/variables/hugo/&#34; | markdownify }}
+{{ printf `%&#43;v
+T:%T
+#v:%#v` $.Hugo $.Hugo $.Hugo }}
+
+{{ $.Hugo.Version}}
+{{ $.Hugo.CommitHash}} {{/* empty ? */}}
+{{ $.Hugo.BuildDate}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://gohugo.io/variables/hugo/">https://gohugo.io/variables/hugo/</a>
+&amp;{Version:0.34 Generator:&lt;meta name=&#34;generator&#34; content=&#34;Hugo 0.34&#34; /&gt; CommitHash: BuildDate:2018-01-22T12:06:40Z}
+T:*hugolib.HugoInfo
+#v:&amp;hugolib.HugoInfo{Version:&#34;0.34&#34;, Generator:&#34;&lt;meta name=\&#34;generator\&#34; content=\&#34;Hugo 0.34\&#34; /&gt;&#34;, CommitHash:&#34;&#34;, BuildDate:&#34;2018-01-22T12:06:40Z&#34;}
+
+0.34
+ 
+2018-01-22T12:06:40Z
+
+ </pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

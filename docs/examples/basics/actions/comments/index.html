@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/">actions/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/comments/">comments/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* comments */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+{{`A comment; discarded. May contain newlines.
+Comments do not nest and must start and end at the delimiters
+`}}
+
+block comment ok:
+{{/*
+  {{ $myFoo := &#34;bar&#34;}}
+  hej - comment here ...
+  {{ $i := 42 }} {{$i}}
+*/}}
+
+block comment wrong:
+{{/*
+ {{ $myFoo := &#34;bar&#34;}} {{/* bla bla bla */}}
+ hej - no comment here ...
+ {{ $i := 42 }} {{$i}}
+*/}}
+
+block comment ok:
+{{/*  {{ $myFoo := &#34;bar&#34;}} {{/* bla bla bla */}}
+{{/*  hej - comment here ...                */}}
+{{/*  {{ $i := 42 }} {{$i}}                 */}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://golang.org/pkg/text/template/#hdr-Actions">https://golang.org/pkg/text/template/#hdr-Actions</a>
+A comment; discarded. May contain newlines.
+Comments do not nest and must start and end at the delimiters
+
+
+block comment ok:
+
+
+block comment wrong:
+
+ hej - no comment here ...
+  42
+*/}}
+
+block comment ok:
+
+
+
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

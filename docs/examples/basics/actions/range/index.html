@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/">actions/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/range/">range/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* range */}}
+{{`https://golang.org/pkg/text/template/#hdr-Actions` | markdownify }}
+
+{{`
+{{range pipeline}} T1 {{end}}
+  The value of the pipeline must be an array, slice, map, or channel.
+  If the value of the pipeline has length zero, nothing is output;
+  otherwise, dot is set to the successive elements of the array,
+  slice, or map and T1 is executed. If the value is a map and the
+  keys are of basic type with a defined order (&#34;comparable&#34;), the
+  elements will be visited in sorted key order.
+`}}
+
+{{range (seq 1 5) }} {{.}} {{end}}
+{{ $myMap := dict &#34;hello&#34; 42 &#34;foo&#34; &#34;bar&#34; &#34;A&#34; &#34;z-end&#34; &#34;a&#34; &#34;a&#34; &#34;Z&#34; &#34;Z&#34; &#34;11&#34; &#34;eleven&#34; &#34;2&#34; &#34;two&#34; }}
+{{ printf &#34;%&#43;v&#34; $myMap }}
+{{range ($myMap) }} {{.}} {{end}}
+
+{{`
+{{range pipeline}} T1 {{else}} T0 {{end}}
+  The value of the pipeline must be an array, slice, map, or channel.
+  If the value of the pipeline has length zero, dot is unaffected and
+  T0 is executed; otherwise, dot is set to the successive elements
+  of the array, slice, or map and T1 is executed.
+`}}
+
+{{range (slice &#34;a&#34; 2) }} {{.}} {{else}} empty {{end}}
+{{range (slice      ) }} {{.}} {{else}} empty {{end}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://golang.org/pkg/text/template/#hdr-Actions">https://golang.org/pkg/text/template/#hdr-Actions</a>
+
+
+{{range pipeline}} T1 {{end}}
+  The value of the pipeline must be an array, slice, map, or channel.
+  If the value of the pipeline has length zero, nothing is output;
+  otherwise, dot is set to the successive elements of the array,
+  slice, or map and T1 is executed. If the value is a map and the
+  keys are of basic type with a defined order (&#34;comparable&#34;), the
+  elements will be visited in sorted key order.
+
+
+ 1  2  3  4  5 
+
+map[A:z-end a:a Z:Z 11:eleven 2:two hello:42 foo:bar]
+ eleven  two  z-end  Z  a  bar  42 
+
+
+{{range pipeline}} T1 {{else}} T0 {{end}}
+  The value of the pipeline must be an array, slice, map, or channel.
+  If the value of the pipeline has length zero, dot is unaffected and
+  T0 is executed; otherwise, dot is set to the successive elements
+  of the array, slice, or map and T1 is executed.
+
+
+ a  2 
+ empty 
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
