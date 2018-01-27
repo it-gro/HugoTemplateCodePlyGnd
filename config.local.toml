@@ -1,3 +1,11 @@
-baseURL = "/"
 relativeURLs  = true
 #uglyurls      = true
+
+baseURL = "/"
+
+#[languages]
+#[languages.en]
+#baseURL = "https://example.com/hugo/en"
+# 
+#[languages.no]
+#baseURL = "https://example.com/hugo/no"

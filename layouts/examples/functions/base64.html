@@ -1,5 +1,16 @@
 {{/* __HIDE__ */}} {{- define "render" }}
 {{/* base64 */}}
 {{"https://gohugo.io/functions/base64" | markdownify }}
+{{ "Hello world"      | base64Encode }}
+{{ "SGVsbG8gd29ybGQ=" | base64Decode }}
+
+{{ "Hello world"| base64Encode | base64Decode }}
+{{ $myTest := (42 | base64Encode | base64Decode) }}   {{/* result is a string */}}
+{{ printf "%+v (T:%T #v:%#v)" $myTest $myTest $myTest }}
+
+{{"https://gohugo.io/functions/base64#base64-with-apis" | markdownify }}
+
+{{ $resp := getJSON "https://api.github.com/repos/it-gro/HugoTemplatingPlayground/readme"  }}
+{{ $resp.content | base64Decode | markdownify }}
 
 {{/* __HIDE__ */}} {{- end }}
