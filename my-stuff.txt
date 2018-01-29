@@ -35,4 +35,15 @@ content => layouts, now fix:
 ./layouts/discourses/taxonomy/_create.sh
 
 
+i18n 
+
+https://gohugo.io/content-management/multilingual/#list-all-available-languages
+.AllTranslations
+.defaultContentLanguageInSubdir
+...
+
+resources
+images
+...
+
 
