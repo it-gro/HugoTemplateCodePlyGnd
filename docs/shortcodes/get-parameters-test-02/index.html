@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/">Shortcodes/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-02/">Get parameters test 02/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>---
+description: &#34;Parameter passing positional vs named&#34;
+---
+
+https://gohugo.io/templates/shortcode-templates/
+
+### Positional parameters
+
+*  {{&lt;/* get-parameters-test-02 1 2 3 */&gt;}}   
+  =&gt; {{&lt; get-parameters-test-02 1 2 3 &gt;}}
+*  {{&lt;/* get-parameters-test-02 1 foo 3 */&gt;}}  
+  =&gt; {{&lt; get-parameters-test-02 1 foo 3 &gt;}}
+*  {{&lt;/* get-parameters-test-02 1 foo bar 3 */&gt;}}  
+  =&gt; {{&lt; get-parameters-test-02 1 foo bar 3 &gt;}}
+*  {{&lt;/* get-parameters-test-02 1 &#34;foo bar&#34; 3 */&gt;}}  
+  =&gt; {{&lt; get-parameters-test-02 1 &#34;foo bar&#34; 3 &gt;}}
+
+
+
+### Named parameters
+
+https://discourse.gohugo.io/t/shortcodes-best-practice-for-named-parameters-quoting/10253   
+{{` always quote the values using &#34; `}}
+
+*  {{&lt;/* get-parameters-test-02 arg1=&#34;1&#34; arg2=&#34;2&#34; arg3=&#34;3&#34; */&gt;}}   
+  =&gt; {{&lt; get-parameters-test-02 arg1=&#34;1&#34; arg2=&#34;2&#34; arg3=&#34;3&#34; &gt;}}
+*  {{&lt;/* get-parameters-test-02 arg1=&#34;1&#34; arg2=&#34;foo&#34; arg3=&#34;3&#34; */&gt;}}   
+  =&gt; {{&lt; get-parameters-test-02 arg1=&#34;1&#34; arg2=&#34;foo&#34; arg3=&#34;3&#34; &gt;}}
+
+#### Danger:
+A) {{&lt;/* get-parameters-test-02 arg1=42 arg2=&#34;foo&#34; */&gt;}}   
+  =&gt; {{&lt; get-parameters-test-02 arg1=42 arg2=&#34;foo&#34; &gt;}}
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              
+
+<p><a href="https://gohugo.io/templates/shortcode-templates/">https://gohugo.io/templates/shortcode-templates/</a></p>
+
+<h3 id="positional-parameters">Positional parameters</h3>
+
+<ul>
+<li>{{&lt; get-parameters-test-02 1 2 3 &gt;}}<br />
+=&gt; 
+[]string{&#34;1&#34;, &#34;2&#34;, &#34;3&#34;} 
+</li>
+<li>{{&lt; get-parameters-test-02 1 foo 3 &gt;}}<br />
+=&gt; 
+[]string{&#34;1&#34;, &#34;foo&#34;, &#34;3&#34;} 
+</li>
+<li>{{&lt; get-parameters-test-02 1 foo bar 3 &gt;}}<br />
+=&gt; 
+[]string{&#34;1&#34;, &#34;foo&#34;, &#34;bar&#34;, &#34;3&#34;} 
+</li>
+<li>{{&lt; get-parameters-test-02 1 &ldquo;foo bar&rdquo; 3 &gt;}}<br />
+=&gt; 
+[]string{&#34;1&#34;, &#34;foo bar&#34;, &#34;3&#34;} 
+</li>
+</ul>
+
+<h3 id="named-parameters">Named parameters</h3>
+
+<p><a href="https://discourse.gohugo.io/t/shortcodes-best-practice-for-named-parameters-quoting/10253">https://discourse.gohugo.io/t/shortcodes-best-practice-for-named-parameters-quoting/10253</a><br />
+{{<code>always quote the values using &quot;</code>}}</p>
+
+<ul>
+<li>{{&lt; get-parameters-test-02 arg1=&ldquo;1&rdquo; arg2=&ldquo;2&rdquo; arg3=&ldquo;3&rdquo; &gt;}}<br />
+=&gt; 
+map[string]string{&#34;arg1&#34;:&#34;1&#34;, &#34;arg2&#34;:&#34;2&#34;, &#34;arg3&#34;:&#34;3&#34;} 
+</li>
+<li>{{&lt; get-parameters-test-02 arg1=&ldquo;1&rdquo; arg2=&ldquo;foo&rdquo; arg3=&ldquo;3&rdquo; &gt;}}<br />
+=&gt; 
+map[string]string{&#34;arg1&#34;:&#34;1&#34;, &#34;arg2&#34;:&#34;foo&#34;, &#34;arg3&#34;:&#34;3&#34;} 
+</li>
+</ul>
+
+<h4 id="danger">Danger:</h4>
+
+<p>A) {{&lt; get-parameters-test-02 arg1=42 arg2=&ldquo;foo&rdquo; &gt;}}<br />
+  =&gt; 
+map[string]string{&#34;arg1&#34;:&#34;foo&#34;} 
+</p>
+
+            </div>
+          </div>
+          <div class="w3-container w3-card w3-theme-d1">
+            <pre>{{/*.Params*/}}
+{{with .Params }}{{printf &#34;%#v &#34; .}}{{end}}
+</pre>
+          </div>
+
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
+

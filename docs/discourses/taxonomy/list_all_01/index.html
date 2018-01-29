@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/discourses/">Discourses/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/discourses/taxonomy/">Taxonomy/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/discourses/taxonomy/list_all_01/">List all 01/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+title:  &#34;list_all_01&#34;
+categories:
+  - &#34;hello word&#34;
+---
+
+## This is a test
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* list_all_01 */}}
+{{ $mySeeMore := &#34;/examples/variables/Taxonomy/&#34; }}
+See more: {{printf &#34;[%s](%s)&#34; $mySeeMore (relURL $mySeeMore) | markdownify }}
+
+10)
+{{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
+{{- $myTaxonomy := &#34;categories&#34; }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+  {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+15)
+{{`List Terms in a Taxonomy (e.g. categories) with Pages`}}
+{{- range  $term, $value := .Site.Taxonomies.categories }}
+  {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+
+20)
+{{`List all Term Pages of a Taxonomy (e.g. categories) `}}
+{{- range ($.Site.GetPage &#34;taxonomyTerm&#34; &#34;categories&#34;).Pages }}
+  {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }} {{/* . is a page */}}
+{{- end}}
+
+25)
+{{`List all Term Pages of a Taxonomy (e.g. tags) `}}
+{{- range ($.Site.GetPage &#34;taxonomyTerm&#34; &#34;tags&#34;).Pages }}
+  {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }} {{/* . is a page */}}
+{{- end}}
+
+
+30)
+{{`List all Terms in a Taxonomy (e.g. tags) with Pages`}}
+{{- $myTaxonomy := &#34;tags&#34; }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+  {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
+    {{- range $value.Pages }}
+      {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }} {{/* . is a page */}}
+  {{- end}}
+{{- end}}
+
+
+{{/* analyse ...
+{{block &#34;myDummyBlock&#34; .Site.Data }}
+40)
+  {{`List all Terms in a Taxonomy (e.g. categories) `}}
+  {{- range  $term, $value := .Site.Taxonomies.categories }}
+    {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
+      {{- range $value.Pages }}
+        {{ printf &#34;%-45s | %-10s&#34; .RelPermalink .Name }}
+    {{- end}}
+  {{- end}}
+{{end}}
+*/}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+
+See more: <a href="/HugoTemplatingPlayground/examples/variables/Taxonomy/">/examples/variables/Taxonomy/</a>
+
+10)
+List Terms in a Taxonomy (e.g. categories) with Pages
+  hello-word #Pages:3
+      /HugoTemplatingPlayground/examples/variables/ | foobar     
+      /HugoTemplatingPlayground/discourses/taxonomy/list_all_01/ | list_all_01 
+      /HugoTemplatingPlayground/examples/variables/Site/ | mySite     
+
+15)
+List Terms in a Taxonomy (e.g. categories) with Pages
+  hello-word #Pages:3
+      /HugoTemplatingPlayground/examples/variables/ | foobar     
+      /HugoTemplatingPlayground/discourses/taxonomy/list_all_01/ | list_all_01 
+      /HugoTemplatingPlayground/examples/variables/Site/ | mySite     
+
+
+20)
+List all Term Pages of a Taxonomy (e.g. categories) 
+  /HugoTemplatingPlayground/categories/hello-word/ | Hello Word 
+
+25)
+List all Term Pages of a Taxonomy (e.g. tags) 
+  /HugoTemplatingPlayground/tags/bar/           | Bar        
+  /HugoTemplatingPlayground/tags/foo/           | Foo        
+
+
+30)
+List all Terms in a Taxonomy (e.g. tags) with Pages
+  bar #Pages:2
+      /HugoTemplatingPlayground/examples/variables/FrontMatterVariables/ | Title      
+      /HugoTemplatingPlayground/examples/variables/Site/ | mySite     
+  foo #Pages:3
+      /HugoTemplatingPlayground/examples/variables/FrontMatterVariables/ | Title      
+      /HugoTemplatingPlayground/examples/variables/Taxonomy/ |            
+      /HugoTemplatingPlayground/examples/variables/Site/ | mySite     
+
+
+
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

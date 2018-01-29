@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">Examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/">Variables/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Menu/">Menu/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+menu:
+  docs:
+    name:       &#34;foo&#34;
+    parent:     &#39;home&#39;
+    pre:        &#34;&lt;i class=&#39;fa fa-heart&#39;&gt;&lt;/i&gt;&#34;
+    identifier: &#34;foo&#34;
+    url:        &#34;/foo/&#34;
+    weight:     20
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* Menu */}}
+{{&#34;https://gohugo.io/variables/menus/&#34; | markdownify }}
+{{&#34;https://gohugo.io/content-management/menus/&#34; | markdownify }}
+
+{{ range .Site.Menus.main -}}
+10) {{ printf &#34;%-8v | %-8v | %-12v | %-8v &#34; .Name .Title .URL .Pre }}
+{{ end }}
+
+{{`just to show the structure `}}
+{{ len  .Site.Menus.main   }}
+{{ index .Site.Menus.main 0  }}
+{{ (index .Site.Menus.main 0).Name  }}
+{{ index .Site.Menus.main 1  }}
+{{ (index .Site.Menus.main 1).URL   }}
+
+{{&#34;https://gohugo.io/content-management/menus/#add-content-to-menus&#34; | markdownify }}
+{{ range .Page.Menus }}
+20) {{ printf &#34;%-8v | %-8v | %-12v | %-8v | %-8v&#34; .Name .Title .URL .Pre .Parent }}
+{{ end }}
+
+.Children  : {{ (index .Page.Menus &#34;docs&#34;).Children  }}
+.Identifier: {{ (index .Page.Menus &#34;docs&#34;).Identifier}}
+.Menu      : {{ (index .Page.Menus &#34;docs&#34;).Menu      }}
+.Name      : {{ (index .Page.Menus &#34;docs&#34;).Name      }}
+.Parent    : {{ (index .Page.Menus &#34;docs&#34;).Parent    }}
+.Post      : {{ (index .Page.Menus &#34;docs&#34;).Post      }}
+.Pre       : {{ (index .Page.Menus &#34;docs&#34;).Pre       }}
+.URL       : {{ (index .Page.Menus &#34;docs&#34;).URL       }}
+.Weight    : {{ (index .Page.Menus &#34;docs&#34;).Weight    }}
+
+.HasChildren    : {{ (index .Page.Menus &#34;docs&#34;).HasChildren    }}
+
+{{/* printf &#34;#v:%#v&#34; .Page.Menus */}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+<a href="https://gohugo.io/variables/menus/">https://gohugo.io/variables/menus/</a>
+<a href="https://gohugo.io/content-management/menus/">https://gohugo.io/content-management/menus/</a>
+
+10) Home     | Base     | /HugoTemplatingPlayground/index.html | fas fa-home 
+10) Contact  | Touch    | /HugoTemplatingPlayground/contact | far fa-address-card 
+
+
+just to show the structure 
+2
+{/HugoTemplatingPlayground/index.html &lt;nil&gt; Home main  Base fas fa-home  1  []}
+Home
+{/HugoTemplatingPlayground/contact &lt;nil&gt; Contact main  Touch far fa-address-card  2  []}
+/HugoTemplatingPlayground/contact
+
+<a href="https://gohugo.io/content-management/menus/#add-content-to-menus">https://gohugo.io/content-management/menus/#add-content-to-menus</a>
+
+20) foo      |          | /foo/        | &lt;i class=&#39;fa fa-heart&#39;&gt;&lt;/i&gt; | home    
+
+
+.Children  : []
+.Identifier: foo
+.Menu      : docs
+.Name      : foo
+.Parent    : home
+.Post      : 
+.Pre       : <i class='fa fa-heart'></i>
+.URL       : /foo/
+.Weight    : 20
+
+.HasChildren    : false
+
+
+
+</pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>

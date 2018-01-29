@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Templating Playground</title>
+    <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/</link>
+    <description>Recent content on Hugo Templating Playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>demo site vars (lang code)</language>
+    <copyright>demo site vars (c)</copyright>
+    <lastBuildDate>Sat, 27 Jan 2018 22:31:24 +0100</lastBuildDate>
+    
+	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/Math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/Math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_AddDate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_AddDate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Format/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Get/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Get/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_GetPage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_GetPage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Param/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Param/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Scratch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Scratch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Unix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absLangURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absLangURL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absURL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/add/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/after/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/after/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/apply/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/apply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/base64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/base64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/chomp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/chomp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/cond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/cond/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countrunes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countrunes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countwords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countwords/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dateFormat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dateFormat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/default/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/default/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/delimit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/delimit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dict/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dict/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/echoParam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/echoParam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/emojify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/emojify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/eq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/eq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/errorf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/errorf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/fileExists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/fileExists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/findRE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/findRE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/float/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/float/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/getenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/getenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/gt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/gt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/hasPrefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/hasPrefix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/highlight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/highlight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlEscape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlEscape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlUnescape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlUnescape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/humanize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/humanize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/i18n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/i18n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/imageConfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/imageConfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/in/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/index_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/index_/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/int/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/intersect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/intersect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/isset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/isset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/jsonify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/jsonify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lang.NumFmt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lang.NumFmt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/last/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/last/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/le/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/le/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lower/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lower/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/markdownify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/markdownify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/md5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/md5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ne/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ne/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/now/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/partialCached/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/partialCached/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/plainify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/plainify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/pluralize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/pluralize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/print/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/print/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/printf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/printf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/println/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/println/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/querify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/querify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/range/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readDir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readDir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readFile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readFile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ref/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relLangURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relLangURL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relURL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relref/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/render/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/render/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replaceRE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replaceRE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeCSS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeCSS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTML/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTML/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTMLAttr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTMLAttr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeJS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeJS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeURL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/seq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/seq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/shuffle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/shuffle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/singularize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/singularize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slicestr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slicestr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/split/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/split/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimLeft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimLeft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimPrefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimPrefix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimRight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimRight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimSuffix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimSuffix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/substr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/substr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/title/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/trim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/trim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/truncate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/truncate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/union/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/union/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/uniq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/uniq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/upper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/upper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urlize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urlize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urls.Parse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urls.Parse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/where/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/where/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/with/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/with/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
