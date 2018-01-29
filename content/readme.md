@@ -108,7 +108,7 @@ layouts/examples/basics/
 
   * https://play.golang.org/
 
-** JSON
+**JSON**
 
    * https://jsonformatter.org/
    * http://ulion.github.io/jsonform/playground/
