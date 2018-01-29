@@ -3,9 +3,8 @@ weight: 100
 description: "Parameter passing (datatypes)"
 ---
 
-https://gohugo.io/templates/shortcode-templates/
-
-https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3   
+https://gohugo.io/templates/shortcode-templates/   
+https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
 
 
 *  {{</* get-parameters-test-01 "foo" */>}}    
