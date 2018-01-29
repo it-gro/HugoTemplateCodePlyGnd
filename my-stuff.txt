@@ -1,0 +1,23 @@
+
+clean up:
+
+find . -type d              | xargs chmod 755
+find . -type f              | xargs chmod 644
+find . -type f -name "*.sh" | xargs chmod 755
+
+find . -name "*~" | xargs rm -f
+
+rm -rf docs/*
+
+git add content/ layouts/
+
+
+ToDo:
+
+content => layouts, now fix:
+./layouts/examples/functions/_create.sh
+./layouts/examples/basics/actions/_create.sh
+./layouts/examples/basics/_create.sh
+./layouts/examples/basics/datatypes/_create.sh
+./layouts/examples/variables/_create.sh
+./layouts/discourses/taxonomy/_create.sh

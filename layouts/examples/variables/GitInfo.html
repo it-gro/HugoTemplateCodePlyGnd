@@ -7,11 +7,16 @@
 T:%T
 #v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
 
-{{`git info regarding this file `}}
-{{ $.GitInfo.Subject }}
-{{ $.GitInfo.AuthorDate }}
-{{ .Lastmod }}
+.Site.Params.enableGitInfoProject: {{.Site.Params.enableGitInfoProject}}
 
-{{ "https://gohugo.io/variables/git/#lastmod" | markdownify }} {{` hmm?`}}
+{{if .Site.Params.enableGitInfoProject }}
+{{`git info regarding this file `}}
+$.GitInfo.Subject:    {{ $.GitInfo.Subject }}
+$.GitInfo.AuthorDate: {{ $.GitInfo.AuthorDate }}
+.Lastmod: {{ .Lastmod }}
+{{end}}
+
+
+{{ "https://gohugo.io/variables/git/#lastmod" | markdownify }}
 
 {{/* __HIDE__ */}} {{- end }}

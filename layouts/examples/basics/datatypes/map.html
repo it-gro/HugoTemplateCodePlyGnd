@@ -19,6 +19,13 @@
 {{ $myMap := dict "1" "one" "2" "two" "foo" "bar" }}
 {{ $myMap }}
 
+{{ $myMap := dict `foo` "bar"  }}
+{{ $myMap }}
+
+{{ $myMap := dict `foo` true  }}
+{{ $myMap }}
+{{ printf "%+v (T:%T #v:%#v)" $myMap.foo $myMap.foo $myMap.foo }}
+
 {{/*
 {{ $myMap := dict (slice "a" "A" "b" "B") }}
 {{ $myMap }}

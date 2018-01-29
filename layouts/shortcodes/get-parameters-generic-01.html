@@ -1,0 +1,23 @@
+{{- $.Scratch.Set "theArgument1"     ""          }}
+{{- $.Scratch.Set "theArgument2"     "default2"  }}
+{{- $.Scratch.Set "theArgument3"     "default3"  }}
+{{- $.Scratch.Set "theArgument4"     "default4"  }}
+{{- $.Scratch.Set "theArgument5"     ""          }}
+{{- if .IsNamedParams }}
+  {{- $.Scratch.Set "theArgument1"    (.Get "arg1"      | default ($.Scratch.Get "theArgument1"  ) )}}
+  {{- $.Scratch.Set "theArgument2"    (.Get "arg2"      | default ($.Scratch.Get "theArgument2"  ) )}}
+  {{- $.Scratch.Set "theArgument3"    (.Get "arg3"      | default ($.Scratch.Get "theArgument3"  ) )}}
+  {{- $.Scratch.Set "theArgument4"    (.Get "arg4"      | default ($.Scratch.Get "theArgument4"  ) )}}
+  {{- $.Scratch.Set "theArgument5"    (.Get "arg5"      | default ($.Scratch.Get "theArgument5"  ) )}}
+{{- else }}
+  {{- $myPos := 0}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theArgument1"  (.Get $myPos) }} {{end}}
+  {{- $myPos := 1}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theArgument2"  (.Get $myPos) }} {{end}}
+  {{- $myPos := 2}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theArgument3"  (.Get $myPos) }} {{end}}
+  {{- $myPos := 3}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theArgument4"  (.Get $myPos) }} {{end}}
+  {{- $myPos := 4}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theArgument5"  (.Get $myPos) }} {{end}}
+{{- end }}
+(1:{{- $.Scratch.Get "theArgument1" }})
+(2:{{- $.Scratch.Get "theArgument2" }})
+(3:{{- $.Scratch.Get "theArgument3" }})
+(4:{{- $.Scratch.Get "theArgument4" }})
+(5:{{- $.Scratch.Get "theArgument5" }})
