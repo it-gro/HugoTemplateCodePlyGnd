@@ -10,17 +10,17 @@ https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
 *  {{</* get-parameters-test-01 "foo" */>}}    
   => {{< get-parameters-test-01 "foo" >}}
 *  {{</* get-parameters-test-01 "foo\nbar" */>}}    
-  => {{< get-parameters-test-01 "foo\nbar" >}}
+  => {{< get-parameters-test-01 "foo\nbar" >}} *"\" gets quoted with "\"*
 *  {{</* get-parameters-test-01 false */>}}    
-  => {{< get-parameters-test-01 false >}}
+  => {{< get-parameters-test-01 false >}} *boolean values is true (non emtpy)*
 *  {{</* get-parameters-test-01 1     */>}}    
-  => {{< get-parameters-test-01 1     >}}
+  => {{< get-parameters-test-01 1     >}} 
 *  {{</* get-parameters-test-01 "0.5" */>}}    
-  => {{< get-parameters-test-01 "0.5" >}}
+  => {{< get-parameters-test-01 "0.5" >}} 
 *  {{</* get-parameters-test-01 "" */>}}    
-  => {{< get-parameters-test-01 "" >}}
+  => {{< get-parameters-test-01 "" >}} 
 *  {{</* get-parameters-test-01 1e3   */>}}    
-  => {{< get-parameters-test-01 1e3    >}} not 1000
+  => {{< get-parameters-test-01 1e3    >}} *not 1000*
     
 A) {{</* get-parameters-test-01 'foo' */>}}    
 =>  
