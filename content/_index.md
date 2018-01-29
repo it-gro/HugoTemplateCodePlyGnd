@@ -1,24 +1,6 @@
-### Playground is for
+---
+title:        "Front readme"
+date:         2018-01-28T22:18:10+01:00
+---
 
-* Syntax
-  * Literals
-  * Comments
-  * Text and Spaces
-  * Datatypes
-  * Variables
-  * Arguments
-  * Conditions
-  * Range
-  * With
-* Functions
-* Variables
-
-### but not for
-
-* any html, css, js stuff
-* hugo template lookup order - but a trick is shown how to trace. Remove the comment in config.toml
-
-```toml
-[params]
-  #traceFlags = "layout-name:baseof"
-```
+[What is this all about?](readme/)

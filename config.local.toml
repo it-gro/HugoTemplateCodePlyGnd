@@ -2,7 +2,6 @@ relativeURLs  = true
 #uglyurls      = true
 
 baseURL = "/"
-enableGitInfo          = false
 
 #[languages]
 #[languages.en]
@@ -10,3 +9,5 @@ enableGitInfo          = false
 #
 #[languages.no]
 #baseURL = "https://example.com/hugo/no"
+[params]
+enableGitInfoProject = true

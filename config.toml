@@ -24,6 +24,8 @@ LanguageCode    = "demo site vars (lang code)"
   #traceFlags = "layout-name:baseof"
   #debug      = true
 
+  enableGitInfoProject = true
+
   #w3cssColorTheme = "css/w3-theme-custom.css"
   #w3cssColorTheme = "vendor/w3css/4/w3-theme-amber.css"
   #w3cssColorTheme = "vendor/w3css/4/w3-theme-black.css"
