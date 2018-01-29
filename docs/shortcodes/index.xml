@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Templating Playground</title>
-    <link>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/</link>
-    <description>Recent content on Hugo Templating Playground</description>
+    <title>Hugo Template Codeing Playground</title>
+    <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/</link>
+    <description>Recent content on Hugo Template Codeing Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
     <lastBuildDate>Mon, 29 Jan 2018 10:55:23 +0100</lastBuildDate>
     
-	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-01/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-01/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-01/</guid>
       <description>https://gohugo.io/templates/shortcode-templates/
 https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
 1) []string{&amp;#34;foo&amp;#34;} =&amp;gt; []string{&amp;ldquo;foo&amp;rdquo;}
@@ -34,10 +34,10 @@ unrecognized character in shortcode action: U+0027 &amp;ldquo;&amp;lsquo;.</desc
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-02/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-02/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-02/</guid>
       <description>https://gohugo.io/templates/shortcode-templates/
 Positional parameters  {{&amp;lt; get-parameters-test-02 1 2 3 &amp;gt;}}
 =&amp;gt; []string{&amp;#34;1&amp;#34;, &amp;#34;2&amp;#34;, &amp;#34;3&amp;#34;}  {{&amp;lt; get-parameters-test-02 1 foo 3 &amp;gt;}}
@@ -50,10 +50,10 @@ Positional parameters  {{&amp;lt; get-parameters-test-02 1 2 3 &amp;gt;}}
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-generic-01/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-generic-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-generic-01/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-generic-01/</guid>
       <description>https://gohugo.io/templates/shortcode-templates/
 1) (1:) (2:default2) (3:default3) (4:default4) (5:) 2) (1:1) (2:2) (3:3) (4:4) (5:5) 3) (1:1) (2:2) (3:3) (4:default4) (5:) 4) (1:1) (2:default2) (3:default3) (4:default4) (5:foo) 5) (1:1) (2:2) (3:3) (4:4) (5:5) 6) (1:42) (2:default2) (3:default3) (4:default4) (5:) {{/* arg4 =&amp;gt; default value, not emtpy */}}
 7) (1:42) (2:default2) (3:default3) (4:default4) (5:bar) ?) (1:foo) (2:default2) (3:default3) (4:default4) (5:) </description>

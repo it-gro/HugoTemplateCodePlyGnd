@@ -3,776 +3,776 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/</loc>
     <lastmod>2018-01-27T22:33:41+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/</loc>
     <lastmod>2018-01-27T22:31:24+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/tests/play/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tests/play/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/discourses/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/tests/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tests/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/FrontMatterVariables/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</loc>
     <lastmod>2018-01-27T22:55:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Page/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Page/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/discourses/taxonomy/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/taxonomy/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/string/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/string/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/literals/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/literals/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/File/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/File/</loc>
     <lastmod>2018-01-27T17:19:35+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/GitInfo/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/GitInfo/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Hugo/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Hugo/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Menu/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Menu/</loc>
     <lastmod>2018-01-27T18:39:25+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Site.Params/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Site.Params/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Sitemap/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Sitemap/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Taxonomy/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Taxonomy/</loc>
     <lastmod>2018-01-27T17:19:35+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-01/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-01/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/discourses/taxonomy/list_all_01/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/taxonomy/list_all_01/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/Site/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Site/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/int/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/int/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/variables/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/variables/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-test-02/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-02/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/float/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/float/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/arguments/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/arguments/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/context_the_dot/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/context_the_dot/</loc>
     <lastmod>2018-01-27T13:46:59+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/bool/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/bool/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/array/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/array/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/map/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/map/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/shortcodes/get-parameters-generic-01/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-generic-01/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/time/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/time/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/text_and_spaces/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/text_and_spaces/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/datatypes/complex/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/complex/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/comments/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/comments/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/pipelines/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/pipelines/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/conditions/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/conditions/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/range/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/range/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/with/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/with/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/actions/template/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/actions/template/</loc>
     <lastmod>2018-01-26T16:31:42+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/readme/</loc>
-    <lastmod>2018-01-29T10:55:23+01:00</lastmod>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/readme/</loc>
+    <lastmod>2018-01-29T11:06:33+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/Math/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/Math/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_AddDate/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_AddDate/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Format/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_Format/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Get/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_Get/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_GetPage/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_GetPage/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Param/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_Param/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Scratch/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_Scratch/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/_Unix/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/_Unix/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absLangURL/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/absLangURL/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/absURL/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/absURL/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/add/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/add/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/after/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/after/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/apply/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/apply/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/base64/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/base64/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/chomp/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/chomp/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/cond/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/cond/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countrunes/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/countrunes/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/countwords/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/countwords/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dateFormat/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/dateFormat/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/default/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/default/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/delimit/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/delimit/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/dict/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/dict/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/echoParam/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/echoParam/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/emojify/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/emojify/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/eq/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/eq/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/errorf/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/errorf/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/fileExists/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/fileExists/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/findRE/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/findRE/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/first/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/first/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/float/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/float/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ge/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/ge/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/getenv/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/getenv/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/gt/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/gt/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/hasPrefix/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/hasPrefix/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/highlight/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/highlight/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlEscape/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/htmlEscape/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/htmlUnescape/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/htmlUnescape/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/humanize/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/humanize/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/i18n/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/i18n/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/imageConfig/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/imageConfig/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/in/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/in/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/index_/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/index_/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/int/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/int/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/intersect/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/intersect/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/isset/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/isset/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/jsonify/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/jsonify/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lang.NumFmt/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/lang.NumFmt/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/last/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/last/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/le/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/le/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lower/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/lower/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/lt/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/lt/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/markdownify/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/markdownify/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/md5/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/md5/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ne/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/ne/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/now/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/now/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/partialCached/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/partialCached/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/plainify/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/plainify/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/pluralize/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/pluralize/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/print/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/print/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/printf/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/printf/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/println/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/println/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/querify/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/querify/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/range/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/range/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readDir/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/readDir/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/readFile/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/readFile/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/ref/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/ref/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relLangURL/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/relLangURL/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relURL/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/relURL/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/relref/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/relref/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/render/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/render/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replace/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/replace/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/replaceRE/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/replaceRE/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeCSS/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/safeCSS/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTML/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/safeHTML/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeHTMLAttr/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/safeHTMLAttr/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeJS/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/safeJS/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/safeURL/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/safeURL/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/seq/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/seq/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sha/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/sha/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/shuffle/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/shuffle/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/singularize/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/singularize/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slice/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/slice/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/slicestr/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/slicestr/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/sort/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/sort/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/split/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/split/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/string/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/string/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimLeft/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/strings.TrimLeft/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimPrefix/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/strings.TrimPrefix/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimRight/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/strings.TrimRight/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/strings.TrimSuffix/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/strings.TrimSuffix/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/substr/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/substr/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/time/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/time/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/title/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/title/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/trim/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/trim/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/truncate/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/truncate/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/union/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/union/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/uniq/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/uniq/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/upper/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/upper/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urlize/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/urlize/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/urls.Parse/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/urls.Parse/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/where/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/where/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/functions/with/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/with/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/tags/bar/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/bar/</loc>
     <lastmod>2018-01-27T22:55:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/categories/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/countries/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/countries/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/tags/foo/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/foo/</loc>
     <lastmod>2018-01-27T22:55:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/categories/hello-word/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/categories/hello-word/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/tags/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/</loc>
     <lastmod>2018-01-27T22:55:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplatingPlayground/examples/variables/</loc>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
   

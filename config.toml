@@ -1,5 +1,5 @@
-baseURL = "https://it-gro.github.io/HugoTemplatingPlayground"
-title   = "Hugo Templating Playground"
+baseURL = "https://it-gro.github.io/HugoTemplateCodePlyGnd"
+title   = "Hugo Template Codeing Playground"
 
 disablePathToLower = true
 DefaultContentLanguage = "en"
