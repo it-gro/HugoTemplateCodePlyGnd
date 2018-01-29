@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Templating Playground</title>
-    <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/</link>
-    <description>Recent content on Hugo Templating Playground</description>
+    <title>Hugo Template Codeing Playground</title>
+    <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/</link>
+    <description>Recent content on Hugo Template Codeing Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
     <lastBuildDate>Fri, 26 Jan 2018 01:04:10 +0100</lastBuildDate>
     
-	<atom:link href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/literals/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/literals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/literals/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/literals/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/variables/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/variables/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/variables/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arguments</title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/arguments/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/arguments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/arguments/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/arguments/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/context_the_dot/</link>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/context_the_dot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/context_the_dot/</guid>
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/context_the_dot/</guid>
       <description></description>
     </item>
     
