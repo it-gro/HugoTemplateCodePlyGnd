@@ -68,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/</loc>
-    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/walle-e/</loc>
     <lastmod>2018-01-29T18:20:18+01:00</lastmod>
   </url>
@@ -145,6 +140,11 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Site/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/</loc>
+    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
   </url>
   
   <url>
