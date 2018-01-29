@@ -18,8 +18,8 @@
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/</loc>
-    <lastmod>2018-01-27T22:31:24+01:00</lastmod>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/methods/Pages/</loc>
+    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
   </url>
   
   <url>
@@ -38,8 +38,23 @@
   </url>
   
   <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/</loc>
+    <lastmod>2018-01-29T18:18:48+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tests/</loc>
     <lastmod>2018-01-29T10:55:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/</loc>
+    <lastmod>2018-01-29T18:18:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/methods/</loc>
+    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
   </url>
   
   <url>
@@ -50,6 +65,16 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Page/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/</loc>
+    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/walle-e/</loc>
+    <lastmod>2018-01-29T18:20:18+01:00</lastmod>
   </url>
   
   <url>
@@ -761,7 +786,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/categories/hello-word/</loc>
-    <lastmod>2018-01-27T22:24:15+01:00</lastmod>
+    <lastmod>2018-01-29T18:18:48+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -769,11 +794,6 @@
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/</loc>
     <lastmod>2018-01-27T22:55:07+01:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/</loc>
-    <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
   
 </urlset>

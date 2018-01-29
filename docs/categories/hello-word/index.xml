@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
+    <lastBuildDate>Mon, 29 Jan 2018 18:18:48 +0100</lastBuildDate>
     
 	<atom:link href="https://it-gro.github.io/HugoTemplateCodePlyGnd/categories/hello-word/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>foobar</title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/</link>
-      <pubDate>Sat, 27 Jan 2018 22:24:15 +0100</pubDate>
+      <pubDate>Mon, 29 Jan 2018 18:18:48 +0100</pubDate>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/</guid>
       <description></description>
