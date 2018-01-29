@@ -9,13 +9,19 @@ find . -name "*~" | xargs rm -f
 
 rm -rf docs/*
 
-rm -rf docs/*; hugo ; git status; git push
+hugo
+git status
+git commit -a -m "bring it up ..."
+git push
+
 
 
 
 git add docs/
 
 git add content/ layouts/
+
+git remote set-url origin git@github.com:it-gro/HugoTemplateCodePlyGnd.git
 
 
 ToDo:
@@ -27,3 +33,6 @@ content => layouts, now fix:
 ./layouts/examples/basics/datatypes/_create.sh
 ./layouts/examples/variables/_create.sh
 ./layouts/discourses/taxonomy/_create.sh
+
+
+
