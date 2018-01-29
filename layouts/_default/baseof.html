@@ -22,7 +22,7 @@
             </code>
           {{- end}}
           <div class="w3-container w3-card w3-theme-d1">
-              <pre>{{printf "content/%s" .File.Path  | readFile | replaceRE `(?m)^(layout|weight).*\n` ""  }}</pre>
+              <pre>{{printf "content/%s" .File.Path  | readFile | replaceRE `(?m)^(layout|weight).*\n` ""  | replaceRE `(?m)^\s*"(layout|weight)":.*\n` ""  }}</pre>
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
