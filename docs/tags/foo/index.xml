@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Foo on Hugo Template Codeing Playground</title>
+    <title>Foo on Hugo Template Coding Playground</title>
     <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/foo/</link>
-    <description>Recent content in Foo on Hugo Template Codeing Playground</description>
+    <description>Recent content in Foo on Hugo Template Coding Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
