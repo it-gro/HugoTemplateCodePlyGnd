@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type"    content="text/html; charset=utf-8" />
+<meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="robots"                content="all,follow" />
+<meta name="googlebot"             content="index,follow,snippet,archive" />
+
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/vendor/w3css/4/w3-theme-green.css" />
+<link rel="stylesheet" href="/HugoTemplatingPlayground/css/style.css" />
+
+<title>Hugo Templating Playground</title>
+
+  </head>
+  <body>
+
+    <section id="top" class="w3-theme" >
+      <div class="w3-container w3-theme-l4">
+
+        
+<div class="w3-bar w3-mobile w3-theme-d3 ">
+  
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/">Home</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/">Examples/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/">Basics/</a>
+</div>
+
+<div class="w3-bar-item w3-button w3-mobile">
+  <a href="https://it-gro.github.io/HugoTemplatingPlayground/examples/basics/literals/">Literals/</a>
+</div>
+
+</div>
+
+
+        
+          <div class="w3-container w3-card w3-theme-d1">
+              <pre>---
+---
+</pre>
+          </div>
+          <div class="w3-row">
+            <div class="w3-container w3-col m6 w3-theme-l2">
+              <pre>{{/* literals */}}
+
+{{/* integer literal */}}
+{{`https://golang.org/ref/spec#Integer_literals` | markdownify}}
+{{ 42             }}
+{{ 0600           }}
+{{ 0xBadFace      }}
+{{ 1701411834604  }}
+
+
+{{/* floating-point literal */}}
+{{`https://golang.org/ref/spec#Floating-point_literals` | markdownify}}
+{{ 0.          }}
+{{ 72.40       }}
+{{ 072.40      }}
+{{ 2.71828     }}
+{{ 1.e&#43;0       }}
+{{ 6.67428e-11 }}
+{{ 1E6         }}
+{{ .25         }}
+{{ .12345E&#43;5   }}
+
+
+{{/* imaginaryliteral */}}
+{{`https://golang.org/ref/spec#Imaginary_literals` | markdownify}}
+{{ 0i           }}
+{{ 011i         }}
+{{ 0.i          }}
+{{ 2.71828i     }}
+{{ 1.e&#43;0i       }}
+{{ 6.67428e-11i }}
+{{ 1E6i         }}
+{{ .25i         }}
+{{ .12345E&#43;5i   }}
+
+{{/* rune literal  */}}
+{{`https://golang.org/ref/spec#Rune_literals` | markdownify}}
+{{ &#39;a&#39;           }}
+{{ &#39;ä&#39;           }}
+{{ &#39;本&#39;          }}
+{{ &#39;\t&#39;          }}
+{{ &#39;\000&#39;        }}
+{{ &#39;\007&#39;        }}
+{{ &#39;\377&#39;        }}
+{{ &#39;\x07&#39;        }}
+{{ &#39;\xff&#39;        }}
+{{ &#39;\u12e4&#39;      }}
+{{ &#39;\U00101234&#39;  }}
+
+{{/* string literal */}}
+{{`https://golang.org/ref/spec#String_literals` | markdownify}}
+{{ `abc`                   }}
+{{ `\n
+\n`                        }}
+{{ &#34;\n&#34;                    }}
+{{ &#34;\&#34;&#34;                    }} {{`&#34; (editor fix) `}}
+{{ &#34;Hello, world!\n&#34;       }}
+{{ &#34;日本語&#34;                }}
+{{ &#34;\u65e5本\U00008a9e&#34;    }}
+{{ &#34;\xff\U0001f609&#34;        }}
+
+{{`all the same`}}
+{{ &#34;日本語&#34;                }}
+{{ `日本語`                }}
+{{ &#34;\u65e5\u672c\u8a9e&#34;    }}
+{{ &#34;\U000065e5\U0000672c\U00008a9e&#34;       }}
+{{ &#34;\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e&#34; }}
+
+{{/* boolean */}}
+{{`https://golang.org/ref/spec#Boolean_types` | markdownify}}
+{{ true }}
+{{ false }}
+
+{{`
+The default type of an untyped constant is bool, rune, int, float64,
+complex128 or string respectively
+`}}
+
+</pre>
+            </div>
+            <div class="w3-container w3-col m6 w3-theme-l3">
+              <pre>
+
+
+
+<a href="https://golang.org/ref/spec#Integer_literals">https://golang.org/ref/spec#Integer_literals</a>
+42
+384
+195951310
+1701411834604
+
+
+
+<a href="https://golang.org/ref/spec#Floating-point_literals">https://golang.org/ref/spec#Floating-point_literals</a>
+0
+72.4
+72.4
+2.71828
+1
+6.67428e-11
+1e&#43;06
+0.25
+12345
+
+
+
+<a href="https://golang.org/ref/spec#Imaginary_literals">https://golang.org/ref/spec#Imaginary_literals</a>
+(0&#43;0i)
+(0&#43;11i)
+(0&#43;0i)
+(0&#43;2.71828i)
+(0&#43;1i)
+(0&#43;6.67428e-11i)
+(0&#43;1e&#43;06i)
+(0&#43;0.25i)
+(0&#43;12345i)
+
+
+<a href="https://golang.org/ref/spec#Rune_literals">https://golang.org/ref/spec#Rune_literals</a>
+97
+228
+26412
+9
+0
+7
+255
+7
+255
+4836
+1053236
+
+
+<a href="https://golang.org/ref/spec#String_literals">https://golang.org/ref/spec#String_literals</a>
+abc
+\n
+\n
+
+
+&#34; &#34; (editor fix) 
+Hello, world!
+
+日本語
+日本語
+�😉
+
+all the same
+日本語
+日本語
+日本語
+日本語
+日本語
+
+
+<a href="https://golang.org/ref/spec#Boolean_types">https://golang.org/ref/spec#Boolean_types</a>
+true
+false
+
+
+The default type of an untyped constant is bool, rune, int, float64,
+complex128 or string respectively
+
+
+ </pre>
+            </div>
+          </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
