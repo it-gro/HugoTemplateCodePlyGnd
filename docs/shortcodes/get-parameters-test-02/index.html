@@ -106,11 +106,11 @@ A) {{&lt;/* get-parameters-test-02 arg1=42 arg2=&#34;foo&#34; */&gt;}}
 <ul>
 <li>{{&lt; get-parameters-test-02 arg1=&ldquo;1&rdquo; arg2=&ldquo;2&rdquo; arg3=&ldquo;3&rdquo; &gt;}}<br />
 =&gt; 
-map[string]string{&#34;arg2&#34;:&#34;2&#34;, &#34;arg3&#34;:&#34;3&#34;, &#34;arg1&#34;:&#34;1&#34;} 
+map[string]string{&#34;arg1&#34;:&#34;1&#34;, &#34;arg2&#34;:&#34;2&#34;, &#34;arg3&#34;:&#34;3&#34;} 
 </li>
 <li>{{&lt; get-parameters-test-02 arg1=&ldquo;1&rdquo; arg2=&ldquo;foo&rdquo; arg3=&ldquo;3&rdquo; &gt;}}<br />
 =&gt; 
-map[string]string{&#34;arg3&#34;:&#34;3&#34;, &#34;arg1&#34;:&#34;1&#34;, &#34;arg2&#34;:&#34;foo&#34;} 
+map[string]string{&#34;arg1&#34;:&#34;1&#34;, &#34;arg2&#34;:&#34;foo&#34;, &#34;arg3&#34;:&#34;3&#34;} 
 </li>
 </ul>
 

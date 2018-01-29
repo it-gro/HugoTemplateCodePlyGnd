@@ -47,28 +47,21 @@ https://gohugo.io/templates/shortcode-templates/
 https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3   
 
 
-1) {{&lt; get-parameters-test-01 &#34;foo&#34; &gt;}}    
-=&gt; []string{&#34;foo&#34;}   
-
-2) {{&lt; get-parameters-test-01 &#34;foo\nbar&#34; &gt;}}    
-=&gt; []string{&#34;foo\\nbar&#34;} note: \n gets quoted with &#34;\\&#34;
-
-3) {{&lt; get-parameters-test-01 false &gt;}}    
-=&gt; []string{&#34;false&#34;}  note: that&#39;s a string &#34;false&#34; - which is a true value
-
-4) {{&lt; get-parameters-test-01 1     &gt;}}    
-=&gt; []string{&#34;1&#34;} note: the &#34;number&#34; 1 becomes a string &#34;1&#34;
-
-5) {{&lt; get-parameters-test-01 &#34;0.5&#34; &gt;}}    
-=&gt; []string{&#34;0.5&#34;} 
-
-6) {{&lt; get-parameters-test-01 &#34;&#34; &gt;}}    
-=&gt; []string{&#34;&#34;} 
-
-7) {{&lt; get-parameters-test-01 1e3    &gt;}}    
-=&gt; []string{&#34;1e3&#34;}  note: not 1000
-
-
+*  {{&lt;/* get-parameters-test-01 &#34;foo&#34; */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 &#34;foo&#34; &gt;}}
+*  {{&lt;/* get-parameters-test-01 &#34;foo\nbar&#34; */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 &#34;foo\nbar&#34; &gt;}}
+*  {{&lt;/* get-parameters-test-01 false */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 false &gt;}}
+*  {{&lt;/* get-parameters-test-01 1     */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 1     &gt;}}
+*  {{&lt;/* get-parameters-test-01 &#34;0.5&#34; */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 &#34;0.5&#34; &gt;}}
+*  {{&lt;/* get-parameters-test-01 &#34;&#34; */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 &#34;&#34; &gt;}}
+*  {{&lt;/* get-parameters-test-01 1e3   */&gt;}}    
+  =&gt; {{&lt; get-parameters-test-01 1e3    &gt;}} not 1000
+    
 A) {{&lt;/* get-parameters-test-01 &#39;foo&#39; */&gt;}}    
 =&gt;  
 unrecognized character in shortcode action: U&#43;0027 &#39;&#39;&#39;. Note:
@@ -90,40 +83,37 @@ Parameters with non-alphanumeric args must be quoted
 
 <p><a href="https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3">https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3</a></p>
 
-<p>1) 
+<ul>
+<li>{{&lt; get-parameters-test-01 &ldquo;foo&rdquo; &gt;}}<br />
+=&gt; 
 []string{&#34;foo&#34;} 
-<br />
-=&gt; []string{&ldquo;foo&rdquo;}</p>
-
-<p>2) 
+</li>
+<li>{{&lt; get-parameters-test-01 &ldquo;foo\nbar&rdquo; &gt;}}<br />
+=&gt; 
 []string{&#34;foo\\nbar&#34;} 
-<br />
-=&gt; []string{&ldquo;foo\nbar&rdquo;} note: \n gets quoted with &ldquo;\&ldquo;</p>
-
-<p>3) 
+</li>
+<li>{{&lt; get-parameters-test-01 false &gt;}}<br />
+=&gt; 
 []string{&#34;false&#34;} 
-<br />
-=&gt; []string{&ldquo;false&rdquo;}  note: that&rsquo;s a string &ldquo;false&rdquo; - which is a true value</p>
-
-<p>4) 
+</li>
+<li>{{&lt; get-parameters-test-01 1     &gt;}}<br />
+=&gt; 
 []string{&#34;1&#34;} 
-<br />
-=&gt; []string{&ldquo;1&rdquo;} note: the &ldquo;number&rdquo; 1 becomes a string &ldquo;1&rdquo;</p>
-
-<p>5) 
+</li>
+<li>{{&lt; get-parameters-test-01 &ldquo;0.5&rdquo; &gt;}}<br />
+=&gt; 
 []string{&#34;0.5&#34;} 
-<br />
-=&gt; []string{&ldquo;0.5&rdquo;}</p>
-
-<p>6) 
+</li>
+<li>{{&lt; get-parameters-test-01 &ldquo;&rdquo; &gt;}}<br />
+=&gt; 
 []string{&#34;&#34;} 
-<br />
-=&gt; []string{&ldquo;&rdquo;}</p>
-
-<p>7) 
+</li>
+<li>{{&lt; get-parameters-test-01 1e3   &gt;}}<br />
+=&gt; 
 []string{&#34;1e3&#34;} 
-<br />
-=&gt; []string{&ldquo;1e3&rdquo;}  note: not 1000</p>
+ not 1000
+<br /></li>
+</ul>
 
 <p>A) {{&lt; get-parameters-test-01 &lsquo;foo&rsquo; &gt;}}<br />
 =&gt;<br />
