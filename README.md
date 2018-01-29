@@ -20,7 +20,7 @@ GitHub Page: https://it-gro.github.io/HugoTemplateCodePlyGnd
 ### How to start:
 
 ```bash
-git clone git@github.com:it-gro/HugoTemplateCodePlyGnd.git
+git clone https://github.com/it-gro/HugoTemplateCodePlyGnd.git
 cd HugoTemplateCodePlyGnd
 hugo -v -w server --disableFastRender --navigateToChanged --config config.toml,config.local.toml
 ```

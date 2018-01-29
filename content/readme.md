@@ -7,7 +7,7 @@ date:  2018-01-28T22:18:10+01:00
 
 ### This Playground is for
 
-Hugo [Templates](https://gohugo.io/templates/):
+Hugo [Templates](https://gohugo.io/templates/) Coding:
 
 * Syntax: *Literals, Comments, Text and Spaces, Datatypes, Variables,
   Arguments, Conditions, Range, With*

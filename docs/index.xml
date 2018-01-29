@@ -346,7 +346,7 @@ Positional parameters  {{&amp;lt; get-parameters-test-02 1 2 3 &amp;gt;}}
       
       <guid>https://it-gro.github.io/HugoTemplatingPlayground/readme/</guid>
       <description>Demo or it didn&amp;rsquo;t happen&amp;hellip;
-This Playground is for Hugo Templates:
+This Playground is for Hugo Templates Coding:
  Syntax: Literals, Comments, Text and Spaces, Datatypes, Variables, Arguments, Conditions, Range, With Functions Variables Shortcodes  But not  hugo template lookup order any html, css, js stuff  How it works ToDo &amp;hellip;
 content/examples/basics/ ├── actions │ ├── comments.md │ ├── conditions.md │ ├── _index.md │ ├── pipelines.md │ ├── range.md │ ├── template.md │ ├── text_and_spaces.</description>
     </item>
