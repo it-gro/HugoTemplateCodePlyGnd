@@ -1,0 +1,16 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+
+{{ "https://discourse.gohugo.io/t/parsejson/10247" | markdownify }}
+
+{{ range $overview := .Params.data }}
+  {{ printf "#v:%#v)" $overview }}
+  1) {{ $overview.children.text }}
+{{ end }}
+
+{{- template "myTpl1" (index .Params.data 0) }}
+{{/* __HIDE__ */}} {{- end }}
+
+{{- define "myTpl1"}}
+{{/* printf "#v:%#v)" . */}}
+{{ .children.text }}
+{{- end}}
