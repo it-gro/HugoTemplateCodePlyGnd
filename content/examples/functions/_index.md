@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 20
 description: |
    Hugo **Functions** (still ToDo)                        
    https://gohugo.io/functions                            
