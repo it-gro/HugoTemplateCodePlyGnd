@@ -10,7 +10,9 @@
 
 {{"https://gohugo.io/functions/base64#base64-with-apis" | markdownify }}
 
-{{ $resp := getJSON "https://api.github.com/repos/it-gro/HugoTemplatingPlayground/readme"  }}
-{{ $resp.content | base64Decode | markdownify }}
+{{- if .Site.Params.enablegetJSON }}
+  {{ $resp := getJSON "https://api.github.com/repos/it-gro/HugoTemplatingPlayground/readme"  }}
+  {{ $resp.content | base64Decode | markdownify }}
+{{- end }}
 
 {{/* __HIDE__ */}} {{- end }}

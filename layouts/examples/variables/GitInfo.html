@@ -3,13 +3,14 @@
 {{"https://gohugo.io/variables/git/" | markdownify }}
 
 {{`config.toml: enableGitInfo = true`}}
-{{ printf `%+v
-T:%T
-#v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
 
 .Site.Params.enableGitInfoProject: {{.Site.Params.enableGitInfoProject}}
 
 {{if .Site.Params.enableGitInfoProject }}
+{{ printf `%+v
+T:%T
+#v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
+
 {{`git info regarding this file `}}
 $.GitInfo.Subject:    {{ $.GitInfo.Subject }}
 $.GitInfo.AuthorDate: {{ $.GitInfo.AuthorDate }}

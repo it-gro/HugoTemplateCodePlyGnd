@@ -20,15 +20,15 @@
 {{`same as`}}
 33){{ index .Site.Taxonomies "tags" }}
 34){{ index .Site.Taxonomies "categories" }}
-{{- $myTaxonomy := "categories" }}
-35){{ index .Site.Taxonomies $myTaxonomy }}
+{{- $myTaxonomyName := "categories" }}
+35){{ index .Site.Taxonomies $myTaxonomyName }}
 
 
 {{`List Terms by Taxonomy with Pages `}}
 40)
-{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-{{ printf "%+v " $taxonomyname }}
-  {{- range $term, $value := $taxonomy }}
+{{- range $myTaxonomyName, $myTaxonomyPagesMap := .Site.Taxonomies }}
+{{ printf "%+v " $myTaxonomyName }}
+  {{- range $term, $value := $myTaxonomyPagesMap }}
     {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
     {{- range $value.Pages }}
       {{ printf "%+v" .RelPermalink }} {{/* . is a page */}}
@@ -38,8 +38,8 @@
 
 {{`List Taxonomies`}}
 50)
-{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-  {{ printf "%+v " $taxonomyname }}
+{{- range $myTaxonomyName, $myTaxonomyPagesMap := .Site.Taxonomies }}
+  {{ printf "%+v " $myTaxonomyName }}
 {{- end}}
 
 {{`List Term foo in Taxonomy tags with Pages `}}
@@ -56,14 +56,25 @@
 
 {{`List Terms in a Taxonomy (e.g. categories) with Pages `}}
 70)
-{{- $myTaxonomy := "categories" }}
-{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+{{- $myTaxonomyName := "categories" }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomyName) }}
   {{ printf "%+v #Pages:%+v" $term (len $value.Pages) }}
     {{- range $value.Pages }}
       {{ printf "%-40v | %-20v" .RelPermalink .Name }} {{/* . is a page */}}
   {{- end}}
 {{- end}}
 
+
+{{`List just the Terms (no link) of a Pages `}}
+80)
+{{ range $myTaxonomyName, $term := .Site.Taxonomies }}
+  {{- if (index $.Params $myTaxonomyName)}}
+    {{ $myTaxonomyName }}
+    {{- range (index $.Params $myTaxonomyName) }}
+      {{ . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
 
 <hr>
 {{`just curious ...`}}
