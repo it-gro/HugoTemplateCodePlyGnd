@@ -25,6 +25,7 @@ LanguageCode    = "demo site vars (lang code)"
   #debug      = true
 
   enableGitInfoProject = true
+  enablegetJSON        = true
 
   #w3cssColorTheme = "css/w3-theme-custom.css"
   #w3cssColorTheme = "vendor/w3css/4/w3-theme-amber.css"

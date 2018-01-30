@@ -10,4 +10,5 @@ baseURL = "/"
 #[languages.no]
 #baseURL = "https://example.com/hugo/no"
 [params]
-enableGitInfoProject = true
+enableGitInfoProject = false
+enablegetJSON        = false

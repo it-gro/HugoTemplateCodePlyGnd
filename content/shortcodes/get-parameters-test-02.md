@@ -28,6 +28,9 @@ https://discourse.gohugo.io/t/shortcodes-best-practice-for-named-parameters-quot
 *  {{</* get-parameters-test-02 arg1="1" arg2="foo" arg3="3" */>}}   
   => {{< get-parameters-test-02 arg1="1" arg2="foo" arg3="3" >}}
 
-#### Danger:
+#### Not cool:
 A) {{</* get-parameters-test-02 arg1=42 arg2="foo" */>}}   
   => {{< get-parameters-test-02 arg1=42 arg2="foo" >}}
+
+So **always** quote using **`"`**   
+you have been warned ...

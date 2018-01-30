@@ -16,7 +16,11 @@ https://gohugo.io/templates/shortcode-templates/
 {{< get-parameters-generic-01 
 arg1="42" 
 arg5="bar" 
->}}                             
+>}}                           
 
-?) {{< get-parameters-generic-01 arg1=42 arg5="foo" >}}                             
 
+### not cool:
+{{< get-parameters-generic-01 arg1=42 arg5="foo" >}}                             
+see [get-parameters-test-02](../get-parameters-test-02)
+
+So **always** quote using **`"`**
