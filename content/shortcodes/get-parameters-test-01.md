@@ -1,11 +1,12 @@
 ---
 weight: 100
-description: "Parameter passing (datatypes)"
+description: "Parameter passing by position"
 ---
 
 https://gohugo.io/templates/shortcode-templates/   
 https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
 
+Datatype is always **string**
 
 *  {{</* get-parameters-test-01 "foo" */>}}    
   => {{< get-parameters-test-01 "foo" >}}
