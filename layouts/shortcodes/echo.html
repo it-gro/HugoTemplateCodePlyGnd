@@ -1,0 +1,7 @@
+{{ range (seq 0 (sub (len .Params) 1) ) }}
+  {{ $.Get .  }}
+{{ end }}
+{{ $.Inner }}
+{{ range (seq (sub (len .Params) 1) -1 0)  }}
+  {{ $.Get . }}
+{{ end }}

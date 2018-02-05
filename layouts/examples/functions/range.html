@@ -2,4 +2,26 @@
 {{/* range */}}
 {{"https://gohugo.io/functions/range" | markdownify }}
 
+{{ $fields := (dict "Title" "p_title" "Type" "p_type" "Status" "p_status") }}
+{{ range $index, $value := $fields}}
+    {{ $index}}:{{$value}}
+{{ end }}
+
+{{ printf "%+v (T:%T #v:%#v)" $fields $fields $fields }}
+
+{{ printf "#v:%#v" $fields }}
+
+
+{{ $myArray := slice "Title" "p_title" "Type" "p_type" "Status" "p_status" }}
+{{ if modBool (len $myArray) 2 }}
+  {{ range (seq 0 2 (sub (len $myArray) 1)  )  }}
+    {{ . }}:{{ index $myArray  . }}:{{ index $myArray (add . 1) }}
+  {{ end }}
+{{ else }}
+must be even
+{{ end }}
+
+
+
+
 {{/* __HIDE__ */}} {{- end }}
