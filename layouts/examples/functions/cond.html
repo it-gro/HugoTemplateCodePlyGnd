@@ -2,4 +2,21 @@
 {{/* cond */}}
 {{"https://gohugo.io/functions/cond" | markdownify }}
 
+{{ cond true  12 42 }}
+{{ cond false 12 42 }}
+
+{{ cond (eq 7 7) 12 42 }}
+{{ cond (ne 7 7) 12 42 }}
+
+{{ $foo := cond (isset $.Site.Params "foo" ) ($.Site.Params.foo) "default" }}
+foo:{{$foo}}
+
+{{/* shorter */}}
+{{ $foo := $.Site.Params.foo | default "default" }}
+foo:{{$foo}}
+
+{{ $env := cond (in .Params.env "PROD" ) "PROD"  "DEV" }}
+env:{{$env}}
+
+
 {{/* __HIDE__ */}} {{- end }}
