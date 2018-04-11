@@ -53,12 +53,62 @@
               <pre>{{/* range */}}
 {{&#34;https://gohugo.io/functions/range&#34; | markdownify }}
 
+{{ $fields := (dict &#34;Title&#34; &#34;p_title&#34; &#34;Type&#34; &#34;p_type&#34; &#34;Status&#34; &#34;p_status&#34;) }}
+{{ range $index, $value := $fields}}
+    {{ $index}}:{{$value}}
+{{ end }}
+
+{{ printf &#34;%&#43;v (T:%T #v:%#v)&#34; $fields $fields $fields }}
+
+{{ printf &#34;#v:%#v&#34; $fields }}
+
+
+{{ $myArray := slice &#34;Title&#34; &#34;p_title&#34; &#34;Type&#34; &#34;p_type&#34; &#34;Status&#34; &#34;p_status&#34; }}
+{{ if modBool (len $myArray) 2 }}
+  {{ range (seq 0 2 (sub (len $myArray) 1)  )  }}
+    {{ . }}:{{ index $myArray  . }}:{{ index $myArray (add . 1) }}
+  {{ end }}
+{{ else }}
+must be even
+{{ end }}
+
+
+
+
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 
 <a href="https://gohugo.io/functions/range">https://gohugo.io/functions/range</a>
+
+
+
+    Status:p_status
+
+    Title:p_title
+
+    Type:p_type
+
+
+map[Title:p_title Type:p_type Status:p_status] (T:map[string]interface {} #v:map[string]interface {}{&#34;Type&#34;:&#34;p_type&#34;, &#34;Status&#34;:&#34;p_status&#34;, &#34;Title&#34;:&#34;p_title&#34;})
+
+#v:map[string]interface {}{&#34;Title&#34;:&#34;p_title&#34;, &#34;Type&#34;:&#34;p_type&#34;, &#34;Status&#34;:&#34;p_status&#34;}
+
+
+
+
+  
+    0:Title:p_title
+  
+    2:Type:p_type
+  
+    4:Status:p_status
+  
+
+
+
+
 
 </pre>
             </div>

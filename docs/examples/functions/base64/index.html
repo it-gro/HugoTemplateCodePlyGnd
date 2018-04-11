@@ -61,8 +61,10 @@
 
 {{&#34;https://gohugo.io/functions/base64#base64-with-apis&#34; | markdownify }}
 
-{{ $resp := getJSON &#34;https://api.github.com/repos/it-gro/HugoTemplatingPlayground/readme&#34;  }}
-{{ $resp.content | base64Decode | markdownify }}
+{{- if .Site.Params.enablegetJSON }}
+  {{ $resp := getJSON &#34;https://api.github.com/repos/it-gro/HugoTemplatingPlayground/readme&#34;  }}
+  {{ $resp.content | base64Decode | markdownify }}
+{{- end }}
 
 </pre>
             </div>
@@ -78,49 +80,34 @@ Hello world
 42 (T:string #v:&#34;42&#34;)
 
 <a href="https://gohugo.io/functions/base64#base64-with-apis">https://gohugo.io/functions/base64#base64-with-apis</a>
+  
+  <h1 id="hugo-templates-code-playground">Hugo Templates Code Playground</h1>
 
+<p>This is a Playground for Hugo Templates Coding <a href="https://gohugo.io/">Hugo</a>.</p>
 
-<h1 id="hugo-templating-playground">Hugo Templating Playground</h1>
-
-<p>This is a Playground for Hugo Templates <a href="https://gohugo.io/">Hugo</a>.</p>
-
-<p>GitHub Page: <a href="https://it-gro.github.io/HugoTemplatingPlayground/">https://it-gro.github.io/HugoTemplatingPlayground/</a></p>
+<p>GitHub Page: <a href="https://it-gro.github.io/HugoTemplateCodePlyGnd">https://it-gro.github.io/HugoTemplateCodePlyGnd</a></p>
 
 <h3 id="playground-is-for">Playground is for</h3>
 
 <ul>
-<li>Syntax
-
-<ul>
-<li>Literals</li>
-<li>Comments</li>
-<li>Text and Spaces</li>
-<li>Datatypes</li>
-<li>Variables</li>
-<li>Arguments</li>
-<li>Conditions</li>
-<li>Range</li>
-<li>With</li>
-</ul></li>
+<li>Syntax: <em>Literals, Comments, Text and Spaces, Datatypes, Variables,
+Arguments, Conditions, Range, With</em></li>
 <li>Functions</li>
 <li>Variables</li>
+<li>Shortcodes</li>
 </ul>
 
 <h3 id="but-not-for">but not for</h3>
 
 <ul>
 <li>any html, css, js stuff</li>
-<li>hugo template lookup order - but a trick is shown how to trace. Remove the comment in <a href="config.toml">config.toml</a>:</li>
+<li>hugo template lookup order</li>
 </ul>
-
-<pre><code class="language-toml">[params]
-  #traceFlags = &quot;layout-name:baseof&quot;
-</code></pre>
 
 <h3 id="how-to-start">How to start:</h3>
 
-<pre><code class="language-bash">git clone git@github.com:it-gro/HugoTemplatingPlayground.git
-cd HugoTemplatingPlayground
+<pre><code class="language-bash">git clone https://github.com/it-gro/HugoTemplateCodePlyGnd.git
+cd HugoTemplateCodePlyGnd
 hugo -v -w server --disableFastRender --navigateToChanged --config config.toml,config.local.toml
 </code></pre>
 

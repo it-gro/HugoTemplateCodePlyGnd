@@ -132,12 +132,23 @@
     
     <item>
       <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/button/</guid>
+      <description>Test foo Read more Read more Read more bar foo Read more Read more Read more bar
+1 2 3 hello world 3 2 1  10 11 12 12 11 10 20 21 22 hello world 22 21 20 foo bar 30 31 32 32 31 30 {{&amp;lt; echo 10 11 12 /&amp;gt;}} {{% echo 20 21 22 %}}hello world{{% /echo %}} foo bar {{&amp;lt; echo 30 31 32 /&amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-01/</guid>
       <description>https://gohugo.io/templates/shortcode-templates/
 https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
+Datatype is always string
  {{&amp;lt; get-parameters-test-01 &amp;ldquo;foo&amp;rdquo; &amp;gt;}}
 =&amp;gt; []string{&amp;#34;foo&amp;#34;}  {{&amp;lt; get-parameters-test-01 &amp;ldquo;foo\nbar&amp;rdquo; &amp;gt;}}
 =&amp;gt; []string{&amp;#34;foo\\nbar&amp;#34;} &amp;ldquo;\&amp;rdquo; gets quoted with &amp;ldquo;\&amp;rdquo; {{&amp;lt; get-parameters-test-01 false &amp;gt;}}
@@ -145,8 +156,31 @@ https://discourse.gohugo.io/t/shortcode-doesnt-accept-number/1535/3
 =&amp;gt; []string{&amp;#34;1&amp;#34;}  {{&amp;lt; get-parameters-test-01 &amp;ldquo;0.5&amp;rdquo; &amp;gt;}}
 =&amp;gt; []string{&amp;#34;0.5&amp;#34;}  {{&amp;lt; get-parameters-test-01 &amp;ldquo;&amp;rdquo; &amp;gt;}}
 =&amp;gt; []string{&amp;#34;&amp;#34;}  {{&amp;lt; get-parameters-test-01 1e3 &amp;gt;}}
-=&amp;gt; []string{&amp;#34;1e3&amp;#34;} not 1000   A) {{&amp;lt; get-parameters-test-01 &amp;lsquo;foo&amp;rsquo; &amp;gt;}}
-=&amp;gt;</description>
+=&amp;gt; []string{&amp;#34;1e3&amp;#34;} not 1000   A) {{&amp;lt; get-parameters-test-01 &amp;lsquo;foo&amp;rsquo; &amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode-inner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode-inner/</guid>
+      <description>Works foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo 42 bar
+more 42 here end
+Bug foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo */ bar
+more */ here end</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode/</guid>
+      <description>Works foo {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo 42 bar
+more 42 here 24 end
+Bug foo {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo */ bar
+more */ here 24 end</description>
     </item>
     
     <item>
@@ -263,7 +297,8 @@ Positional parameters  {{&amp;lt; get-parameters-test-02 1 2 3 &amp;gt;}}
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-generic-01/</guid>
       <description>https://gohugo.io/templates/shortcode-templates/
 1) (1:) (2:default2) (3:default3) (4:default4) (5:) 2) (1:1) (2:2) (3:3) (4:4) (5:5) 3) (1:1) (2:2) (3:3) (4:default4) (5:) 4) (1:1) (2:default2) (3:default3) (4:default4) (5:foo) 5) (1:1) (2:2) (3:3) (4:4) (5:5) 6) (1:42) (2:default2) (3:default3) (4:default4) (5:) {{/* arg4 =&amp;gt; default value, not emtpy */}}
-7) (1:42) (2:default2) (3:default3) (4:default4) (5:bar) ?) (1:foo) (2:default2) (3:default3) (4:default4) (5:) </description>
+7) (1:42) (2:default2) (3:default3) (4:default4) (5:bar) not cool:  (1:foo) (2:default2) (3:default3) (4:default4) (5:) see get-parameters-test-02
+So always quote using &amp;quot;</description>
     </item>
     
     <item>
@@ -291,6 +326,24 @@ Positional parameters  {{&amp;lt; get-parameters-test-02 1 2 3 &amp;gt;}}
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/complex/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/todo-inner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/todo-inner/</guid>
+      <description>ToDo</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/todo-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/todo-variables/</guid>
+      <description>ToDo</description>
     </item>
     
     <item>
