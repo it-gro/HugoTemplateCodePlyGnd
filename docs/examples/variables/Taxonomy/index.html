@@ -73,15 +73,15 @@ tags:
 {{`same as`}}
 33){{ index .Site.Taxonomies &#34;tags&#34; }}
 34){{ index .Site.Taxonomies &#34;categories&#34; }}
-{{- $myTaxonomy := &#34;categories&#34; }}
-35){{ index .Site.Taxonomies $myTaxonomy }}
+{{- $myTaxonomyName := &#34;categories&#34; }}
+35){{ index .Site.Taxonomies $myTaxonomyName }}
 
 
 {{`List Terms by Taxonomy with Pages `}}
 40)
-{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-{{ printf &#34;%&#43;v &#34; $taxonomyname }}
-  {{- range $term, $value := $taxonomy }}
+{{- range $myTaxonomyName, $myTaxonomyPagesMap := .Site.Taxonomies }}
+{{ printf &#34;%&#43;v &#34; $myTaxonomyName }}
+  {{- range $term, $value := $myTaxonomyPagesMap }}
     {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
     {{- range $value.Pages }}
       {{ printf &#34;%&#43;v&#34; .RelPermalink }} {{/* . is a page */}}
@@ -91,8 +91,8 @@ tags:
 
 {{`List Taxonomies`}}
 50)
-{{- range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-  {{ printf &#34;%&#43;v &#34; $taxonomyname }}
+{{- range $myTaxonomyName, $myTaxonomyPagesMap := .Site.Taxonomies }}
+  {{ printf &#34;%&#43;v &#34; $myTaxonomyName }}
 {{- end}}
 
 {{`List Term foo in Taxonomy tags with Pages `}}
@@ -109,14 +109,25 @@ tags:
 
 {{`List Terms in a Taxonomy (e.g. categories) with Pages `}}
 70)
-{{- $myTaxonomy := &#34;categories&#34; }}
-{{- range $term, $value := (index .Site.Taxonomies $myTaxonomy) }}
+{{- $myTaxonomyName := &#34;categories&#34; }}
+{{- range $term, $value := (index .Site.Taxonomies $myTaxonomyName) }}
   {{ printf &#34;%&#43;v #Pages:%&#43;v&#34; $term (len $value.Pages) }}
     {{- range $value.Pages }}
       {{ printf &#34;%-40v | %-20v&#34; .RelPermalink .Name }} {{/* . is a page */}}
   {{- end}}
 {{- end}}
 
+
+{{`List just the Terms (no link) of a Pages `}}
+80)
+{{ range $myTaxonomyName, $term := .Site.Taxonomies }}
+  {{- if (index $.Params $myTaxonomyName)}}
+    {{ $myTaxonomyName }}
+    {{- range (index $.Params $myTaxonomyName) }}
+      {{ . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
 
 &lt;hr&gt;
 {{`just curious ...`}}
@@ -140,7 +151,7 @@ TaxonomyList(3)
   categories (T:string) =&gt; map[hello-word:[WeightedPage(0,&#34;foobar&#34;) WeightedPage(0,&#34;list_all_01&#34;) WeightedPage(0,&#34;mySite&#34;)]] (T:hugolib.Taxonomy) 
     * hello-word (T:string) =&gt; [WeightedPage(0,&#34;foobar&#34;) WeightedPage(0,&#34;list_all_01&#34;) WeightedPage(0,&#34;mySite&#34;)] (T:hugolib.WeightedPages) 
   countries (T:string) =&gt; map[] (T:hugolib.Taxonomy) 
-  tags (T:string) =&gt; map[bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)] foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)]] (T:hugolib.Taxonomy) 
+  tags (T:string) =&gt; map[foo:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)] bar:[WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)]] (T:hugolib.Taxonomy) 
     * bar (T:string) =&gt; [WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;mySite&#34;)] (T:hugolib.WeightedPages) 
     * foo (T:string) =&gt; [WeightedPage(0,&#34;Title&#34;) WeightedPage(0,&#34;&#34;) WeightedPage(0,&#34;mySite&#34;)] (T:hugolib.WeightedPages) 
 
@@ -196,11 +207,17 @@ List Terms in a Taxonomy (e.g. categories) with Pages
       /HugoTemplateCodePlyGnd/examples/variables/Site/ | mySite               
 
 
+List just the Terms (no link) of a Pages 
+80)
+
+    tags
+      foo
+
 <hr>
 just curious ...
 TaxonomyList(3)
 T:hugolib.TaxonomyList
-#v:hugolib.TaxonomyList{&#34;tags&#34;:hugolib.Taxonomy{&#34;foo&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428fa0000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428ee1900)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428ebf400)}}, &#34;bar&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428fa0000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428ebf400)}}}, &#34;categories&#34;:hugolib.Taxonomy{&#34;hello-word&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428ec5900)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428fb8500)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc428ebf400)}}}, &#34;countries&#34;:hugolib.Taxonomy{}}
+#v:hugolib.TaxonomyList{&#34;countries&#34;:hugolib.Taxonomy{}, &#34;tags&#34;:hugolib.Taxonomy{&#34;foo&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429e48000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429d8d400)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429df4a00)}}, &#34;bar&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429e48000)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429df4a00)}}}, &#34;categories&#34;:hugolib.Taxonomy{&#34;hello-word&#34;:hugolib.WeightedPages{hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429e84500)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429df5400)}, hugolib.WeightedPage{Weight:0, Page:(*hugolib.Page)(0xc429df4a00)}}}}
 
 </pre>
             </div>

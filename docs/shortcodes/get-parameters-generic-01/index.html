@@ -55,14 +55,20 @@ https://gohugo.io/templates/shortcode-templates/
 {{&lt; get-parameters-generic-01 
 arg1=&#34;42&#34; 
 arg5=&#34;bar&#34; 
-&gt;}}                             
+&gt;}}                           
 
-?) {{&lt; get-parameters-generic-01 arg1=42 arg5=&#34;foo&#34; &gt;}}                             
 
+### not cool:
+{{&lt; get-parameters-generic-01 arg1=42 arg5=&#34;foo&#34; &gt;}}                             
+see [get-parameters-test-02](../get-parameters-test-02)
+
+So **always** quote using **`&#34;`**
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
-              <p><a href="https://gohugo.io/templates/shortcode-templates/">https://gohugo.io/templates/shortcode-templates/</a></p>
+              
+
+<p><a href="https://gohugo.io/templates/shortcode-templates/">https://gohugo.io/templates/shortcode-templates/</a></p>
 
 <p>1)      
 (1:)
@@ -116,13 +122,18 @@ arg5=&#34;bar&#34;
 (5:bar)
 </p>
 
-<p>?) 
+<h3 id="not-cool">not cool:</h3>
+
+<p>
 (1:foo)
 (2:default2)
 (3:default3)
 (4:default4)
 (5:)
-</p>
+<br />
+see <a href="../get-parameters-test-02">get-parameters-test-02</a></p>
+
+<p>So <strong>always</strong> quote using <strong><code>&quot;</code></strong></p>
 
             </div>
           </div>

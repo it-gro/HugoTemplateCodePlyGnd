@@ -54,13 +54,14 @@
 {{&#34;https://gohugo.io/variables/git/&#34; | markdownify }}
 
 {{`config.toml: enableGitInfo = true`}}
-{{ printf `%&#43;v
-T:%T
-#v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
 
 .Site.Params.enableGitInfoProject: {{.Site.Params.enableGitInfoProject}}
 
 {{if .Site.Params.enableGitInfoProject }}
+{{ printf `%&#43;v
+T:%T
+#v:%#v` $.GitInfo $.GitInfo $.GitInfo }}
+
 {{`git info regarding this file `}}
 $.GitInfo.Subject:    {{ $.GitInfo.Subject }}
 $.GitInfo.AuthorDate: {{ $.GitInfo.AuthorDate }}
@@ -78,12 +79,13 @@ $.GitInfo.AuthorDate: {{ $.GitInfo.AuthorDate }}
 <a href="https://gohugo.io/variables/git/">https://gohugo.io/variables/git/</a>
 
 config.toml: enableGitInfo = true
-&amp;{Hash:af5cc9b838535c9e80670dcb54dd0686f5738cd8 AbbreviatedHash:af5cc9b Subject:add more variables AuthorName:Bruno Grossniklaus AuthorEmail:grossnik@tuvok AuthorDate:2018-01-27 15:59:32 &#43;0100 CET}
-T:*gitmap.GitInfo
-#v:&amp;gitmap.GitInfo{Hash:&#34;af5cc9b838535c9e80670dcb54dd0686f5738cd8&#34;, AbbreviatedHash:&#34;af5cc9b&#34;, Subject:&#34;add more variables&#34;, AuthorName:&#34;Bruno Grossniklaus&#34;, AuthorEmail:&#34;grossnik@tuvok&#34;, AuthorDate:time.Time{wall:0x0, ext:63652661972, loc:(*time.Location)(0x1fa2ca0)}}
 
 .Site.Params.enableGitInfoProject: true
 
+
+&amp;{Hash:af5cc9b838535c9e80670dcb54dd0686f5738cd8 AbbreviatedHash:af5cc9b Subject:add more variables AuthorName:Bruno Grossniklaus AuthorEmail:grossnik@tuvok AuthorDate:2018-01-27 15:59:32 &#43;0100 CET}
+T:*gitmap.GitInfo
+#v:&amp;gitmap.GitInfo{Hash:&#34;af5cc9b838535c9e80670dcb54dd0686f5738cd8&#34;, AbbreviatedHash:&#34;af5cc9b&#34;, Subject:&#34;add more variables&#34;, AuthorName:&#34;Bruno Grossniklaus&#34;, AuthorEmail:&#34;grossnik@tuvok&#34;, AuthorDate:time.Time{wall:0x0, ext:63652661972, loc:(*time.Location)(0x14d55a0)}}
 
 git info regarding this file 
 $.GitInfo.Subject:    add more variables
