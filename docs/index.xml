@@ -167,7 +167,7 @@ Datatype is always string
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode-inner/</guid>
       <description>Works foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo 42 bar
 more 42 here end
-Bug foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;*/&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;*/&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo */ bar
+Bug (fixed in 0.39) foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo */ bar
 more */ here end</description>
     </item>
     
@@ -179,7 +179,7 @@ more */ here end</description>
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode/</guid>
       <description>Works foo {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo 42 bar
 more 42 here 24 end
-Bug foo {{&amp;lt; issue-document-shortcode &amp;quot;*/&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;*/&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo */ bar
+Bug (fixed in 0.39) foo {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo */ bar
 more */ here 24 end</description>
     </item>
     
@@ -407,9 +407,10 @@ So always quote using &amp;quot;</description>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/readme/</guid>
       <description>Demo or it didn&amp;rsquo;t happen&amp;hellip;
+currently the _create.sh files are broken
 This Playground is for Hugo Templates Coding:
  Syntax: Literals, Comments, Text and Spaces, Datatypes, Variables, Arguments, Conditions, Range, With Functions Variables Shortcodes  But not  hugo template lookup order any html, css, js stuff  How it works ToDo &amp;hellip;
-content/examples/basics/ ├── actions │ ├── comments.md │ ├── conditions.md │ ├── _index.md │ ├── pipelines.md │ ├── range.md │ ├── template.md │ ├── text_and_spaces.</description>
+hugo -v -w server --disableFastRender --navigateToChanged --config config.toml,config.local.toml  content/examples/basics/ ├── actions │ ├── comments.md │ ├── conditions.</description>
     </item>
     
     <item>

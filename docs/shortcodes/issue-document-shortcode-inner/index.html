@@ -58,14 +58,14 @@ foo {{&lt; issue-document-shortcode-inner &#34;42&#34; /&gt;}} bar
 more {{&lt; issue-document-shortcode-inner &#34;42&#34; &gt;}} here {{&lt; /issue-document-shortcode-inner &gt;}} end
 
 
-## Bug
+## Bug (fixed in 0.39)
 
 ```
-foo {{&lt;/* issue-document-shortcode-inner &#34;*/&#34; /*/&gt;}} bar
+foo {{&lt;/* issue-document-shortcode-inner &#34;*!/&#34; /*/&gt;}} bar
 ```
 
 ```
-more {{&lt;/* issue-document-shortcode-inner &#34;*/&#34; &gt;}} here {{&lt; /issue-document-shortcode-inner */&gt;}} end
+more {{&lt;/* issue-document-shortcode-inner &#34;*!/&#34; &gt;}} here {{&lt; /issue-document-shortcode-inner */&gt;}} end
 ```
 
 foo {{&lt; issue-document-shortcode-inner &#34;*/&#34; /&gt;}} bar
@@ -90,12 +90,12 @@ more {{&lt; issue-document-shortcode-inner &#34;*/&#34; &gt;}} here {{&lt; /issu
 <p>more 42 here 
  end</p>
 
-<h2 id="bug">Bug</h2>
+<h2 id="bug-fixed-in-0-39">Bug (fixed in 0.39)</h2>
 
-<pre><code>foo {{&lt; issue-document-shortcode-inner &quot;*/&quot; /&gt;}} bar
+<pre><code>foo {{&lt; issue-document-shortcode-inner &quot;*!/&quot; /&gt;}} bar
 </code></pre>
 
-<pre><code>more {{&lt; issue-document-shortcode-inner &quot;*/&quot; &gt;}} here {{&lt; /issue-document-shortcode-inner &gt;}} end
+<pre><code>more {{&lt; issue-document-shortcode-inner &quot;*!/&quot; &gt;}} here {{&lt; /issue-document-shortcode-inner &gt;}} end
 </code></pre>
 
 <p>foo */
