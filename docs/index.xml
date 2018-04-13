@@ -167,7 +167,7 @@ Datatype is always string
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode-inner/</guid>
       <description>Works foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo 42 bar
 more 42 here end
-Bug foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo */ bar
+Bug foo {{&amp;lt; issue-document-shortcode-inner &amp;quot;*/&amp;quot; /&amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode-inner &amp;quot;*/&amp;quot; &amp;gt;}} here {{&amp;lt; /issue-document-shortcode-inner &amp;gt;}} end  foo */ bar
 more */ here end</description>
     </item>
     
@@ -179,7 +179,7 @@ more */ here end</description>
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode/</guid>
       <description>Works foo {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;42&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo 42 bar
 more 42 here 24 end
-Bug foo {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;*!/&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo */ bar
+Bug foo {{&amp;lt; issue-document-shortcode &amp;quot;*/&amp;quot; &amp;gt;}} bar  more {{&amp;lt; issue-document-shortcode &amp;quot;*/&amp;quot; &amp;gt;}} here {{&amp;lt; issue-document-shortcode &amp;quot;24&amp;quot; &amp;gt;}} end  foo */ bar
 more */ here 24 end</description>
     </item>
     

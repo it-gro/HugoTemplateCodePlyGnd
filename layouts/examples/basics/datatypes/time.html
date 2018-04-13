@@ -21,6 +21,11 @@
 {{ $myTime2.Sub $myTime1 }}
 
 
+{{ $myTime1 := printf "2000-01-01T%s" "08:00:00" | time }}
+{{ $myTime2 := printf "2000-01-01T%s" "12:00:00" | time }}
+{{ $myTime2.Sub $myTime1 }}
+
+
 {{ `https://golang.org/pkg/time/` | markdownify }}
 {{`any use in hugo templating ?`}}
 1) {{ time.Now }}
