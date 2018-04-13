@@ -5,6 +5,8 @@ date:  2018-01-28T22:18:10+01:00
 
 *Demo or it didn't happen...*
 
+**currently the `_create.sh` files are broken**
+
 ### This Playground is for
 
 Hugo [Templates](https://gohugo.io/templates/) Coding:
@@ -23,6 +25,11 @@ Hugo [Templates](https://gohugo.io/templates/) Coding:
 ### How it works
 
 ToDo ...
+
+```bash
+hugo -v -w server --disableFastRender --navigateToChanged --config config.toml,config.local.toml
+```
+
 
 ```
 content/examples/basics/
@@ -92,6 +99,13 @@ layouts/examples/basics/
 
 
 ### Other Playgrounds
+
+**Hugo**
+
+  * https://github.com/bep/hugotest
+  * https://hugo-sandbox.netlify.com/
+  * https://hugo-bare-min.netlify.com/
+
 
 **HTML, CSS, JS**
 
