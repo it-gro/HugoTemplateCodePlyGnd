@@ -23,12 +23,27 @@ weight          : {{ .Weight        }}
 outputs
 isCJKLanguage
 
+{{`terms (taxonomy) via .Params`}}
+.Params.tags    : {{ .Params.tags }}
+
 {{`User-Defined, not case sensitive, Anything => .Params.anything`}}
 .Params.FooBar  : {{ .Params.FooBar }}
 .Params.foobar  : {{ .Params.foobar }}
 .Params.FOOBAR  : {{ .Params.FOOBAR }}
 
-{{`terms (taxonomy) via .Params`}}
-.Params.tags    : {{ .Params.tags }}
+.Param `FooBar`  : {{ .Param `FooBar` }}
+.Param `foobar`  : {{ .Param `foobar` }}
+.Param `FOOBAR`  : {{ .Param `FOOBAR` }}
 
+$.Page.Params.FooBar  : {{ $.Page.Params.FooBar }}
+$.Page.Params.foobar  : {{ $.Page.Params.foobar }}
+$.Page.Params.FOOBAR  : {{ $.Page.Params.FOOBAR }}
+
+{{`has to be lowercase`}}
+index .Params `FooBar`  : {{ index .Params `FooBar` }}
+index .Params `foobar`  : {{ index .Params `foobar` }}
+index .Params `FOOBAR`  : {{ index .Params `FOOBAR` }}
+
+{{`it is stored in lowercase:`}}
+{{printf "%v\n" .Params }}
 {{/* __HIDE__ */}} {{- end }}
