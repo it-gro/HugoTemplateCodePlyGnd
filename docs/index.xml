@@ -1331,5 +1331,14 @@ hugo -v -w server --disableFastRender --navigateToChanged --config config.toml,c
       <description></description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
