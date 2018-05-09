@@ -173,6 +173,11 @@
   </url>
   
   <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
+    <lastmod>2018-05-09T23:38:17+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-test-02/</loc>
     <lastmod>2018-01-30T20:15:37+01:00</lastmod>
   </url>
@@ -785,11 +790,6 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/with/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
-    <lastmod>2018-05-09T23:38:17+02:00</lastmod>
   </url>
   
   <url>
