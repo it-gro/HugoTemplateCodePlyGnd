@@ -1,0 +1,16 @@
+{{/* __HIDE__ */}} {{- define "render" }}
+{{/* Page Front Matter */}}
+{{"https://golang.org/pkg/time/#Time" | markdownify }}
+{{"https://github.com/toml-lang/toml#local-time" | markdownify }}
+
+.Params.Time1  : {{ .Params.Time1 }}
+.Params.Time2  : {{ .Params.Time2 }}
+.Params.Time3  : {{ .Params.Time3 }}
+
+{{ printf "`%s` is `%T`" .Params.Time1 .Params.Time1 }}
+{{ printf "`%s` is `%T`" .Params.Time3 .Params.Time3 }}
+
+{{ .Params.Time2 }}
+{{ .Params.Time1 }}
+
+{{/* __HIDE__ */}} {{- end }}
