@@ -7,10 +7,20 @@
 .Params.Time2  : {{ .Params.Time2 }}
 .Params.Time3  : {{ .Params.Time3 }}
 
+{{ printf "`%s` is `%T`" .Page.Lastmod .Page.Lastmod }}
 {{ printf "`%s` is `%T`" .Params.Time1 .Params.Time1 }}
 {{ printf "`%s` is `%T`" .Params.Time3 .Params.Time3 }}
+{{ printf "`%s` is `%T`" .Params.somextraparam .Params.somextraparam }}
+
+{{ $myTime := time (printf "0001-01-01T%s" .Params.Time3) }}
+{{ printf "`%s` is `%T`" $myTime $myTime }}
 
 {{ .Params.Time2 }}
 {{ .Params.Time1 }}
+{{ .Params.somextraparam }}
+
+{{ (.Params.somextraparam2).Sub .Params.somextraparam }}
+
+{{ printf "`%s` is `%T`" ((.Params.somextraparam2).Sub .Params.somextraparam) ((.Params.somextraparam2).Sub .Params.somextraparam) }}
 
 {{/* __HIDE__ */}} {{- end }}
