@@ -139,12 +139,12 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode-inner/</loc>
-    <lastmod>2018-04-13T17:02:29+02:00</lastmod>
+    <lastmod>2018-04-13T19:26:13+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/issue-document-shortcode/</loc>
-    <lastmod>2018-04-13T17:02:29+02:00</lastmod>
+    <lastmod>2018-04-13T19:26:13+02:00</lastmod>
   </url>
   
   <url>
@@ -274,7 +274,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/readme/</loc>
-    <lastmod>2018-01-29T19:51:01+01:00</lastmod>
+    <lastmod>2018-04-13T19:26:13+02:00</lastmod>
   </url>
   
   <url>
@@ -785,6 +785,11 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/functions/with/</loc>
     <lastmod>2018-01-23T00:33:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
+    <lastmod>2018-05-09T23:35:58+02:00</lastmod>
   </url>
   
   <url>

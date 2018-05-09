@@ -94,14 +94,29 @@ weight          : {{ .Weight        }}
 outputs
 isCJKLanguage
 
+{{`terms (taxonomy) via .Params`}}
+.Params.tags    : {{ .Params.tags }}
+
 {{`User-Defined, not case sensitive, Anything =&gt; .Params.anything`}}
 .Params.FooBar  : {{ .Params.FooBar }}
 .Params.foobar  : {{ .Params.foobar }}
 .Params.FOOBAR  : {{ .Params.FOOBAR }}
 
-{{`terms (taxonomy) via .Params`}}
-.Params.tags    : {{ .Params.tags }}
+.Param `FooBar`  : {{ .Param `FooBar` }}
+.Param `foobar`  : {{ .Param `foobar` }}
+.Param `FOOBAR`  : {{ .Param `FOOBAR` }}
 
+$.Page.Params.FooBar  : {{ $.Page.Params.FooBar }}
+$.Page.Params.foobar  : {{ $.Page.Params.foobar }}
+$.Page.Params.FOOBAR  : {{ $.Page.Params.FOOBAR }}
+
+{{`has to be lowercase`}}
+index .Params `FooBar`  : {{ index .Params `FooBar` }}
+index .Params `foobar`  : {{ index .Params `foobar` }}
+index .Params `FOOBAR`  : {{ index .Params `FOOBAR` }}
+
+{{`it is stored in lowercase:`}}
+{{printf &#34;%v\n&#34; .Params }}
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
@@ -130,13 +145,29 @@ not exported:
 outputs
 isCJKLanguage
 
+terms (taxonomy) via .Params
+.Params.tags    : [foo bar]
+
 User-Defined, not case sensitive, Anything =&gt; .Params.anything
 .Params.FooBar  : hello world
 .Params.foobar  : hello world
 .Params.FOOBAR  : hello world
 
-terms (taxonomy) via .Params
-.Params.tags    : [foo bar]
+.Param `FooBar`  : hello world
+.Param `foobar`  : hello world
+.Param `FOOBAR`  : hello world
+
+$.Page.Params.FooBar  : hello world
+$.Page.Params.foobar  : hello world
+$.Page.Params.FOOBAR  : hello world
+
+has to be lowercase
+index .Params `FooBar`  : 
+index .Params `foobar`  : hello world
+index .Params `FOOBAR`  : 
+
+it is stored in lowercase:
+map[lastmod:2018-01-27 22:55:07 &#43;0100 CET description:description keywords:[foo bar] draft:false iscjklanguage:false publishdate:2018-01-27 18:19:05 &#43;0100 CET outputs:[{HTML text/html&#43;html  index canonical  false true false false}] weight:100 tags:[foo bar] foobar:hello world expirydate:2042-01-27 18:18:13 &#43;0100 CET aliases:[alias1 alias2] linktitle:linkTitle slug:FrontMatterVariables date:2018-01-27 18:18:24 &#43;0100 CET layout:variables/page_front_matter markup:md title:Title]
 
 </pre>
             </div>
