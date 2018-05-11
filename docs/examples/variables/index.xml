@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>Title</title>
-      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</link>
-      <pubDate>Sat, 27 Jan 2018 18:18:24 +0100</pubDate>
-      
-      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</guid>
-      <description>type : &amp;ldquo;myType&amp;rdquo; url : &amp;ldquo;myURL&amp;rdquo;</description>
-    </item>
-    
-    <item>
       <title>Hello Page</title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Page/</link>
       <pubDate>Sat, 27 Jan 2018 14:28:03 +0100</pubDate>
@@ -101,6 +92,15 @@
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Site/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Title</title>
+      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</link>
+      <pubDate>Wed, 09 May 2018 23:55:57 +0200</pubDate>
+      
+      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</guid>
+      <description>type : &amp;ldquo;myType&amp;rdquo; url : &amp;ldquo;myURL&amp;rdquo;</description>
     </item>
     
     <item>
