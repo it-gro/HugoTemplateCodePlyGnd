@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>demo site vars (lang code)</language>
     <copyright>demo site vars (c)</copyright>
-    <lastBuildDate>Sat, 27 Jan 2018 18:18:24 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 09 May 2018 23:55:57 +0200</lastBuildDate>
     
 	<atom:link href="https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Bar</title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/bar/</link>
-      <pubDate>Sat, 27 Jan 2018 18:18:24 +0100</pubDate>
+      <pubDate>Wed, 09 May 2018 23:55:57 +0200</pubDate>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/bar/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Foo</title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/foo/</link>
-      <pubDate>Sat, 27 Jan 2018 18:18:24 +0100</pubDate>
+      <pubDate>Wed, 09 May 2018 23:55:57 +0200</pubDate>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/foo/</guid>
       <description></description>

@@ -45,8 +45,8 @@
         
           <div class="w3-container w3-card w3-theme-d1">
               <pre>&#43;&#43;&#43;
-Time1          = 0001-01-01T07:32:00
-Time2          = 0001-01-01T08:00:00
+Time1          = 0001-01-01T07:32:00Z
+Time2          = 0001-01-01T08:00:00Z
 Time3          = &#34;07:32:00&#34;
 somextraparam  = 2018-03-13T18:15:00&#43;02:00
 somextraparam2 = 2018-03-13T20:15:00&#43;02:00
@@ -88,20 +88,20 @@ somextraparam2 = 2018-03-13T20:15:00&#43;02:00
 <a href="https://golang.org/pkg/time/#Time">https://golang.org/pkg/time/#Time</a>
 <a href="https://github.com/toml-lang/toml#local-time">https://github.com/toml-lang/toml#local-time</a>
 
-.Params.Time1  : 0001-01-01 07:32:00 &#43;0029 BMT
-.Params.Time2  : 0001-01-01 08:00:00 &#43;0029 BMT
+.Params.Time1  : 0001-01-01 07:32:00 &#43;0000 UTC
+.Params.Time2  : 0001-01-01 08:00:00 &#43;0000 UTC
 .Params.Time3  : 07:32:00
 
-`2018-05-09 23:38:17 &#43;0200 CEST` is `time.Time`
-`0001-01-01 07:32:00 &#43;0029 BMT` is `time.Time`
+`2018-05-09 23:40:12 &#43;0200 CEST` is `time.Time`
+`0001-01-01 07:32:00 &#43;0000 UTC` is `time.Time`
 `07:32:00` is `string`
 `2018-03-13 18:15:00 &#43;0200 &#43;0200` is `time.Time`
 
 
 `0001-01-01 07:32:00 &#43;0000 UTC` is `time.Time`
 
-0001-01-01 08:00:00 &#43;0029 BMT
-0001-01-01 07:32:00 &#43;0029 BMT
+0001-01-01 08:00:00 &#43;0000 UTC
+0001-01-01 07:32:00 &#43;0000 UTC
 2018-03-13 18:15:00 &#43;0200 &#43;0200
 
 2h0m0s

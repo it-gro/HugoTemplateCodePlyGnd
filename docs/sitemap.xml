@@ -58,11 +58,6 @@
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</loc>
-    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Page/</loc>
     <lastmod>2018-01-27T15:59:32+01:00</lastmod>
   </url>
@@ -148,6 +143,10 @@
   </url>
   
   <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/ex01/</loc>
+  </url>
+  
+  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/taxonomy/list_all_01/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
@@ -158,8 +157,20 @@
   </url>
   
   <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/or01/</loc>
+  </url>
+  
+  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/</loc>
     <lastmod>2018-01-29T19:57:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/</loc>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/</loc>
   </url>
   
   <url>
@@ -170,11 +181,6 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/variables/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
-    <lastmod>2018-05-09T23:38:17+02:00</lastmod>
   </url>
   
   <url>
@@ -208,6 +214,11 @@
   </url>
   
   <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</loc>
+    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/basics/datatypes/map/</loc>
     <lastmod>2018-01-26T01:04:10+01:00</lastmod>
   </url>
@@ -215,6 +226,11 @@
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/shortcodes/get-parameters-generic-01/</loc>
     <lastmod>2018-01-30T20:15:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
+    <lastmod>2018-05-09T23:40:12+02:00</lastmod>
   </url>
   
   <url>

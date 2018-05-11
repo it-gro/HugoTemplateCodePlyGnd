@@ -1,6 +1,6 @@
 ---
 aliases         : [ "alias1", "alias2" ]
-date            : 2018-01-27T18:18:24+01:00
+date            : 2018-05-09T23:55:57+02:00
 description     : "description"
 draft           : false
 expiryDate      : 2042-01-27T18:18:13+01:00
@@ -15,7 +15,7 @@ publishDate     : 2018-01-27T18:19:05+01:00
 slug            : "FrontMatterVariables"
 tags            : [ "foo", "bar" ]
 title           : "Title"
-weight          : 100
+weight          : 150
 
 FooBar          : "hello world"
 ---
