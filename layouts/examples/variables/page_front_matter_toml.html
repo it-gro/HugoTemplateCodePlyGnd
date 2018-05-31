@@ -23,4 +23,12 @@
 
 {{ printf "`%s` is `%T`" ((.Params.somextraparam2).Sub .Params.somextraparam) ((.Params.somextraparam2).Sub .Params.somextraparam) }}
 
+{{ dateFormat "Monday, Jan 2, 2006" .Params.somextraparam }}
+{{ dateFormat "15:04"               .Params.somextraparam }}
+
+{{ (.Params.somextraparam).Format "Monday, Jan 2, 2006"  }}
+{{ (.Params.somextraparam).Format "15:04"  }}
+
+
+
 {{/* __HIDE__ */}} {{- end }}
