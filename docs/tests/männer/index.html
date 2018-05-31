@@ -46,24 +46,42 @@
           </div>
           <div class="w3-row">
             <div class="w3-container w3-col m6 w3-theme-l2">
-              <pre>{{ urlquery &#34;männer&#34; }}
+              <pre>
+{{&#34;https://en.wikipedia.org/wiki/Percent-encoding&#34; | markdownify }}
+{{&#34;https://de.wikipedia.org/wiki/URL-Encoding&#34; | markdownify }}
+{{&#34;https://gohugo.io/functions/urls.parse/&#34; | markdownify }}
+{{&#34;https://godoc.org/net/url#URL&#34; | markdownify }}
+{{&#34;https://golang.org/pkg/text/template/#hdr-Functions&#34; | markdownify }}
+
+
+{{ urlquery &#34;männer&#34; }}
 {{ (urls.Parse &#34;m%C3%A4nner&#34;).Path }}
 
 {{ .Permalink }}
 {{ .RelPermalink }}
 {{ .URL }}
+
 {{ (urls.Parse .Permalink).Path }}
 
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
+
+<a href="https://en.wikipedia.org/wiki/Percent-encoding">https://en.wikipedia.org/wiki/Percent-encoding</a>
+<a href="https://de.wikipedia.org/wiki/URL-Encoding">https://de.wikipedia.org/wiki/URL-Encoding</a>
+<a href="https://gohugo.io/functions/urls.parse/">https://gohugo.io/functions/urls.parse/</a>
+<a href="https://godoc.org/net/url#URL">https://godoc.org/net/url#URL</a>
+<a href="https://golang.org/pkg/text/template/#hdr-Functions">https://golang.org/pkg/text/template/#hdr-Functions</a>
+
+
 m%C3%A4nner
 männer
 
 https://it-gro.github.io/HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
 /HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
 /HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
+
 /HugoTemplateCodePlyGnd/tests/männer/
 
 </pre>
