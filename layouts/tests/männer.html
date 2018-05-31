@@ -1,5 +1,13 @@
 {{/* __HIDE__ */}} {{ define "render" }}
 {{ .Permalink }}
 {{ .RelPermalink }}
+{{ .URL }}
 {{ (urls.Parse .Permalink).Path }}
+
+{{ urlquery .RelPermalink }}
+{{ urlquery (urls.Parse .Permalink).Path }}
+{{ urlquery "männer" }}
+
+
+
 {{/* __HIDE__ */}} {{- end }}

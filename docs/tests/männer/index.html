@@ -48,14 +48,30 @@
             <div class="w3-container w3-col m6 w3-theme-l2">
               <pre>{{ .Permalink }}
 {{ .RelPermalink }}
+{{ .URL }}
 {{ (urls.Parse .Permalink).Path }}
+
+{{ urlquery .RelPermalink }}
+{{ urlquery (urls.Parse .Permalink).Path }}
+{{ urlquery &#34;männer&#34; }}
+
+
+
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
               <pre>
 https://it-gro.github.io/HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
 /HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
+/HugoTemplateCodePlyGnd/tests/m%C3%A4nner/
 /HugoTemplateCodePlyGnd/tests/männer/
+
+%2FHugoTemplateCodePlyGnd%2Ftests%2Fm%25C3%25A4nner%2F
+%2FHugoTemplateCodePlyGnd%2Ftests%2Fm%C3%A4nner%2F
+m%C3%A4nner
+
+
+
 </pre>
             </div>
           </div>
