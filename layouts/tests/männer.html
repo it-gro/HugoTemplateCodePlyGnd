@@ -1,13 +1,10 @@
 {{/* __HIDE__ */}} {{ define "render" }}
+{{ urlquery "männer" }}
+{{ (urls.Parse "m%C3%A4nner").Path }}
+
 {{ .Permalink }}
 {{ .RelPermalink }}
 {{ .URL }}
 {{ (urls.Parse .Permalink).Path }}
-
-{{ urlquery .RelPermalink }}
-{{ urlquery (urls.Parse .Permalink).Path }}
-{{ urlquery "männer" }}
-
-
 
 {{/* __HIDE__ */}} {{- end }}
