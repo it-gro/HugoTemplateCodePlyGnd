@@ -175,15 +175,6 @@ more */ here 24 end</description>
     </item>
     
     <item>
-      <title>ex01</title>
-      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/ex01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/ex01/</guid>
-      <description> This is a test </description>
-    </item>
-    
-    <item>
       <title>list_all_01</title>
       <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/taxonomy/list_all_01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -199,15 +190,6 @@ more */ here 24 end</description>
       
       <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/Site/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>or01</title>
-      <link>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/or01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/or01/</guid>
-      <description> This is a test </description>
     </item>
     
     <item>

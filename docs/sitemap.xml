@@ -143,10 +143,6 @@
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/ex01/</loc>
-  </url>
-  
-  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/taxonomy/list_all_01/</loc>
     <lastmod>2018-01-27T22:24:15+01:00</lastmod>
   </url>
@@ -157,20 +153,8 @@
   </url>
   
   <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/or01/</loc>
-  </url>
-  
-  <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/json/</loc>
     <lastmod>2018-01-29T19:57:23+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/or/</loc>
-  </url>
-  
-  <url>
-    <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/discourses/printf/</loc>
   </url>
   
   <url>
@@ -215,7 +199,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/FrontMatterVariables/</loc>
-    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
+    <lastmod>2018-05-12T00:10:52+02:00</lastmod>
   </url>
   
   <url>
@@ -230,7 +214,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/examples/variables/page_front_matter_toml/</loc>
-    <lastmod>2018-05-09T23:40:12+02:00</lastmod>
+    <lastmod>2018-05-12T00:10:52+02:00</lastmod>
   </url>
   
   <url>
@@ -810,7 +794,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/bar/</loc>
-    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
+    <lastmod>2018-05-12T00:10:52+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -826,7 +810,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/foo/</loc>
-    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
+    <lastmod>2018-05-12T00:10:52+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -838,7 +822,7 @@
   
   <url>
     <loc>https://it-gro.github.io/HugoTemplateCodePlyGnd/tags/</loc>
-    <lastmod>2018-01-27T22:55:07+01:00</lastmod>
+    <lastmod>2018-05-12T00:10:52+02:00</lastmod>
     <priority>0</priority>
   </url>
   
