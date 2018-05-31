@@ -80,6 +80,14 @@ somextraparam2 = 2018-03-13T20:15:00&#43;02:00
 
 {{ printf &#34;`%s` is `%T`&#34; ((.Params.somextraparam2).Sub .Params.somextraparam) ((.Params.somextraparam2).Sub .Params.somextraparam) }}
 
+{{ dateFormat &#34;Monday, Jan 2, 2006&#34; .Params.somextraparam }}
+{{ dateFormat &#34;15:04&#34;               .Params.somextraparam }}
+
+{{ (.Params.somextraparam).Format &#34;Monday, Jan 2, 2006&#34;  }}
+{{ (.Params.somextraparam).Format &#34;15:04&#34;  }}
+
+
+
 </pre>
             </div>
             <div class="w3-container w3-col m6 w3-theme-l3">
@@ -107,6 +115,14 @@ somextraparam2 = 2018-03-13T20:15:00&#43;02:00
 2h0m0s
 
 `2h0m0s` is `time.Duration`
+
+Tuesday, Mar 13, 2018
+18:15
+
+Tuesday, Mar 13, 2018
+18:15
+
+
 
 </pre>
             </div>
