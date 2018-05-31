@@ -1,0 +1,5 @@
+{{/* __HIDE__ */}} {{ define "render" }}
+{{ .Permalink }}
+{{ .RelPermalink }}
+{{ (urls.Parse .Permalink).Path }}
+{{/* __HIDE__ */}} {{- end }}
