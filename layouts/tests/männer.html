@@ -1,10 +1,19 @@
 {{/* __HIDE__ */}} {{ define "render" }}
+
+{{"https://en.wikipedia.org/wiki/Percent-encoding" | markdownify }}
+{{"https://de.wikipedia.org/wiki/URL-Encoding" | markdownify }}
+{{"https://gohugo.io/functions/urls.parse/" | markdownify }}
+{{"https://godoc.org/net/url#URL" | markdownify }}
+{{"https://golang.org/pkg/text/template/#hdr-Functions" | markdownify }}
+
+
 {{ urlquery "männer" }}
 {{ (urls.Parse "m%C3%A4nner").Path }}
 
 {{ .Permalink }}
 {{ .RelPermalink }}
 {{ .URL }}
+
 {{ (urls.Parse .Permalink).Path }}
 
 {{/* __HIDE__ */}} {{- end }}
